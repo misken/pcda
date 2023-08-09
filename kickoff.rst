@@ -66,11 +66,7 @@ of data science / business analytics.
 Class logistics
 ---------------
 
-We'll review the syllabus and course websites (Moodle and main)
-
-
-- `SCREENCAST: pcda course websites and syllabus <https://youtu.be/YpZslOrzBS4>`_ (9:20)
-- `Transcript: pcda course websites and syllabus <https://drive.google.com/file/d/1Gd4-hR_FDr2US_PjbD56auw5agnubD5E/view?usp=sharing>`_
+Between the "Course welcome video" and the "Week 1 Welcome Video" (both available via Moodle), all of the course logistics are covered. So, if you haven't watched these yet, please do so ASAP. Also, read the syllabus carefully (again, Moodle). Finally, review the first two Announcements I made in Moodle.
 
 
 The **pcda** computing appliance
@@ -87,7 +83,7 @@ We'll discuss things which led to the pcda appliance:
     - reproducible analysis/research
     
 You should go through (if you haven't already) the screencasts and instructions 
-on the `pcda VM page <http://www.sba.oakland.edu/faculty/isken/courses/mis5470_f23/pcda_vm.html>`_ that covers installation and an overview of VirtualBox and the Lubuntu desktop. The screencasts below are from Fall 2020 but nothing has changed except the name of the VM.
+on the `pcda VM page <http://www.sba.oakland.edu/faculty/isken/courses/pcda/pcda_vm.html>`_ that covers installation and an overview of VirtualBox and the Lubuntu desktop. The screencasts below are from Fall 2020 but nothing has changed except the name of the VM.
 
 - `SCREENCAST: Intro to the pcda VM <https://youtu.be/AjLOhog7ByM>`_ (16:17)
 

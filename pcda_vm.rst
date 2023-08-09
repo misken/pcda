@@ -28,7 +28,7 @@ All the details are described next, but here's a screencast as well:
 Resource 1 - The pcda virtual machine
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Since the creation of this class in 2014, I have created a new virtual machine each year that runs Lubuntu Linux and includes R, R Studio, a bunch of R packages, Anaconda Python, a bunch of Python packages, and a few other programs such as a text editor and git (for version control). I distribute the virtual machine via an OVA file that students download and import using VirtualBox. Below, you'll find `extensive background information as well as installation, usage and troubleshooting instructions for the pcda VM <http://www.sba.oakland.edu/faculty/isken/courses/mis5470_f22/pcda_vm.html#obtaining-and-installing-the-pcda-virtual-machine>`_. 
+Since the creation of this class in 2014, I have created a new virtual machine each year that runs Lubuntu Linux and includes R, R Studio, a bunch of R packages, Anaconda Python, a bunch of Python packages, and a few other programs such as a text editor and git (for version control). I distribute the virtual machine via an OVA file that students download and import using VirtualBox. Below, you'll find `extensive background information as well as installation, usage and troubleshooting instructions for the pcda VM <http://www.sba.oakland.edu/faculty/isken/courses/pcda/pcda_vm.html#obtaining-and-installing-the-pcda-virtual-machine>`_. 
 
 The benefit of using the pcda VM is that all three computing topics: Linux, R, and Python can all be done on the VM and all of the software is **ALREADY INSTALLED** for you.
 
@@ -56,14 +56,14 @@ If you are interested in a high level description of exactly what git bash for W
 Using a bash shell with Mac - Option 2: macOS is actually Unix based
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Finally, for those of you using a Mac, you might not realize it, but the Mac OS is actually using a Unix based kernel. It comes with standard Unix command line tools and you could actually do the Linux intro part of this course using your Mac's built in `Terminal program <https://en.wikipedia.org/wiki/Terminal_(macOS)>`_ that uses the ``zsh`` shell by default (though you can `change it to bash if you want <https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/>`_ ). So, you could do the entire course using your Mac without installing the pcda VM. Just follow the `instructions below for installing the R and Python related tools on your Mac <http://www.sba.oakland.edu/faculty/isken/courses/mis5470_f22/pcda_vm.html#windows-mac-versions-of-some-of-the-course-software>`_. 
+Finally, for those of you using a Mac, you might not realize it, but the Mac OS is actually using a Unix based kernel. It comes with standard Unix command line tools and you could actually do the Linux intro part of this course using your Mac's built in `Terminal program <https://en.wikipedia.org/wiki/Terminal_(macOS)>`_ that uses the ``zsh`` shell by default (though you can `change it to bash if you want <https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/>`_ ). So, you could do the entire course using your Mac without installing the pcda VM. Just follow the `instructions below for installing the R and Python related tools on your Mac <http://www.sba.oakland.edu/faculty/isken/courses/pcda/pcda_vm.html#windows-mac-versions-of-some-of-the-course-software>`_. 
 
 Resource 3 - OU Apporto Virtual Lab
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The OU Apporto Virtual Lab has an Ubuntu 20.04 application available which includes R, R Studio and Anaconda Python. This resource provides another way of doing the Linux related parts of the class (which is really just the first two weeks). Obviously you can also use it for the R and Python portions of the course, though you will have to:
 
-* for R, install some R packages using a script that I make available (see `R packages for Windows and Mac <http://www.sba.oakland.edu/faculty/isken/courses/mis5470_f22/pcda_vm.html#r-packages-for-windows-or-mac>`_ below - it's the same process on Linux),
+* for R, install some R packages using a script that I make available (see `R packages for Windows and Mac <http://www.sba.oakland.edu/faculty/isken/courses/pcda/pcda_vm.html#r-packages-for-windows-or-mac>`_ below - it's the same process on Linux),
 * for Python,  you'll create the `datasci` conda virtual environment. This isn't absolutely necessary and we don't do Python until the second half of the semester. If you really want to do this now (I'll create a screencast later in the term):
 
   - download the `datasci.yml <https://drive.google.com/file/d/1Z-VqIMKsR9ybCddRxeyrZhjpyZilPR0B/view?usp=sharing>`_ file to your ``Downloads`` folder.
