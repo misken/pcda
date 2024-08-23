@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Group by analysis and data wrangling with R &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Modeling 1: Overview and linear regression in R" href="modeling1_mlr_r.html" />
+    <link rel="prev" title="Version control with git and GitHub" href="git_intro.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modeling1_mlr_r.html" title="Modeling 1: Overview and linear regression in R"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="git_intro.html" title="Version control with git and GitHub"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_r.html" accesskey="U">Intro to data analytics with R</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Group by analysis and data wrangling with R</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="group-by-analysis-and-data-wrangling-with-r">
+<h1>Group by analysis and data wrangling with R<a class="headerlink" href="#group-by-analysis-and-data-wrangling-with-r" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>The term data wrangling is used to describe the process of reading, exploring, cleaning, and transforming data in preparation for modeling, statistics and machine learning. A popular rule of thumb is that you’ll typically spend 80% of total project time on data wrangling! Having done analytics work professionally both in industry and academia, this rings true. Getting good at data wrangling will pay off big time. We’ll start with basic wrangling tasks using R. Later in the semester we’ll revisit wrangling with Python and learn some more advanced methods. This does NOT mean that R can’t do the wrangling things that Python can - it can. It just makes sense to save some of the more advanced stuff like regex, JSON and web scraping until we get to Python. This will allow us to get going quicker doing statistical modeling in R.  Common data wrangling tasks such as dealing with missing data and feature engineering will pop up over and over again as we get into statistical learning models.Some of the things we’ll do include:</p>
+<ul class="simple">
+<li><p>We’ll learn about various ways to do “pivot” or “group by analysis” with a focus on the widely used dplyr package (more Hadley Wickham creations) - though I’ll also introduce classic R techniques using the <code class="docutils literal notranslate"><span class="pre">apply</span></code> family of functions.</p></li>
+<li><p>reading csv, Excel, and SQLite data into R,</p></li>
+<li><p>string and date/time manipulation for cleaning/transforming data,</p></li>
+<li><p>tidying and reshaping data,</p></li>
+<li><p>saving/writing data.</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>RforE - 6, 11, 12, 14-16</p></li>
+<li><p>r4ds - 4, 6, 13-20</p></li>
+<li><p>PDSwR - 4</p></li>
+</ul>
+</section>
+<section id="downloads-and-other-resources">
+<h2>Downloads and other resources<a class="headerlink" href="#downloads-and-other-resources" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1fmlP-7M5ZIrXnl758TdYr3-LRquZGAZz/view?usp=sharing">Downloads_EDA2withR.zip</a> - Group by analysis using old school tools like apply along with new era tools such as plyr and dplyr. Basic date/time manipulation.</p></li>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1dcMv6dDsTLaduOzuu49_2PS9IbX0OEPT/view?usp=sharing">Downloads_DataWranglngwithR.zip</a> - More on getting data into and out of R. Also, data reshaping and basic string manipulation.</p></li>
+<li><p><a class="reference external" href="http://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf">Data wrangling (dplyr and tidyr) cheat sheet</a> (R Studio)</p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<p>Tools like Excel Pivot Tables and aggregate SQL queries are commonly used for what
+is known as “group by” analysis.</p>
+<p>We’ll start by learning about the new dplyr library - think pivot tables but way more powerful.</p>
+<p>Here’s the name of the file we’ll be using.
+* <strong>GroupByAnalysis_dplyr_basics_shell.Rmd</strong></p>
+<p>I’m going to break this up into logical chunks.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/8RHmJ7hZEF8">SCREENCAST: Intro to group by analysis with dplyr</a> (11:02)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/0UU-qTEoXGc">SCREENCAST: Using filter() to get subset of rows</a> (10:37)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/CKtpVAvMM5M">SCREENCAST: Using select() to get subset of columns</a> (4:49)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/kHxvpXG_bKw">SCREENCAST: Using mutate() to compute new variables</a> (12:06)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/XT87NVdGw5Q">SCREENCAST: Using summarise() to do aggregations like sums, counts, means, …</a> (20:03)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/Kp8Utack4MI">SCREENCAST: Using dplyr with databases</a> (6:14)</p></li>
+</ul>
+<p>If you have the time
+and interest, check out
+the “old school” approach use base R tools such as the apply family
+of functions as well as a tool called plyr.</p>
+<ul class="simple">
+<li><p><strong>GroupByAnalysis_oldschool_notes.Rmd</strong> (OPTIONAL)</p></li>
+</ul>
+<p>Now let’s see some alternatives to <code class="docutils literal notranslate"><span class="pre">read.table</span></code> and <code class="docutils literal notranslate"><span class="pre">read.csv</span></code>, a bit on tibbles, RData and RDS files, built in datasets. See <strong>GettingDataIntoR_notes.Rmd</strong>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/iV5DX1oiTcs">SCREENCAST: Getting data into R</a> (12:54)</p></li>
+</ul>
+<p>Let’s use <strong>DataWrangling_combining_notes.Rmd</strong> file to learn about combining data by rows and columns as well as doing SQL style joins.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/DMh2ElPXe5Y">SCREENCAST: Combining data</a> (16:05)</p></li>
+</ul>
+<p>The tidyverse approach to reshaping data between long and wide formats is covered in <strong>DataWrangling_reshaping_notes.Rmd</strong> and
+in the following screencast.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/e7Ggw7e-rMA">SCREENCAST: Wide &lt;–&gt; Long with tidyr</a> (11:18)</p></li>
+</ul>
+<p>Prior to the tidyverse, the reshape2 package was used to go between wide and long data formats. Then tidyr came along. The next screencast uses reshape2. It also gets into some basic string manipulation like substringing as well as some more advanced ggplot2 plot formatting. The associated Rmd file is <strong>DataWrangling_reshaping_pretidy_notes.Rmd</strong>.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/d00MoWdb7LQ">SCREENCAST (OPTIONAL): Wide &lt;–&gt; Long with reshape2 (melt and cast)</a> (17:44)</p></li>
+</ul>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<section id="split-apply-combine">
+<h3>Split-Apply-Combine<a class="headerlink" href="#split-apply-combine" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.jstatsoft.org/article/view/v040i01">The Split-Apply-Combine Strategy for Data Analysis</a> - This is the original paper by Hadley Wickham. I’ve also included the pdf in the Downloads file for this session.</p></li>
+<li><p><a class="reference external" href="http://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/">A brief introduction to “apply” in R</a> - This is one of the best overviews I’ve found of the “apply” family of functions in R.</p></li>
+<li><p><a class="reference external" href="https://rpubs.com/justmarkham/dplyr-tutorial">Introduction to dplyr for Faster Data Manipulation in R</a> - Very good dplyr tutorial by Kevin Markham.</p></li>
+</ul>
+</section>
+<section id="data-reshaping">
+<h3>Data reshaping<a class="headerlink" href="#data-reshaping" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf">Tidy Data</a> - This is the original paper by Hadley Wickham.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Group by analysis and data wrangling with R</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads-and-other-resources">Downloads and other resources</a></li>
+<li><a class="reference internal" href="#activities">Activities</a></li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#split-apply-combine">Split-Apply-Combine</a></li>
+<li><a class="reference internal" href="#data-reshaping">Data reshaping</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="git_intro.html"
+                          title="previous chapter">Version control with git and GitHub</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="modeling1_mlr_r.html"
+                          title="next chapter">Modeling 1: Overview and linear regression in R</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/data_wrangling_r.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modeling1_mlr_r.html" title="Modeling 1: Overview and linear regression in R"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="git_intro.html" title="Version control with git and GitHub"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_r.html" >Intro to data analytics with R</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Group by analysis and data wrangling with R</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Data analysis and plotting in Python &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Text wrangling with Python" href="data_wrangling_python.html" />
+    <link rel="prev" title="Functions, text files, reading data files with Python" href="python_intro_2.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="data_wrangling_python.html" title="Text wrangling with Python"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="python_intro_2.html" title="Functions, text files, reading data files with Python"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" accesskey="U">Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Data analysis and plotting in Python</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="data-analysis-and-plotting-in-python">
+<h1>Data analysis and plotting in Python<a class="headerlink" href="#data-analysis-and-plotting-in-python" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="http://pandas.pydata.org/">Pandas</a>, developed by Wes McKinney, is the “go to” library for doing data manipulation and analysis in Python. It’s not really a statistics library (ala R); for that, <a class="reference external" href="http://statsmodels.sourceforge.net/">StatsModels</a> is the Python library of choice for now. For more advanced stuff like machine learning and data mining algorithms, <a class="reference external" href="http://scikit-learn.org/stable/">scikit-learn</a> is the go to Python module.</p>
+<p>The de-facto standard plotting library for Python is called <a class="reference external" href="http://matplotlib.org/">matplotlib</a> and it’s one of the key reasons that Python has become such a major force in the analytics world. Below, you’ll also find information on <a class="reference external" href="https://stanford.edu/~mwaskom/software/seaborn/">Seaborn</a>, a newish plotting package that uses matplotlib under the hood but provides an easier to use high level interface for common plotting tasks. Another option for visualization is <a class="reference external" href="http://bokeh.pydata.org/en/latest/">Bokeh</a> it’s designed for creating interactive graphs using web browsers for presentation. <a class="reference external" href="https://plotly.com/python/">Plotly</a> also has similar tools for interactive, web based, Python plotting.</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<p>Python Data Science Handbook (PDSH)  - Ch 3 is on pandas, Ch 4 is matplotlib</p>
+</section>
+<section id="downloads-and-other-resources">
+<h2>Downloads and other resources<a class="headerlink" href="#downloads-and-other-resources" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/14KXn3ynHSPran1DJIZvrRQ0qtD8f9vJy/view?usp=sharing">Downloads_pandas_matplotlib_intro.zip</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jakevdp/PythonDataScienceHandbook">Jupyter notebooks for Python Data Science Handbook</a> - JVPs GitHub site has the full text of the book within Jupyter notebooks. Makes it super easy for self-study.</p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<p>Start with this intro to the session: <a class="reference external" href="https://youtu.be/8zjV0gm71Gg">SCREENCAST: Overview of session</a></p>
+<p>This is the primary notebook that we’ll use to learn the basics of pandas and matplotlib. We’ll also be looking at a few of JVP’s notebooks on matplotlib.</p>
+<ul class="simple">
+<li><p><strong>ORSchedLeadTime_Python.ipynb</strong> in ORSchedLeadTime_Python/</p></li>
+</ul>
+<p>Clear the output before starting. This notebook covers the basics of pandas and matplotlib.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/zklq_e0GLJ0">SCREENCAST: Intro to pandas/matplotlib - Part 1 - data structures</a> (17:21)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/5C09mGarbtk">SCREENCAST: Intro to pandas/matplotlib - Part 2 - indexing with iloc() and loc()</a> (12:47)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/RHYPNINmpGc">SCREENCAST: Intro to pandas/matplotlib - Part 3 - matplotlib</a> (23:07)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/NcsFkehgYw8">SCREENCAST: Intro to pandas/matplotlib - Part 4 - group by analysis</a> (7:44)</p></li>
+</ul>
+</div></blockquote>
+<ul>
+<li><p><strong>c19_data_wrangle_viz.ipynb</strong> in c19_data_wrangle_viz/</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/u2rEwmaYqAs">SCREENCAST: Processing/plotting Covid-19 data with pandas, matplotlib and Seaborn</a> (31:29)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Back in April 2020, I developed a Jupyter notebook to automate the process of downloading and processing daily Covid-19 case data. The processing steps included adding new fields, reshaping to make plotting easier and just organizing the data in a way that facilitated analysis. Finally, the notebook produced faceted plots of cases by county in the state of Michigan and by state for the entire US. The plotting is done using matplotlib and Seaborn. I’ve adapted that notebook for use in this class by cleaning things up and adding a large amount of explanatory text. This is a good example of a very real use of Python for data analysis and includes more advanced things than done in the first introductory notebook.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before launching Jupyter lab do a <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">datasci</span></code> so that you can pip install the <a class="reference external" href="https://pypi.org/project/us/">us</a> package. It’s really useful package for working with things like state abbreviations and FIPS codes.</p>
+</div>
+<p>You can pip install it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda activate datasci
+$ pip install us
+$ conda deactivate
+$ jupyter lab
+</pre></div>
+</div>
+<p>Now you can go through the <strong>c19_data_wrangle_viz.ipynb</strong> notebook.</p>
+<section id="optional-activities">
+<h3>Optional activities<a class="headerlink" href="#optional-activities" title="Link to this heading">¶</a></h3>
+<p>Here are some additional notebooks that you can check out if you are interested in the topic.</p>
+<ul>
+<li><p><strong>Visualization_Techniques_Seaborn.ipynb</strong> in Final_Project_SeabornPlotting/</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Seaborn is a newish visualization library built on top of matplotlib</p></li>
+<li><p>this is a student final project</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>pandas_ch2_movielens.ipynb</strong> in movielens/</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>based on Ch2 of Wes McKinney’s Pandas book</p></li>
+<li><p>shows table merging and pointers to other pandas tutorials from SQL point of view</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>datetime_exploring.ipynb</strong> in datetime/</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Python has terrific libraries for dealing with time series (pandas). However, there be dragons in the confluence of pandas, numpy, and base Python date and time handling. Given the ubiquitous nature of datetime data in business, slaying these dragons is a calling we cannot avoid. I cover this topic is quite a bit of detail in my MIS 4900/6900 - Advanced Analytics with Python course. You can find the full set of datetime related subtopics and screencasts at <a class="reference external" href="http://www.sba.oakland.edu/faculty/isken/courses/mis6900_s21/datetime_occupancy.html">http://www.sba.oakland.edu/faculty/isken/courses/mis6900_s21/datetime_occupancy.html</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>templogger_batch.py</strong> in temp_logging_pcda/</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Short focused example of using pandas and matplotlib for automated data processing</p></li>
+<li><p>includes file globbing</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (Optional)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<section id="id1">
+<h3>Pandas<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/tdpetrou/Learn-Pandas">Learn-Pandas GitHub repo (Ted Petrou)</a> - thorough, well done, coverage of pandas via a series of Jupyter notebooks</p></li>
+<li><p><a class="reference external" href="http://www.dataschool.io/best-python-pandas-resources/">Top 8 resources for leaning data analysis with pandas</a></p></li>
+<li><p><a class="reference external" href="https://stmorse.github.io/journal/tidyverse-style-pandas.html">Tidyverse pipes in pandas</a>- if you like pipes in dplyr, check out how you can do similar things in pandas</p></li>
+<li><p><a class="reference external" href="http://pbpython.com/categorical-encoding.html">Guide to encoding categorical values in Python</a></p></li>
+<li><p><a class="reference external" href="https://www.dataquest.io/blog/python-pandas-databases/">Working with SQLite databases using Python and Pandas</a></p></li>
+<li><p><a class="reference external" href="https://www.kdnuggets.com/2016/06/seven-steps-mastering-sql-data-science.html">7 steps to mastering SQL for data science</a></p></li>
+</ul>
+</section>
+<section id="visualization">
+<h3>Visualization<a class="headerlink" href="#visualization" title="Link to this heading">¶</a></h3>
+<ul>
+<li><p><a class="reference external" href="https://python-charts.com/">Python Charts</a></p></li>
+<li><p><a class="reference external" href="https://dataviz.dylancastillo.co/">Python data viz cookbook</a> - nice little interactive web site for generating common plots in pandas, matplotlib, Seaborn, and plotly.</p></li>
+<li><p><a class="reference external" href="https://pbpython.com/effective-matplotlib.html">Effectively using matplotlib</a></p></li>
+<li><p><a class="reference external" href="https://realpython.com/python-matplotlib-guide/">Python plotting with matplotlib</a></p></li>
+<li><p><a class="reference external" href="http://stanford.edu/~mwaskom/software/seaborn/introduction.html">Seaborn: statistical visualization</a></p>
+<blockquote>
+<div><p>Seaborn is a library for making attractive and informative statistical graphics in Python. It is built on top of matplotlib and tightly integrated with the PyData stack, including support for numpy and pandas data structures and statistical routines from scipy and statsmodels. Some of the features that seaborn offers are</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Several built-in themes that improve on the default matplotlib aesthetics</p></li>
+<li><p>Tools for choosing color palettes to make beautiful plots that reveal patterns in your data</p></li>
+<li><p>Functions for visualizing univariate and bivariate distributions or for comparing them between subsets of data</p></li>
+<li><p>Tools that fit and visualize linear regression models for different kinds of independent and dependent variables</p></li>
+<li><p>Functions that visualize matrices of data and use clustering algorithms to discover structure in those matrices</p></li>
+<li><p>A function to plot statistical timeseries data with flexible estimation and representation of uncertainty around the estimate</p></li>
+<li><p>High-level abstractions for structuring grids of plots that let you easily build complex visualizations</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="http://tomaugspurger.github.io/modern-6-visualization.html">Modern Pandas: Visualization</a> This is actually Part 6 of a series of blog posts on modern use of pandas. It gives a good overview of the landscape of Python plotting with matplotlib, pandas, and Seaborn and focuses on how Seaborn is a great direction for those looking for a plotting package that supports exploratory data analysis.</p></li>
+<li><p><a class="reference external" href="https://www.datafantic.com/the-magic-of-matplotlib-stylesheets/">The magic of matplotlib stylesheets</a></p></li>
+</ul>
+</section>
+<section id="applications">
+<h3>Applications<a class="headerlink" href="#applications" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://ntguardian.wordpress.com/2018/07/17/stock-data-analysis-python-v2/">Introduction to stock market data analysis with Python</a></p></li>
+<li><p><a class="reference external" href="https://github.com/misken/hillmaker">Hillmaker - an occupancy analysis tool</a> - If anyone is interested, there are a few things one could do for the class project that would involve contributing to this open source project. I’m the developer. Take a look and if interested, let me know and I can describe some project options.</p></li>
+<li><p><a class="reference external" href="https://www.kaggle.com/hhllcks/example-analysis-of-the-snl-database">Kaggle: Example analysis of the SNL database</a> - Kaggle is a great place to find datasets, sample analyses and competitions related to data science. You’ll need an account for this class anyway.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Data analysis and plotting in Python</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads-and-other-resources">Downloads and other resources</a></li>
+<li><a class="reference internal" href="#activities">Activities</a><ul>
+<li><a class="reference internal" href="#optional-activities">Optional activities</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (Optional)</a><ul>
+<li><a class="reference internal" href="#id1">Pandas</a></li>
+<li><a class="reference internal" href="#visualization">Visualization</a></li>
+<li><a class="reference internal" href="#applications">Applications</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="python_intro_2.html"
+                          title="previous chapter">Functions, text files, reading data files with Python</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="data_wrangling_python.html"
+                          title="next chapter">Text wrangling with Python</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/eda_python.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="data_wrangling_python.html" title="Text wrangling with Python"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="python_intro_2.html" title="Functions, text files, reading data files with Python"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" >Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Data analysis and plotting in Python</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

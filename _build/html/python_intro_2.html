@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Functions, text files, reading data files with Python &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data analysis and plotting in Python" href="eda_python.html" />
+    <link rel="prev" title="Intro to Python for data analytics" href="python_intro_1.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="eda_python.html" title="Data analysis and plotting in Python"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="python_intro_1.html" title="Intro to Python for data analytics"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" accesskey="U">Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Functions, text files, reading data files with Python</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="functions-text-files-reading-data-files-with-python">
+<h1>Functions, text files, reading data files with Python<a class="headerlink" href="#functions-text-files-reading-data-files-with-python" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>We’ll do a few different things this session:</p>
+<ul class="simple">
+<li><p>We’ll be creating and using functions in Python.</p></li>
+<li><p>We’ll create and use list comprehensions and various string function</p></li>
+<li><p>Next we’ll learn a bit about the structure of text files and tools for working with them</p></li>
+<li><p>We’ll end our crash course into the basics of Python programming by building a simulation model of the famous Monty Hall 3-Door Problem.</p></li>
+<li><p>Finally I’ve included a several more advanced, OPTIONAL, activities about reading csv files, json files and even Excel files with Python. Within these topics I also touch on things like using PyCharm or Spyder for debugging, the conda package management program, and a few other more advanced things.</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>WToP - pages 41-75</p></li>
+</ul>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1LhePdN39711FfcLxWTInjFVbdUCr2IZ9/view?usp=sharing">Downloads_IntroPython2.zip</a></p></li>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1c-qH2_pzTDznvDo3Pcz72gOkHIGnBUAK/view?usp=sharing">Downloads_ReadingFiles.zip</a></p></li>
+</ul>
+</section>
+<section id="fundamental-activities">
+<h2>Fundamental Activities<a class="headerlink" href="#fundamental-activities" title="Link to this heading">¶</a></h2>
+<p>We’ll finish our intro to basic Python programming:</p>
+<ul class="simple">
+<li><p>Creating and using functions</p></li>
+<li><p>List comprehensions</p></li>
+<li><p>Basic string work</p></li>
+</ul>
+<p>Let’s start with learning the very basics  of how to create Python functions, test and debug them and document them.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/siZ2jt9iNFA">SCREENCAST: Creating Python functions getting them to work</a> (20:00)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/fBG8-D4MqIk">SCREENCAST: More on creating, using and documenting Python functions</a> (19:59)</p></li>
+</ul>
+<p>Now we are going to explore an interesting and useful feature of Python known as <em>list comprehensions</em>.
+We’ll also dig a little bit deeper into string formatting for creating nice output.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/xZqNmLVFX08">SCREENCAST: List comprehensions and string formatting</a> (25:17)</p></li>
+</ul>
+<p>The <a class="reference external" href="https://jakevdp.github.io/WhirlwindTourOfPython/14-strings-and-regular-expressions.html">string functions chapter in Whirlwind Tour of Python</a> covers useful string functions and string formatting in Python. The second half of the chapter covers regular expressions which we’ll do in a future session.
+By the way, there is yet another way to create formatted strings beyond the “old style” % operator and the <code class="docutils literal notranslate"><span class="pre">format</span></code> method. This newish approach is known as <em>f-strings</em>. A nice comparison of the three approaches can be found <a class="reference external" href="https://mathspp.com/blog/pydonts/string-formatting-comparison">at this blog post</a>.</p>
+<p>Finally, let’s use our newfound knowledge of the basics of Python to do something kind of fun. I’m sure
+many of you know about the famous Monty Hall 3-Door Problem made famous on
+<a class="reference external" href="http://math.ucsd.edu/~crypto/Monty/monty.html">Let’s Make a Deal!</a> and in a Parade
+Magazine column that set off a firestorm of controversy. Follow the link to play a few
+rounds of the game so that you understand the rules. It’s well known that the optimal
+strategy in the classic version of this puzzle is to always switch. It’s a counterintuitive
+result and is always great fun to discuss (we play every year in my MIS 4460/5460 class).</p>
+<p>What we
+are going to do is to build a Monty Hall 3-Door Problem simulator in Python. Our goal is to create
+a program that lets us compare the strategies of always switching, always staying with the first door chosen, or
+randomly switching or staying based on the flip of a fair coin (I’ll leave this last strategy to the proverbial “reader” to do). This will force us to think through how
+to design multiple functions that can be repeatedly used by a main calling program to run the
+simulations and compile the results. I’ve included a skeleton Jupyter notebook with some of the
+code structure already created. Now let’s work through filling in the gaps and getting this
+simulation program working.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/czg5meD9yXs">SCREENCAST: Simulating the Monty Hall 3-Door Problem - part 1</a> (15:37)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/sAXLlCwjVP0">SCREENCAST: Simulating the Monty Hall 3-Door Problem - part 2</a> (24:39)</p></li>
+</ul>
+<p>For the remainder of the materials in this section as well as the upcoming session on data wrangling
+with regular expressions, we will be working with all kinds of text based files. Please take
+a look at the <strong>IntroToTextFiles.pdf</strong> document available in the <strong>Downloads_ReadingFiles.zip</strong> available above. Explore some of the links in that document so that you have a basic understanding of
+text file formats, text encodings, and text editors.</p>
+</section>
+<section id="optional-advanced-activities">
+<h2>OPTIONAL Advanced Activities<a class="headerlink" href="#optional-advanced-activities" title="Link to this heading">¶</a></h2>
+<p>Feel free to pick and choose from the following based on your interests, needs, and time. None of them are absolutely essential
+for this class, though of course, they may be quite useful to your final project or to your professional work.</p>
+<p>All of the files associated with these activities are available in the <strong>Downloads_ReadingFiles.zip</strong> file.</p>
+<p>We’ll learn more about text files, using Python to read CSV, JSON and even Excel files. We’ll also start to see more advanced programs and will use Spyder for program development and debugging.</p>
+<p>In the first two screencasts we’ll use Jupyter notebooks. Then I’ll introduce using Spyder for these same file reading problems. I’ll focus on creating a new Project in Spyder and using the built in debugging tools.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/Q55OHMlcKDg">SCREENCAST: Reading csv files</a> (18:12)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/dhuIGButFjY">SCREENCAST: Reading json files</a> (9:08)</p></li>
+</ul>
+<p>In addition to covering reading Excel data files into Python data structures, these next two screencasts also covers:</p>
+<ul class="simple">
+<li><p>the basics of Python package management using conda. It’s kind of the equivalent to installing packages from CRAN in R.</p></li>
+<li><p>using the Spyder IDE</p></li>
+<li><p><a class="reference external" href="https://youtu.be/VwljmMnw0To">SCREENCAST: Reading Excel files and installing conda packages</a> (17:23)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/VPHTygC-uMI">SCREENCAST: More Excel file reading and using Spyder</a> (21:24)</p></li>
+</ul>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://pbpython.com/">Practical Business Python</a> - very relevant blog on using Python for business analytics.</p></li>
+<li><p><a class="reference external" href="https://pyformat.info/">PyFormat - a guide to formatted printing</a> - Covers both “old style” via % operator as well as “new style” via the .format() method and formatting mini-language. The official docs are a little tough to read on this topic and this site does a good job of explaining via common examples.</p></li>
+<li><p><a class="reference external" href="http://nbviewer.jupyter.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-0-Scientific-Computing-with-Python.ipynb">Introduction to scientific computing with Python</a> - Nice set of Jupyter notebooks for learning about doing sci-computing in Python</p></li>
+<li><p><a class="reference external" href="https://www.digitalocean.com/community/tutorials/how-to-customize-your-bash-prompt-on-a-linux-vps">customizing your Bash prompt</a> - you spend a lot of time in the shell, might as well have a prompt that makes you happy.</p></li>
+<li><p><a class="reference external" href="http://math.ucsd.edu/~crypto/Monty/monty.html">Let’s Make a Deal!</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Functions, text files, reading data files with Python</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#fundamental-activities">Fundamental Activities</a></li>
+<li><a class="reference internal" href="#optional-advanced-activities">OPTIONAL Advanced Activities</a></li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="python_intro_1.html"
+                          title="previous chapter">Intro to Python for data analytics</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="eda_python.html"
+                          title="next chapter">Data analysis and plotting in Python</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/python_intro_2.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="eda_python.html" title="Data analysis and plotting in Python"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="python_intro_1.html" title="Intro to Python for data analytics"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" >Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Functions, text files, reading data files with Python</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

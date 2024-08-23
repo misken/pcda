@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Intro to Python for data analytics &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Functions, text files, reading data files with Python" href="python_intro_2.html" />
+    <link rel="prev" title="Intro to data analytics with Python" href="data_science_python.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="python_intro_2.html" title="Functions, text files, reading data files with Python"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="data_science_python.html" title="Intro to data analytics with Python"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" accesskey="U">Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Intro to Python for data analytics</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="intro-to-python-for-data-analytics">
+<h1>Intro to Python for data analytics<a class="headerlink" href="#intro-to-python-for-data-analytics" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>Python is a full-featured programming language used for all kinds of things. Our focus will be on learning Python from the perspective of doing data analytics work. Python has several advantages for data science work:</p>
+<ul class="simple">
+<li><p>easy to learn</p></li>
+<li><p>tons of data science related libraries</p></li>
+<li><p>many Python data science tutorials</p></li>
+<li><p>Python, being a full featured language, is much more powerful than R for many of the data science related tasks you’ll face</p></li>
+<li><p>it is widely used</p></li>
+</ul>
+<p>In this first part of the intro we’ll learn about fundamental Python programming concepts such as:</p>
+<ul class="simple">
+<li><p>Jupyter notebooks and Jupyter lab</p></li>
+<li><p>variables, numpy, math, peek at plotting</p></li>
+<li><p>looping and conditional logic</p></li>
+<li><p>lists and dictionaries</p></li>
+<li><p>reading files</p></li>
+<li><p>We’ll start learning to use the Spyder IDE as we start to create more complex programs.</p></li>
+</ul>
+<p>I’m assuming that if you are in this class, you have some familiarity with computer
+programming. So, this is a “whirlwind” intro to Python. The syntax is really quite
+easy to learn and I focus instead on some of the concepts and data structures that those of you that just
+have a VBA background might not be familiar with such as lists, dictionaries, sequential
+reading of files. The Jupyter notebooks upon which this session is based are for you to
+use as a starting point for further exploration and learning.</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Whirlwind Tour of Python (WToP) - pages 1-40 - <a class="reference external" href="https://jakevdp.github.io/WhirlwindTourOfPython/">available as free pdf</a>. You can find the associated Jupyter notebooks in theDownloads folder for this session.</dt><dd><ul>
+<li><p><a class="reference external" href="https://www.kaggle.com/sohier/whirlwind-tour-of-python-index">Whirlwind Tour of Python notebooks as Kaggle Kernels</a> - JVPs WToP free book has this set of notebooks to accompany it. Kaggle has distributed them as Kernals.</p></li>
+<li><p><a class="reference external" href="https://www.cheatography.com/weidadeyue/cheat-sheets/jupyter-notebook/">Jupyter notebook keyboard shortcuts cheat sheet</a></p></li>
+<li><p><a class="reference external" href="https://damontallen.github.io/IPython-quick-ref-sheets/">Jupyter notebook magic commands cheat sheet</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1f18VShz5FIuPX5hsJOqwL1CBQDF2o9Cp/view?usp=sharing">Enlightenment: A Programming Story Of</a></p></li>
+</ul>
+<p>StackOverflow is THE number one Q&amp;A site for all things programming. There are tags for every conceivable programming language. It is essential that you learn how to ask good questions on sites like this or when asking questions of me or in our Help Forum.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://stackoverflow.com/help/how-to-ask">How to ask a question on StackOverflow</a></p></li>
+<li><p><a class="reference external" href="https://xkcd.com/2200">An xkcd comic on error messages in programs</a>. Remember to do the mouse-over after reading the main comic.</p></li>
+</ul>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<p>Inside the Download file, in addition to the files needed for this session,
+you’ll also find a folder with all of the Jupyter notebooks for the
+Whirlwind Tour of Python book listed above.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1dyiE2_jZTw9eKsbrmXtBO-4PzEgfhl1h/view?usp=sharing">Download_IntroPythonBasics.zip</a></p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<p>We will begin with an overview of Python and its use in data analytics.
+Then we’ll start to learn Python in the context of data analysis,
+by working through a number of Jupyter notebooks together. While working through the
+notebooks, the topic of Conda virtual environments will come up. Conda is the <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/data-science.html">package and environment management system</a> for the
+Anaconda Python distro. Here is a <a class="reference external" href="https://towardsdatascience.com/getting-started-with-python-environments-using-conda-32e9f2779307">nice newbie intro to Conda virtual environments</a>.</p>
+<p>If you end up using Anaconda from Windows or Mac,
+eventually you’ll learn about creating virtual environments (see the pcda VM page). Until then,
+things will work just fine in the base environment. You may have to install
+a few libraries but that’s no big deal.</p>
+<ul>
+<li><p><strong>Intro to Python</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>see the <code class="docutils literal notranslate"><span class="pre">intro_to_python_for_business_analytics.html</span></code> file in the Downloads folder</p></li>
+<li><p><a class="reference external" href="https://youtu.be/qxPxJm2YD5g">SCREENCAST: Intro to Python</a> (23:47)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>jupyter notebook vs jupyter lab</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>we will be using JupyterLab which is the latest evolution in the Jupyter Notebook ecosystem</p></li>
+<li><p>here’s a <a class="reference external" href="https://towardsdatascience.com/jupyter-lab-evolution-of-the-jupyter-notebook-5297cacde6b">nice overview post</a> about this evolution</p></li>
+<li><p>it is important to note that the underlying Jupyter notebooks themselves have not changed. What has changed is the interface for working with them.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/4efoQxPDOhE">SCREENCAST: The relationship between JupyterLab and Jupyter Notebook</a> (9:24)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>01-basics-lookahead-pcda.ipynb</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>variables, numpy, math, peek at plotting</p></li>
+<li><p><a class="reference external" href="https://youtu.be/oVi9sN2S8PU">SCREENCAST: Python basics - variables</a> (18:54)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/eH1Ifu34OBw">SCREENCAST: Python basics - reading csv</a> (16:54)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/n_YXCgnVokk">SCREENCAST: Python basics - plotting</a> (7:00)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>02-loop-conditionals-pcda.ipynb</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>repeating actions</p></li>
+<li><p><a class="reference external" href="https://youtu.be/PO10AkDapzA">SCREENCAST: Loops and Conditional logic</a> (15:29)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/IOSroIdXqAo">SCREENCAST: Intro to Spyder IDE</a> (7:01)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>03-lists-pcda.ipynb</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>flexible data storage, indexing and slicing</p></li>
+<li><p><a class="reference external" href="https://youtu.be/k5iFZSuc_WU">SCREENCAST: Lists</a> (10:11)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>04-intro-dictionaries-readingfiles-pcda.ipynb</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>another storage container, more on reading data files</p></li>
+<li><p><a class="reference external" href="https://youtu.be/7d-9o1HKgx0">SCREENCAST: Dictionaries</a> (8:40)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/shUp9W2agZE">SCREENCAST: File reading</a> (17:25)</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>I didn’t make screencasts for these last two. There are
+very short. Just explore them.</p>
+<ul>
+<li><p><strong>05-file-globbing-pcda.ipynb</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>processing a bunch of data files by globbing</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><strong>06-more-on-conditions-pcda.ipynb</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>if-then-elif-else logic</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="explore">
+<h2>Explore<a class="headerlink" href="#explore" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://benn.substack.com/p/the-next-billion-programmers">The next billion programmers</a> - Interesting musings on Excel and Python</p></li>
+<li><p><a class="reference external" href="http://jupyter.readthedocs.io/en/latest//">The Official Jupyter Notebook documentation</a></p></li>
+<li><p><a class="reference external" href="https://medium.com/&#64;dmca/the-mba-data-science-toolkit-8-resources-to-go-from-the-spreadsheet-to-the-command-line-cbb59ea82144">The MBA Data Science Toolkit: 8 resources to go from spreadsheet to command line</a> -</p></li>
+<li><p><a class="reference external" href="http://www.datacarpentry.org/">Data Carpentry</a> - Was a sibling organization to Software Carpentry, focused on helping people build better data science skills. However, recently, the two have merged and will be The Carpentries.</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Intro to Python for data analytics</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#activities">Activities</a></li>
+<li><a class="reference internal" href="#explore">Explore</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="data_science_python.html"
+                          title="previous chapter">Intro to data analytics with Python</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="python_intro_2.html"
+                          title="next chapter">Functions, text files, reading data files with Python</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/python_intro_1.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="python_intro_2.html" title="Functions, text files, reading data files with Python"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="data_science_python.html" title="Intro to data analytics with Python"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" >Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Intro to Python for data analytics</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Text wrangling with Python &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Modeling 3: Intro to machine learning with scikit-learn" href="modeling3_unsupervised_scikit_learn.html" />
+    <link rel="prev" title="Data analysis and plotting in Python" href="eda_python.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modeling3_unsupervised_scikit_learn.html" title="Modeling 3: Intro to machine learning with scikit-learn"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="eda_python.html" title="Data analysis and plotting in Python"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" accesskey="U">Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Text wrangling with Python</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="text-wrangling-with-python">
+<h1>Text wrangling with Python<a class="headerlink" href="#text-wrangling-with-python" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>Now that we’ve got some basic Python hacking skills and have learned a little about ingesting data files of various types, we are going to learn some more advanced data cleaning techniques using things like regular expressions (regex) and even “fuzzy matching”. The days of purely analyzing numeric data are over and text mining skills are really nice to add to your toolkit. These topics will start us on that part of our journey.</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>WToP - p76-91 (covers regex and preview of data science tools in Python)</p></li>
+<li><p>KDNuggets newsletter has a nice article on <a class="reference external" href="http://www.kdnuggets.com/2016/05/practical-skills-practical-data-scientists-need.html">Practical skills that practical data scientists need</a> (see first Comment too after the story).</p></li>
+</ul>
+</section>
+<section id="downloads-and-other-resources">
+<h2>Downloads and other resources<a class="headerlink" href="#downloads-and-other-resources" title="Link to this heading">¶</a></h2>
+<section id="regex">
+<h3>Regex<a class="headerlink" href="#regex" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1iY_W38_8i1eeMFHsQ6GdNgNNlMLexkMC/view?usp=sharing">Downloads_DataCleaning_regex.zip</a></p></li>
+</ul>
+<section id="web-based-tools-and-tutorials">
+<h4>Web based tools and tutorials<a class="headerlink" href="#web-based-tools-and-tutorials" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="http://regexr.com/">RegExr</a> - an HTML/JS based site for creating, testing, and learning about Regular Expressions.</p></li>
+<li><p><a class="reference external" href="https://regex101.com/">regex101</a> - Another nice interactive web based tool for learning regex.</p></li>
+<li><p><a class="reference external" href="http://regexone.com/">RegexOne</a> - Learn regular expressions with simple, interactive examples.</p></li>
+<li><p><a class="reference external" href="https://www.regular-expressions.info/tutorial.html">Regular-Expressions.info</a> - One of my go to sites for regex for a long time now. Very complete, many examples with substantive explanations.</p></li>
+<li><p><a class="reference external" href="http://gnosis.cx/publish/programming/regular_expressions.html">Learning to Use Regular Expressions - Gnossis.cx</a> - This is the site from which I first learned regular expressions. It has been around forever, is widely read, and quite good.</p></li>
+<li><p><a class="reference external" href="http://regexone.com/">Regular Expressions - A Gentle User Guide and Tutorial</a> - This is a good tutorial, cleverly written, at a greater level of detail than some of the others above. It’s got a browser based regex testing tool and the examples are based on matching parts of server logs which is a  relevant application for our class.</p></li>
+<li><p><a class="reference external" href="http://www.cbs.dtu.dk/courses/27610/regular-expressions-cheat-sheet-v2.pdf">Regex Cheat Sheet</a></p></li>
+<li><p><a class="reference external" href="http://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/">Regular Expressions: Now You Have Two Problems</a> - Classic blog post on regex and a related famous quote about regex. Good links to some resources on the bare minimum that every analyst/coder/hacker should know about the incredible world of regular expressions.</p></li>
+<li><p><a class="reference external" href="https://xkcd.com/208/">https://xkcd.com/208/</a></p></li>
+</ul>
+</section>
+<section id="books-chapters">
+<h4>Books/Chapters<a class="headerlink" href="#books-chapters" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="http://shop.oreilly.com/product/9780596528126.do">Mastering Regular Expressions</a> (Friedl) - The definitive book on regex.</p></li>
+<li><p><a class="reference external" href="http://shop.oreilly.com/product/0636920023630.do">Regular Expressions Cookbook</a> (Goyvaerts &amp; Levithan)</p></li>
+<li><p>Chapter 16 in <em>R for Everyone</em> covers string manipulation and shows how regex can be used in R.</p></li>
+<li><p>Chapter 7 in <em>Data Wrangling with Python</em> shows how regex can be used within Python.</p></li>
+<li><p><em>Whirlwind Tour of Python</em> - p76-91</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<ul>
+<li><p>We will do several short exercises to learn the basics of regex</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>will use regex slides and <a class="reference external" href="https://regexr.com/">regexr.com</a></p></li>
+<li><p><a class="reference external" href="https://youtu.be/UTUCD4vFkAk">SCREENCAST: Intro to regex</a> (2:29)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/ojO_3kbq_Ok">SCREENCAST: First quantifiers</a> (9:51)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/Q5XAoZTgnUA">SCREENCAST: Escaping special characters</a> (3:43)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/vZ_Hgzi4lCI">SCREENCAST: Character classes and more quantifiers</a> (13:09)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/QYeQtyaMYIo">SCREENCAST: Matching at end and/or beginning of line</a> (6:15)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/kT1qJ3F63cw">SCREENCAST: General regex tips</a> (4:19)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Then we’ll see how to use regex from within Python</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>data_cleaning_regex.ipnyb</strong></p></li>
+<li><p><a class="reference external" href="https://youtu.be/q1DE4KCdQaU">SCREENCAST: The python re module - part 1</a> (15:33)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/xoJzqk2jFpQ">SCREENCAST: The python re module - part 2</a> (4:29)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/9H9b9XqrcY4">SCREENCAST: The python re module - part 3</a> (17:19)</p></li>
+<li><p><strong>process_apache_log.py</strong></p></li>
+<li><p><a class="reference external" href="https://youtu.be/I8oFENLdvQE">SCREENCAST: Using re in Python program to process Apache log file</a> (15:49)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Brief intro to “fuzzy string matching”.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>data_cleaning_fuzzy_string_matching.ipynb</strong> uses <cite>fuzzywuzzy</cite></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>[OPTIONAL] Using VSCode to work with Jupyter notebooks</p>
+<p>Another way to work with Jupyter notebooks in Windows is with Microsoft’s free
+IDE known as <a class="reference external" href="https://code.visualstudio.com/">VS Code</a>.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://pbpython.com/vscode-notebooks.html">16 Reasons to Use VS Code for Developing Jupyter Notebooks</a> - good blog post from Practical Business Python</p></li>
+<li><p><a class="reference external" href="https://youtu.be/VhcBhxIrWjk">SCREENCAST: Intro to VS Code for Jupyter Notebooks</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>[OPTIONAL] More cleaning examples that you can explore on your own</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>data_cleaning_finding_duplicates.ipynb</strong> shows power of <cite>set</cite> data structure</p></li>
+<li><p><strong>data_cleaning_headerfixing.ipynb</strong> is a good exercise is complex looping over dictionaries and lists</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="explore">
+<h2>Explore<a class="headerlink" href="#explore" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://pbpython.com/case-studies.html">A REALLY RELEVANT post in the Practical Business Python blog</a> - Includes slides from the authors talk entitled  “Escaping Excel Hell with Python and Pandas.”</p></li>
+<li><p><a class="reference external" href="http://www.joelonsoftware.com/articles/Unicode.html">The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=_mZBa3sqTrI">Plain Text. Really?</a> - Fascinating take on the world of plain text. Highly recommended.</p></li>
+<li><p><a class="reference external" href="https://xkcd.com/1537/">On data types in languages like Python</a></p></li>
+</ul>
+<section id="more-on-learning-to-program-in-python">
+<h3>More on learning to program in Python<a class="headerlink" href="#more-on-learning-to-program-in-python" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="http://adv-r.had.co.nz/">Advanced R</a> - This is Hadley Wickham’s new book for those who want to really dig deep into R programming.</p></li>
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1ZjMWaInh4LSaSQg1jvveAQAlU7yFOKCa/view?usp=sharing">Downloads_IntroPython3.zip</a></p></li>
+</ul>
+<p>These are based on the Software Carpentry tutorials on programming with Python. They cover slightly more advanced topics. We won’t cover them in class but are useful for going beyond basic programming.</p>
+<ul class="simple">
+<li><p>Error Handling - <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/07-errors/">http://swcarpentry.github.io/python-novice-inflammation/07-errors/</a></p></li>
+<li><p>Defensive programming - <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/08-defensive/">http://swcarpentry.github.io/python-novice-inflammation/08-defensive/</a></p></li>
+<li><p>Debugging - <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/09-debugging/">http://swcarpentry.github.io/python-novice-inflammation/09-debugging/</a></p></li>
+<li><p>Handling command line arguments - <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/10-cmdline/">http://swcarpentry.github.io/python-novice-inflammation/10-cmdline/</a></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Text wrangling with Python</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads-and-other-resources">Downloads and other resources</a><ul>
+<li><a class="reference internal" href="#regex">Regex</a><ul>
+<li><a class="reference internal" href="#web-based-tools-and-tutorials">Web based tools and tutorials</a></li>
+<li><a class="reference internal" href="#books-chapters">Books/Chapters</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#activities">Activities</a></li>
+<li><a class="reference internal" href="#explore">Explore</a><ul>
+<li><a class="reference internal" href="#more-on-learning-to-program-in-python">More on learning to program in Python</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="eda_python.html"
+                          title="previous chapter">Data analysis and plotting in Python</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="modeling3_unsupervised_scikit_learn.html"
+                          title="next chapter">Modeling 3: Intro to machine learning with scikit-learn</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/data_wrangling_python.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modeling3_unsupervised_scikit_learn.html" title="Modeling 3: Intro to machine learning with scikit-learn"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="eda_python.html" title="Data analysis and plotting in Python"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" >Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Text wrangling with Python</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Intro to R and R Studio &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="EDA with R" href="eda_r.html" />
+    <link rel="prev" title="Intro to data analytics with R" href="data_science_r.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="eda_r.html" title="EDA with R"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="data_science_r.html" title="Intro to data analytics with R"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_r.html" accesskey="U">Intro to data analytics with R</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Intro to R and R Studio</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="intro-to-r-and-r-studio">
+<h1>Intro to R and R Studio<a class="headerlink" href="#intro-to-r-and-r-studio" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>In this module we will:</p>
+<ul class="simple">
+<li><p>get an overview of R and R Studio,</p></li>
+<li><p>do basic interactive R tasks,</p></li>
+<li><p>learn about R data types, installing packages, reading data into and working with dataframes,</p></li>
+<li><p>learn how to create and use basic R scripts to document a series of analysis steps,</p></li>
+<li><p>write our own “tutorials” or “learning guides” using the magic of R Markdown documents along with the knitr package.</p></li>
+</ul>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>R for Everyone (RfE) - Chapters 1-6</p></li>
+<li><p>Practical Data Science with R (PDSwR) - Chapter 2</p></li>
+<li><p>See the <a class="reference internal" href="#additional-resources">Additional Resources</a> section below, especially the stuff on asking good questions</p></li>
+</ul>
+</section>
+<section id="downloads">
+<h2>Downloads<a class="headerlink" href="#downloads" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1YnPqbSFNDYcavLQlrm8KLzi72FEcmLCp/view?usp=sharing">Download_IntroToR.zip</a></p></li>
+<li><p><a class="reference external" href="http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">R Markdown cheat sheet</a> (R Studio)</p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<p>We will work through a series of R scripts and R Markdown documents as
+we start to learn the basics of R and R Studio. In the Downloads file
+you’ll find both “shell” versions of files that we’ll fill in in class
+as well as fully completed versions you can refer to later.</p>
+<p>As of 2022-09-11, all of the screencasts and files have been updated for R 4.x.
+See the note below related to the part on reading CSV files into R for more details.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Overview of R</dt><dd><ul>
+<li><p>see pdf slides</p></li>
+<li><p><a class="reference external" href="https://youtu.be/Oqt1O2W_jqY">SCREENCAST: Overview of R</a> (17:11)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>HelloWorld.R</strong></dt><dd><ul>
+<li><p>a basic R script</p></li>
+<li><p>learn how to run commands.</p></li>
+<li><p><a class="reference external" href="https://youtu.be/9aoAiv72cCE">SCREENCAST: HelloWorld.R</a> (8:34)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>interactive1_notes_shell.Rmd</strong></dt><dd><ul>
+<li><p>R Studio interface</p></li>
+<li><p>code chunks</p></li>
+<li><p>basics of markdown</p></li>
+<li><p><a class="reference external" href="https://youtu.be/TexMn6d2Mpw">SCREENCAST: Intro to R Studio and R Markdown</a> (16:15)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/nU0Jgf6vyNg">SCREENCAST: Installing and loading packages</a> (8:01)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/K7CGJyEucXI">SCREENCAST: Interactive computing with R</a> (19:54)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>vectors_notes_shell.Rmd</strong></dt><dd><ul>
+<li><p>a fundamental data structure in R</p></li>
+<li><p>start to learn to think in vector terms</p></li>
+<li><p><a class="reference external" href="https://youtu.be/fIrwG3iSMGw">SCREENCAST: R Vectors</a> (21:21)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>dataframes_notes_shell.Rmd</strong></dt><dd><ul>
+<li><p>the primary data structure in R</p></li>
+<li><p>like a table in a database or a spreadsheet</p></li>
+<li><p><a class="reference external" href="https://youtu.be/4Z9mYnP2hbM">SCREENCAST: R Dataframes</a> (18:15)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>readcsv_notes_shell.Rmd</strong></dt><dd><ul>
+<li><p>getting data into R from text files</p></li>
+<li><p><strong>NOTE</strong>: The default for <code class="docutils literal notranslate"><span class="pre">stringsAsFactors</span></code> was changed to FALSE in R 4.0. Strings as factors as FALSE for the default is particularly nice when you are reading in some table that has string fields with a gagillion unique values that you would never use as a factor. You’ll see that in many vids we do some string to factor work with <code class="docutils literal notranslate"><span class="pre">as.factor()</span></code>. For me personally, I don’t have a strong opinion as to whether the default should be TRUE or FALSE, just that it’s important to understand what the default is if you are using <code class="docutils literal notranslate"><span class="pre">read.csv</span></code> or <code class="docutils literal notranslate"><span class="pre">read_csv</span></code> from the readr package. Then you just adapt on the fly and set it to whatever makes the most sense for the specific data set you are reading.</p></li>
+<li><p>also getting data from databases</p></li>
+<li><p><a class="reference external" href="https://youtu.be/uv_Yq48j_ts">SCREENCAST: Intro to Getting Data into R</a> (16:52)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>This last Rmd files has some additional details on datetime conversions.</p>
+<ul>
+<li><p><strong>chardate_POSIXct_conversion.Rmd</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>dates and times can be tricky</p></li>
+<li><p>converting between character and datetime data types</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+<section id="additional-resources">
+<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="https://jennybryan.org/about/">Jenny Bryan</a> developed and taught R related courses at
+the University of British Columbia. In particular, she was the driving
+force behind a course called <a class="reference external" href="https://stat545.com/">STAT 545</a> and an <a class="reference external" href="https://stat545.com/index.html">online textbook</a>. Now she works at R Studio on Hadley Wickham’s team, but her course lives on. Many of the resources
+she created for STAT 545 are still available and will continue to
+evolve. I highly recommend them as they really get at the heart of
+effectively using R to do analysis. It also includes invaluable practical R related information that
+is rarely found all in one place. Highly recommended.</p>
+<p>She has in-process book called <a class="reference external" href="https://whattheyforgot.org/">What they forgot to teach you about R</a> that is
+packed with more practical wisdom on working with R and R Studio.</p>
+<section id="asking-good-questions">
+<h3>Asking good questions<a class="headerlink" href="#asking-good-questions" title="Link to this heading">¶</a></h3>
+<p>One particularly helpful page Jenny Bryan created in the old 545 course was
+one on “How to get unstuck”. Unfortunately, while the new course website
+includes a link to it, the link is broken. Using the magical wayback machine
+I was able to locate an archived copy which I’m including here until the
+link gets fixed. One of the resources she links to in her “unstuck”
+page is a classic document entitled “How to Ask Questions the Smart Way” by
+Eric Raymond and Rick Moen. It
+is not for the easily offended, but as Jenny says, they “speak truth”.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://web.archive.org/web/20190318100139/http://stat545.com/help-general.html">How to get unstuck</a></p></li>
+<li><p><a class="reference external" href="https://www.dataschool.io/how-to-ask-for-coding-help-online/">How to write a great online question</a> - great advice from Kevin Markham at Data School</p></li>
+<li><p><a class="reference external" href="http://www.catb.org/~esr/faqs/smart-questions.html">How to Ask Questions the Smart Way</a></p></li>
+</ul>
+</section>
+<section id="reproducible-examples-reprex">
+<h3>Reproducible examples (reprex)<a class="headerlink" href="#reproducible-examples-reprex" title="Link to this heading">¶</a></h3>
+<p>A big part of asking good questions is creating something known as a minimal reproducible example, or <em>reprex</em> for short.
+When people post questions to places like StackOverflow or a GitHub Issue they are <strong>strongly</strong> encouraged
+(in SO it’s almost a must) to include a reprex. There’s a very good <a class="reference external" href="https://community.rstudio.com/t/faq-whats-a-reproducible-example-reprex-and-how-do-i-create-one/5219">FAQ entry in the R Studio
+Community Forum</a> that discusses the reprex in both general terms and provides links the <a class="reference external" href="https://reprex.tidyverse.org/index.html">R reprex package</a> which makes it easy
+to create a reprex that can be pasted from the clipboard into a question or forum.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://reprex.tidyverse.org/articles/learn-reprex.html">How to use reprex</a></p></li>
+<li><p><a class="reference external" href="https://data.library.virginia.edu/ask-better-code-questions-and-get-better-answers-with-reprex/">Ask Better Code Questions (and Get Better Answers) With Reprex</a></p></li>
+</ul>
+</section>
+<section id="datacamp">
+<h3>DataCamp<a class="headerlink" href="#datacamp" title="Link to this heading">¶</a></h3>
+<p>There’s an <a class="reference external" href="https://www.datacamp.com/courses/free-introduction-to-r">Intro to R course at DataCamp</a> that covers much of what we do in
+this first session. There are <a class="reference external" href="https://www.datacamp.com/search?q=r">many R courses</a> available on DataCamp.</p>
+</section>
+</section>
+<section id="explore">
+<h2>Explore<a class="headerlink" href="#explore" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.r-bloggers.com/">R-bloggers</a> - Aggregation site for R related blogs</p></li>
+<li><p><a class="reference external" href="http://simplystatistics.org/">Simply Statistics</a> - Roger Peng and two other biostats guys from Johns Hopkins blog on data science and R. Peng has a super popular online R course through Coursera and these folks have launched a several course series on data science in R on Coursera.</p></li>
+<li><p><a class="reference external" href="http://alyssafrazee.com/introducing-R.html">Introducing R to a non-programmer in one hour</a> - Just what it says.</p></li>
+<li><p><a class="reference external" href="https://elitedatascience.com/r-vs-python-for-data-science">R vs Python for Data Science: Summary of Modern Advances</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Intro to R and R Studio</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads">Downloads</a></li>
+<li><a class="reference internal" href="#activities">Activities</a></li>
+<li><a class="reference internal" href="#additional-resources">Additional Resources</a><ul>
+<li><a class="reference internal" href="#asking-good-questions">Asking good questions</a></li>
+<li><a class="reference internal" href="#reproducible-examples-reprex">Reproducible examples (reprex)</a></li>
+<li><a class="reference internal" href="#datacamp">DataCamp</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore">Explore</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="data_science_r.html"
+                          title="previous chapter">Intro to data analytics with R</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="eda_r.html"
+                          title="next chapter">EDA with R</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/r_intro.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="eda_r.html" title="EDA with R"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="data_science_r.html" title="Intro to data analytics with R"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_r.html" >Intro to data analytics with R</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Intro to R and R Studio</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

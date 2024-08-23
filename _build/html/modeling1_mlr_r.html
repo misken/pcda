@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Modeling 1: Overview and linear regression in R &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Modeling 2: Intro to classifiers with R" href="modeling2_class_r.html" />
+    <link rel="prev" title="Group by analysis and data wrangling with R" href="data_wrangling_r.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="modeling2_class_r.html" title="Modeling 2: Intro to classifiers with R"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="data_wrangling_r.html" title="Group by analysis and data wrangling with R"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_r.html" accesskey="U">Intro to data analytics with R</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Modeling 1: Overview and linear regression in R</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="modeling-1-overview-and-linear-regression-in-r">
+<h1>Modeling 1: Overview and linear regression in R<a class="headerlink" href="#modeling-1-overview-and-linear-regression-in-r" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>One of the workhorses of statistical predictive modeling is the family of linear models. We’ll do things like multiple linear regression for numeric predictions and logistic regression as a classifier for binary response variables. We’ll use these relatively simple models as a way to also learn about important modeling topics such as partitioning data into training and test sets, model training, validation and diagnostics. We’ll also use regression to introduce the notion of parameter estimation, error metrics for assessing model fit and for comparing candidate models against each other. These topics underlie all of statistical learning algorithms.</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>PDSwR - Ch 5, 7.1</p></li>
+<li><p>RforE - Ch 19 and 21</p></li>
+<li><p>ISLR - Ch 1-3 and 4.1-4.3</p></li>
+</ul>
+<p><a class="reference external" href="https://statlearning.com/">An Introduction to Statistical Learning with applications in R</a></p>
+<p>This is an outstanding book, which is available as a free pdf. ISLR covers the main statistical learning topics at a nice introductory level. There is a more mathy version that preceded it called Elements of Statistical Learning. It also has a <a class="reference external" href="https://web.stanford.edu/~hastie/ElemStatLearn/">freely available pdf</a>.</p>
+<p>I will be listing the associated reading that you can do from ISLR as we explore various statistical learning topics - starting with linear regression.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/">In-depth introduction to machine learning in 15 hours of expert videos</a> - The ISLR authors have created a whole series of video lectures based on their book.</p></li>
+</ul>
+</section>
+<section id="downloads-and-other-resources">
+<h2>Downloads and other resources<a class="headerlink" href="#downloads-and-other-resources" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1mJVvSPQo4bTvL0Rs-hyqRpTCaPaJoHxJ/view?usp=sharing">Downloads_StatModels1.zip</a></p></li>
+</ul>
+<p>If you are rusty on statistics, there’s a really good OpenIntro Stats book available as a free online book or you can pay what you want for a paperback copy. It includes R based material.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.openintro.org/book/ims/">OpenIntro Stats</a></p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<p>We are going to work through a series of tutorials exploring the topic
+of building, using and evaluating predictive linear regression models.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/qdZR3ekeSW8">SCREENCAST - Overview of statistical modeling session</a> (5:32)</p></li>
+<li><dl class="simple">
+<dt><strong>0_ProbDists_notes.Rmd</strong></dt><dd><ul>
+<li><p>random variate generation</p></li>
+<li><p>probability distribution computations</p></li>
+<li><p><a class="reference external" href="https://youtu.be/jXA0L_l2jMs">SCREENCAST - Probability distributions in R</a> (5:44)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>1_LinRegModels_notes.Rmd</strong></dt><dd><ul>
+<li><p>basics of correlation</p></li>
+<li><p>simple linear regression</p></li>
+<li><p><a class="reference external" href="https://youtu.be/zxeLqMloAkc">SCREENCAST - Simple linear regression</a> (20:45)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>2_MultLinRegModels_notes.Rmd</strong></dt><dd><ul>
+<li><p>dealing with missing data</p></li>
+<li><p>partition into training and test datasets</p></li>
+<li><p><a class="reference external" href="https://youtu.be/JT35e0dZ06k">SCREENCAST - MLR - Part 1: imputation of missing values</a> (5:39)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/XyHsw0Bru2c">SCREENCAST - MLR - Part 2: partition into train and test</a> (2:47)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/viXD-Q_4VFs">SCREENCAST - MLR - Part 3: some EDA</a> (4:10)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/tNRlzys0aa8">SCREENCAST - MLR - Part 4: fitting simple additive models</a> (6:36)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/Az0npFu4Q_M">SCREENCAST - MLR - Part 5: fitting models with interaction terms</a> (4;14)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/WSjfM4WPBBM">SCREENCAST - MLR - Part 6: making predictions</a> (5:27)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>3_ComparingCompetingModels_1_notes.Rmd</strong></dt><dd><ul>
+<li><p>building and fitting linear models</p></li>
+<li><p>interactions terms</p></li>
+<li><p>using linear models for prediction</p></li>
+<li><p><a class="reference external" href="https://youtu.be/ZClLyAmzx5g">SCREENCAST - Comparing models - metrics</a> (5:18)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>4_ComparingCompetingModels_2_notes.Rmd</strong></dt><dd><ul>
+<li><p>k-crossfold validation</p></li>
+<li><p>comparison of performance on test data</p></li>
+<li><p><a class="reference external" href="https://youtu.be/Gdl5D3lmm90">SCREENCAST - Comparing models - cross validation and predictive accuracy</a> (23:59)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>5_ResidualAnalysis_notes.Rmd</strong></dt><dd><ul>
+<li><p>normality of residuals</p></li>
+<li><p>constantcy of variance</p></li>
+<li><p><a class="reference external" href="https://youtu.be/93L4tnudYr8">SCREENCAST - Residual analysis</a> (6:07)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>6_MLB_regression_modeling_notes.Rmd</strong></dt><dd><ul>
+<li><p>build the best model you can</p></li>
+<li><p><a class="reference external" href="https://youtu.be/qt5zca_TeZo">SCREENCAST - Model building challenge</a> (12:18)</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<section id="regression-modeling">
+<h3>Regression modeling<a class="headerlink" href="#regression-modeling" title="Link to this heading">¶</a></h3>
+<ul>
+<li><p><a class="reference external" href="https://onlinecourses.science.psu.edu/stat501/">STAT 501 - Regression Modeling (Penn State Univ online)</a> - Penn State has a bunch of free online resources for learning stats.</p></li>
+<li><p>Regression modeling textbooks</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://avehtari.github.io/ROS-Examples/">Regression and Other Stories</a> (Gelman, Hill, Vehtari) Hot off the press. This book is about applied regression, uses R, and includes things like Bayesian approaches and using simulation.</p></li>
+<li><p><a class="reference external" href="http://www.amazon.com/Applied-Linear-Statistical-Models-Michael/dp/007310874X/">Applied Linear Statistical Models</a> (Michael Kutner, Christopher Nachtsheim, John Neter , William Li) - A classic text. Well worth owning and studying.</p></li>
+<li><p><a class="reference external" href="http://www.amazon.com/Linear-Models-Chapman-Statistical-Science/dp/1584884258/">Linear Models with R</a> (Faraway) A good R-centric book on linear modeling.</p></li>
+<li><p><a class="reference external" href="http://www.amazon.com/Regression-Modeling-Strategies-Applications-Statistics/dp/1441929185/">Regression Modeling Strategies: With Applications to Linear Models, Logistic Regression, and Survival Analysis</a> (Harrel) - I took a workshop given by Frank Harrel and have never looked at regression modeling quite the same. This is a very modern, more advanced look at applied regression modeling. Frank Harrel is a big “reproducible analysis” advocate, uses R, and is the author of several R packages.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://robjhyndman.com/hyndsight/crossvalidation/">Why every statistician should know about cross-validation</a></p></li>
+<li><dl class="simple">
+<dt>StatQuest YouTube Channel - Josh Starmer</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/JQc3yx0-Q9E">StatQuest: P values, clearly explained</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=nk2CQITm_eo">StatQuest: Linear models (part 1)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=zITIFTsivN8">StatQuest: Linear models (part 1.5)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=NF5_btOaCig">StatQuest: Linear models (part 2)</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=fSytzGwwBVw">StatQuest: Cross-validation</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="general-data-science">
+<h3>General data science<a class="headerlink" href="#general-data-science" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.boozallen.com/s/insight/publication/field-guide-to-data-science.html">Field Guide to Data Science</a> - Booz, Allen, Hamilton (one of the big consulting firms)</p></li>
+<li><p>Analytics jobs on the <a class="reference external" href="http://www.kdnuggets.com/jobs/index.html">KDnuggets jobs board</a>- KDnuggets is a great site for all things analytics. Up until very recently it had an endearing design reminiscent of the early days of the web.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Modeling 1: Overview and linear regression in R</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads-and-other-resources">Downloads and other resources</a></li>
+<li><a class="reference internal" href="#activities">Activities</a></li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#regression-modeling">Regression modeling</a></li>
+<li><a class="reference internal" href="#general-data-science">General data science</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="data_wrangling_r.html"
+                          title="previous chapter">Group by analysis and data wrangling with R</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="modeling2_class_r.html"
+                          title="next chapter">Modeling 2: Intro to classifiers with R</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/modeling1_mlr_r.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="modeling2_class_r.html" title="Modeling 2: Intro to classifiers with R"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="data_wrangling_r.html" title="Group by analysis and data wrangling with R"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_r.html" >Intro to data analytics with R</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Modeling 1: Overview and linear regression in R</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

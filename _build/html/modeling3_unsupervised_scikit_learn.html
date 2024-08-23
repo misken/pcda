@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Modeling 3: Intro to machine learning with scikit-learn &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Automated web data gathering (OPTIONAL)" href="getting_data_from_web.html" />
+    <link rel="prev" title="Text wrangling with Python" href="data_wrangling_python.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="getting_data_from_web.html" title="Automated web data gathering (OPTIONAL)"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="data_wrangling_python.html" title="Text wrangling with Python"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" accesskey="U">Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Modeling 3: Intro to machine learning with scikit-learn</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="modeling-3-intro-to-machine-learning-with-scikit-learn">
+<h1>Modeling 3: Intro to machine learning with scikit-learn<a class="headerlink" href="#modeling-3-intro-to-machine-learning-with-scikit-learn" title="Link to this heading">¶</a></h1>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>The <a class="reference external" href="http://scikit-learn.org/stable/">sckit-learn module</a> (sklearn, for short) is a full featured Python module for all kinds of data analysis and predictive modeling algorithms. We’ll do a brief overview of this widely used module and get a bit more exposure to statistical learning algorithms. We’ll also explore an unsupervised learning technique - K-means cluster analysis (via R and then via Python using scikit-learn).</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>PDSH - Ch 5 p331-375, p433-445, p462-470</p></li>
+<li><p>PDSwR - Sec 8.1</p></li>
+<li><p>RforE - Ch 22</p></li>
+<li><p>ISLR - Sec 10.3</p></li>
+<li><p><a class="reference external" href="https://datasciencelab.wordpress.com/2013/12/12/clustering-with-k-means-in-python/">Clustering with K-Means in Python</a> - Includes animated GIFs to help you visualize what happens during K-means algorithm</p></li>
+<li><p><a class="reference external" href="https://realpython.com/k-means-clustering-python/">k-Means Clustering in Python: A Practical Guide</a></p></li>
+</ul>
+</section>
+<section id="downloads-and-other-resources">
+<h2>Downloads and other resources<a class="headerlink" href="#downloads-and-other-resources" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/17bLQ_J6LVK48lA0GmSuPRvHDc5K9r9Tg/view?usp=sharing">Downloads_StatModels3_sklearn_clustering.zip</a></p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<p>We are going to work through a series of tutorials exploring the topic
+of machine learning with scikit-learn (and a little R).</p>
+<section id="intro-to-machine-learning-with-scikit-learn">
+<h3>Intro to machine learning with scikit-learn<a class="headerlink" href="#intro-to-machine-learning-with-scikit-learn" title="Link to this heading">¶</a></h3>
+<p>Start by opening the notebook <strong>ml_sklearn_intro_5470.ipynb</strong> which you can find in the <code class="docutils literal notranslate"><span class="pre">ml_sklearn_intro</span></code> subfolder of our downloads file. The main topics we’ll be covering, include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>an introduction to the scikit-learn package</p></li>
+<li><p>review of basic machine learning concepts</p></li>
+<li><p>scikit-learn API details</p></li>
+<li><p>overfitting and underfitting - the “variance-bias tradeoff”</p></li>
+<li><p>more rows, more columns, more model complexity?</p></li>
+</ul>
+</div></blockquote>
+<p>You’ll see that we’ll be using several notebooks from the PDSH text. All of the necessary files are included in the <code class="docutils literal notranslate"><span class="pre">ml_sklearn_intro</span></code> subfolder.</p>
+<p>I broke the screencasts up into several chunks:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/D_8CE-1UY_M">SCREENCAST: Intro scikit-learn - Part 1 - Getting started</a> (8:33)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/J9h_TCTVM5Y">SCREENCAST: Intro scikit-learn - Part 2 - Types of machine learning problems</a> (2:38)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/iENQ3hH7zj4">SCREENCAST: Intro scikit-learn - Part 3 - What is scikit-learn?</a> (23:07)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/iHLzc_mo7GM">SCREENCAST: Intro scikit-learn - Part 4 - Hyperparameters and model validation</a> (9:01)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/pneQnn32c_4">SCREENCAST: Intro scikit-learn - Part 5 - Bias-variance tradeoff and learning curves</a> (28:47)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/uL3zm0Dfq2s">SCREENCAST: Intro scikit-learn - Part 6 - Built in datasets, classification reports, API recap</a> (9:24)</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="unsupervised-learning-with-r-and-python">
+<h3>Unsupervised learning with R and Python<a class="headerlink" href="#unsupervised-learning-with-r-and-python" title="Link to this heading">¶</a></h3>
+<p>We take a brief look at both cluster analysis as well as principal components analysis (PCA). Everything
+can be found in the <code class="docutils literal notranslate"><span class="pre">unsupervised_learning</span></code> subfolder.</p>
+<p>Start by reading through the following notebook.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>unsupervised_intro.ipynb</strong></p></li>
+</ul>
+</div></blockquote>
+<p>Then, let’s bounce back to R and do a little clustering of wines using R.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">WineCluster/</span></code> - cluster analysis in R</p></li>
+</ul>
+</div></blockquote>
+<p>Finally, see how cluster analysis can be used to recolor image files and learn a little bit about image processing.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>clusterviz/clustercolors.ipynb</strong> - Python for clustering images (clustercolors.ipynb)</p></li>
+<li><p>WARNING: Don’t try more than about 5 colors for this example as otherwise it can take a long time to run the cluster analysis. :)</p></li>
+</ul>
+</div></blockquote>
+<p>In the above example, we’ll take this picture of a <a class="reference external" href="https://www.allaboutbirds.org/guide/Blackburnian_Warbler/id">Blackburnian Warbler</a> :</p>
+<img alt="_images/Blackburnian_KevinBolton.png" src="_images/Blackburnian_KevinBolton.png" />
+<p>and use cluster analysis to turn it into something like this:</p>
+<img alt="_images/Blackburnian_KevinBolton_3colors.png" src="_images/Blackburnian_KevinBolton_3colors.png" />
+</section>
+<section id="using-r-in-juypyter-notebooks-via-rmagic-optional">
+<h3>Using R in Juypyter Notebooks via rmagic (OPTIONAL)<a class="headerlink" href="#using-r-in-juypyter-notebooks-via-rmagic-optional" title="Link to this heading">¶</a></h3>
+<p>If you want to see how you can use R from within a Juyter notebook, check out the
+<strong>exploring_rmagic.ipynb</strong> notebook in the <strong>rmagic</strong> subfolder. You’ll see that you’ll
+have to do a pip install of the rpy2 module.</p>
+<p>There are two additional
+notebooks in there that demo uses of rmagic to run R commands from Jupyter notebooks.</p>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<ul>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=EuBBz3bI-aA">StatQuest: Bias and variance</a></p></li>
+<li><p><a class="reference external" href="https://aigents.co/blog/publication/distance-metrics-for-machine-learning">Distance metrics for machine learning</a> - compute common distance metrics using Python</p></li>
+<li><p><a class="reference external" href="https://docs.google.com/presentation/d/1n2RlMdmv1p25Xy5thJUhkKGvjtV-dkAIsUXP-AL4ffI/edit?usp=sharing">I don’t like (Jupyter) notebooks</a></p>
+<blockquote>
+<div><p>Very thought provoking presentation done by Joel Grus at JupyterCon 2018
+on the shortcomings of Jupyter notebooks for sci computing.</p>
+<p>Yihui Xie (author of the R package <cite>knitr</cite>) <a class="reference external" href="https://yihui.name/en/2018/09/notebook-war/">responds from an R
+perspective</a>.</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://justindomke.wordpress.com/2021/09/28/the-human-regression-ensemble/?utm_campaign=Data_Elixir&amp;utm_source=Data_Elixir_356/">The human regression ensemble</a> - just eyeball it</p></li>
+<li><p><a class="reference external" href="https://beta.observablehq.com/&#64;tmcw/hacking-hashes-an-exploration-of-the-nyc-taxi-data-issue">The perils of data anonymization</a></p>
+<blockquote>
+<div><p>Often people will try to “anonymize” sensitive data by scrambling key identifiers with things like hash algorithms. The NYC Taxi Dataset is one such famous dataset in which things like taxi license plate numbers were hashed. Unfortunately, it turns out it’s pretty easy to hack the hashes to recover the original license plate numbers. This post gives a nice simple explanation and an interactive demo. A more thought provoking post about what can be done with this data can be found <a class="reference external" href="https://research.neustar.biz/2014/09/15/riding-with-the-stars-passenger-privacy-in-the-nyc-taxicab-dataset/">in this taxi analysis</a> and more technical details about the NYC Taxi de-anonymization (including links to GitHub repo with the MapReduce code) can be found <a class="reference external" href="https://tech.vijayp.ca/of-taxis-and-rainbows-f6bc289679a1">here</a>.</p>
+<p>Anonymizing data is really hard in practice. For example, if you knew someone’s age, zipcode and gender, it’s not too hard to identify them using publicly available data. That’s why, for example, simply dropping things like names and id numbers from health care data doesn’t make the data “anonymized”.</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="http://greenteapress.com/wp/think-stats-2e/">Think Stats</a></p>
+<blockquote>
+<div><p>Think Stats is an introduction to Probability and Statistics for Python programmers.</p>
+<p>This book is under the Creative Commons Attribution-NonCommercial 3.0 Unported License, which means that you are free to copy, distribute, and modify it, as long as you attribute the work and don’t use it for commercial purposes.</p>
+<p>Think Stats emphasizes simple techniques you can use to explore real data sets and answer interesting questions. The book presents a case study using data from the National Institutes of Health. Readers are encouraged to work on a project with real datasets.</p>
+<p>If you have basic skills in Python, you can use them to learn concepts in probability and statistics. Think Stats is based on a Python library for probability distributions (PMFs and CDFs). Many of the exercises use short programs to run experiments and help readers develop understanding.</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://github.com/eriklindernoren/ML-From-Scratch">Machine Learning from Scratch</a></p>
+<blockquote>
+<div><p>“Bare bones Python implementations of some of the fundamental Machine Learning models and algorithms.”</p>
+<p>Great way to learn how a certain algorithm works is to code up simple versions. That’s just what this project does.</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="http://people.duke.edu/~ccc14/sta-663-2017/">Computational statistics in Python</a></p>
+<blockquote>
+<div><p>Wow. Used in a stats class at Duke. This document was created using Sphinx, which is a documentation generation system that I’ve used a bit and gets a lot of use in the Python community. In fact, this (our MIS 4470/5470) course website uses Sphinx.</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://www.statlearning.com/">ISLR textbook for Python</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks">Gallery of interesting Jupyter notebooks</a></p></li>
+<li><p><a class="reference external" href="https://medium.com/topos-ai/rethinking-distance-in-new-york-city-d17212d24919">Rethinking distance in NYC</a></p>
+<blockquote>
+<div><p>Fascinating post on cluster analysis applied to NYC neighborhoods using interesting variables such as characteristics of the built environment, green space and coffee shop vibe.</p>
+</div></blockquote>
+</li>
+<li><p><a class="reference external" href="https://lmcaraig.com/color-quantization-using-k-means/">Color quantization using k-means</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Modeling 3: Intro to machine learning with scikit-learn</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads-and-other-resources">Downloads and other resources</a></li>
+<li><a class="reference internal" href="#activities">Activities</a><ul>
+<li><a class="reference internal" href="#intro-to-machine-learning-with-scikit-learn">Intro to machine learning with scikit-learn</a></li>
+<li><a class="reference internal" href="#unsupervised-learning-with-r-and-python">Unsupervised learning with R and Python</a></li>
+<li><a class="reference internal" href="#using-r-in-juypyter-notebooks-via-rmagic-optional">Using R in Juypyter Notebooks via rmagic (OPTIONAL)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="data_wrangling_python.html"
+                          title="previous chapter">Text wrangling with Python</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="getting_data_from_web.html"
+                          title="next chapter">Automated web data gathering (OPTIONAL)</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/modeling3_unsupervised_scikit_learn.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="getting_data_from_web.html" title="Automated web data gathering (OPTIONAL)"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="data_wrangling_python.html" title="Text wrangling with Python"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_python.html" >Intro to data analytics with Python</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Modeling 3: Intro to machine learning with scikit-learn</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Software and pcda virtual machine &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Resource Center" href="resource_center.html" />
+    <link rel="prev" title="Textbooks" href="textbooks.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="resource_center.html" title="Resource Center"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="textbooks.html" title="Textbooks"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="course_logistics.html" accesskey="U">Course logistics and resources</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Software and pcda virtual machine</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="software-and-pcda-virtual-machine">
+<h1>Software and pcda virtual machine<a class="headerlink" href="#software-and-pcda-virtual-machine" title="Link to this heading">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This section of the course website is <strong>very important</strong>. This course is filled with technology and as it’s an online course, you need to be well informed to make appropriate choices regarding the different software options as you’ll be responsible for your own computing environment. In addition to being programming based, this course requires you (and teaches you) to be able to install software, use the command line, and troubleshoot technical problems. If these kinds of things don’t appeal to you, this is <strong>NOT</strong> the course for you.</p>
+</div>
+<section id="technology-requirements">
+<h2>Technology requirements<a class="headerlink" href="#technology-requirements" title="Link to this heading">¶</a></h2>
+<p>In order to fully participate in this course you will need a Windows, Mac or Linux based computer (64 bit OS) with a minimum of 8Gb of RAM.</p>
+</section>
+<section id="course-software-the-big-picture-and-options">
+<h2>Course software - the big picture and options<a class="headerlink" href="#course-software-the-big-picture-and-options" title="Link to this heading">¶</a></h2>
+<p>There are three main computing based topics in this course:</p>
+<ol class="arabic simple">
+<li><p>Basic Linux use including the bash shell</p></li>
+<li><p>Using R and R Studio for business analytics</p></li>
+<li><p>Using Python for business analytics</p></li>
+</ol>
+<p>I’m going to provide several options for obtaining the necessary software and setting up the necessary computing environment for each of these three main topics. As you’ll see, you will be able to pick and choose parts from the different resources depending on what makes the most sense for you given the type of computer you have and other factors that I’ll describe. In a nutshell, you’ll either install R and Python (and a few other things) in your base OS (i.e. Windows or Mac) or you’ll use a Linux based virtual machine that I’ve created which I’ll refer to as the “pcda VM”.</p>
+<p>All the details are described next, but here’s a screencast as well. Note that this screencast is from last year but
+nothing has changed other than f23 becomes f24 and the VM
+is running a slightly older version of Lubuntu (which just
+means it looks a little different in the screencast).</p>
+<ul class="simple">
+<li><p>SCREENCAST - <a class="reference external" href="https://youtu.be/9TZROY6E8e0">Getting your computer setup for this course</a></p></li>
+</ul>
+<section id="option-1-install-r-r-studio-anaconda-python-and-even-a-bash-shell-on-your-host-os">
+<h3>Option 1 - Install R, R Studio, Anaconda Python and even a bash shell on your host OS<a class="headerlink" href="#option-1-install-r-r-studio-anaconda-python-and-even-a-bash-shell-on-your-host-os" title="Link to this heading">¶</a></h3>
+<p>All of the R and Python related software we use in this course are multi-platform (and free) and will run on Mac, Windows or Linux. Even if you choose to use the pcda VM (discussed in a subsequent section, see <a class="reference internal" href="#about-pcda-vm"><span class="std std-ref">About our pcda virtual machine</span></a>), I still <strong>always recommend that students install R, R Studio and Anaconda Python on their Mac or Windows machine</strong>. I also provide scripts to install all of the necessary R and Python packages. Doing this gives you another way to access the software for the course and can be a lifesaver if the pcda VM is being problematic. All of the details on installing R and Python for Windows/Mac are further down on this page in the <a class="reference internal" href="#install-base-os"><span class="std std-ref">Installing course software in your base OS</span></a> section.</p>
+<p><strong>Yes, you can do all of the R and Python parts of the course using the Mac or Windows OS. You can actually even do the Linux/bash part of the course in Windows/Mac, read on…</strong></p>
+<section id="using-a-bash-shell-with-windows-mac-option-1-git-for-windows">
+<h4>Using a bash shell with Windows/Mac - Option 1: git for Windows<a class="headerlink" href="#using-a-bash-shell-with-windows-mac-option-1-git-for-windows" title="Link to this heading">¶</a></h4>
+<p>I realized that there is another way to get a simple Linux bash shell working in Windows/Mac - install <a class="reference external" href="https://git-scm.com/download/win">git for Windows</a>. While git is included with most Linux distributions, we need to install it in Windows/Mac. When we do, you’ll see that we actually get a Linux bash shell that we use for running git commands. However, you can also use it to learn the basic bash stuff we learn in the pcda class such as <code class="docutils literal notranslate"><span class="pre">cp</span></code>, <code class="docutils literal notranslate"><span class="pre">mkdir</span></code>, <code class="docutils literal notranslate"><span class="pre">wc</span></code>, <code class="docutils literal notranslate"><span class="pre">grep</span></code> and other basic Linux commands. Installation instructions are in the <a class="reference internal" href="#install-base-os"><span class="std std-ref">Installing course software in your base OS</span></a> section.</p>
+<p>This gives you the added benefit of being able to learn and use git on Windows/Mac. For example, in my new
+<a class="reference external" href="http://www.sba.oakland.edu/faculty/isken/courses/aap/">Advanced Analytics with Python class</a> we actually do everything in Windows and we use git for Windows. That course also has a <a class="reference external" href="http://www.sba.oakland.edu/faculty/isken/courses/aap/setup_analytics_machine.html">detailed page on setting up your Windows/Mac machine for analytics work</a> though it doesn’t include info on R and R Studio since we don’t use those in that course. As I mentioned previously, there are instructions below for installing those in Windows/Mac.</p>
+<p>If you are interested in a high level description of exactly what git bash for Windows is, check out <a class="reference external" href="https://superuser.com/questions/1053633/what-is-git-bash-for-windows-anyway">this post</a>. You’ll learn about things like Cygwin and MSYS and <code class="docutils literal notranslate"><span class="pre">mintty</span></code>. A long time ago, I used Cygwin on Windows as my first introduction to using a POSIX OS on Windows.</p>
+</section>
+<section id="using-a-bash-shell-with-mac-option-2-macos-is-actually-unix-based">
+<h4>Using a bash shell with Mac - Option 2: macOS is actually Unix based<a class="headerlink" href="#using-a-bash-shell-with-mac-option-2-macos-is-actually-unix-based" title="Link to this heading">¶</a></h4>
+<p>Finally, for those of you using a Mac, you might not realize it, but the Mac OS is actually using a Unix based kernel. It comes with standard Unix command line tools and you could actually do the Linux intro part of this course using your Mac’s built in <a class="reference external" href="https://en.wikipedia.org/wiki/Terminal_(macOS)">Terminal program</a> that uses the <code class="docutils literal notranslate"><span class="pre">zsh</span></code> shell by default (though you can <a class="reference external" href="https://www.howtogeek.com/444596/how-to-change-the-default-shell-to-bash-in-macos-catalina/">change it to bash if you want</a> ).</p>
+</section>
+</section>
+<section id="option-2-the-pcda-virtual-machine">
+<h3>Option 2 - The pcda virtual machine<a class="headerlink" href="#option-2-the-pcda-virtual-machine" title="Link to this heading">¶</a></h3>
+<p>Since the creation of this class in 2014, I have created a new virtual machine each year that runs Lubuntu Linux and includes R, R Studio, a bunch of R packages, Anaconda Python, a bunch of Python packages, and a few other programs such as a text editor and git (for version control). I distribute the virtual machine via an OVA file that students download and import using VirtualBox. Below, in <a class="reference internal" href="#about-pcda-vm"><span class="std std-ref">About our pcda virtual machine</span></a>, you’ll find extensive background information as well as installation, usage and troubleshooting instructions for the pcda VM.</p>
+<p>The benefit of using the pcda VM is that all three computing topics: Linux, R, and Python can all be done on the VM and all of the software is <strong>ALREADY INSTALLED</strong> for you.</p>
+</section>
+<section id="another-resource-the-sba-open-labs">
+<h3>Another resource - the SBA open labs<a class="headerlink" href="#another-resource-the-sba-open-labs" title="Link to this heading">¶</a></h3>
+<p>The SBA open labs will also have R, R Studio, and the Anaconda Python distribution installed.</p>
+</section>
+<section id="so-what-should-i-do">
+<h3>So, what should I do?<a class="headerlink" href="#so-what-should-i-do" title="Link to this heading">¶</a></h3>
+<p>Since I started teaching this class in 2014, <strong>every single student has successfully gotten the pcda VM working</strong> on their machine. Most students <strong>also</strong> install R, R Studio and Anaconda Python on their Mac/Windows machine to have a second way of using the applications.</p>
+<p><strong>However, it is possible to do this entire class WITHOUT the VM via a combination of git for Windows (or the Mac Terminal) for the Linux/bash part of the course, and all of the R and Python based software that you install on your Windows or Mac machine.</strong> I think that this has probably become the most widely used option. All of the software is easy to install, you learn something by installing it, and you avoid some of the headaches that can pop up with a virtual machine.</p>
+<p>It’s your decision. Figure out what works best for you and do it. Doing data science work in the real world involves these kinds of technical decisions all the time - get used to it.</p>
+<p>The rest of this page has a <strong>HUGE</strong> amount of information on these various resources. We will start by learning how to install all the various pieces of software on your Windows or Mac machine.</p>
+<p>After that is information on how to get the pcda VM working on your computer.</p>
+</section>
+</section>
+<section id="installing-course-software-in-your-base-os">
+<span id="install-base-os"></span><h2>Installing course software in your base OS<a class="headerlink" href="#installing-course-software-in-your-base-os" title="Link to this heading">¶</a></h2>
+<p>One great advantage of the R and Python tools we use in this course is that they are all available for Windows, Mac and Linux. Installation of all of the course software is pretty straightforward and you’ll learn a lot by doing it.</p>
+<section id="git">
+<h3>git<a class="headerlink" href="#git" title="Link to this heading">¶</a></h3>
+<p>To install git on Windows/Mac, go to <a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a> and follow the instructions to download and install the appropriate version for your operating system. Here’s a screencast to walk you through the install and launching git bash from the Start Menu.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/3SQQGL4I0mM">SCREENCAST: Installing git on Windows and launching git bash</a></p></li>
+</ul>
+</section>
+<section id="r">
+<h3>R<a class="headerlink" href="#r" title="Link to this heading">¶</a></h3>
+<p>Go to the <a class="reference external" href="https://cran.r-project.org/">R Project site</a> and follow the Download R link fo your operating system.</p>
+</section>
+<section id="rstudio">
+<h3>RStudio<a class="headerlink" href="#rstudio" title="Link to this heading">¶</a></h3>
+<p>Go to the <a class="reference external" href="https://rstudio.com/products/rstudio/">RStudio site</a> and install latest Windows (or Mac) open-source desktop version.</p>
+</section>
+<section id="r-packages-for-windows-or-mac-or-linux">
+<h3>R packages for Windows or Mac or Linux<a class="headerlink" href="#r-packages-for-windows-or-mac-or-linux" title="Link to this heading">¶</a></h3>
+<p>I’ve got an R script that installs most of the packages we’ll use this semester. These packages <strong>ARE ALREADY INSTALLED ON THE PCDA VM - THIS IS JUST FOR INSTALLING THEM IN WINDOWS OR MAC OR YOUR OWN UBUNTU SYSTEM</strong>. You can <a class="reference external" href="https://drive.google.com/file/d/1zDPMmDCz9eMBg92EC4seoC-pJ0RoY7IG/view?usp=sharing">download the R script from here</a>.
+Then</p>
+<ul class="simple">
+<li><p>start R Studio</p></li>
+<li><p>open the <code class="docutils literal notranslate"><span class="pre">downloaded</span> <span class="pre">install_r_packages.r</span></code> file</p></li>
+<li><p>if you’re feeling lucky, go ahead and run the entire script. Or run it a line at a time to install one package at a time.</p></li>
+</ul>
+<p>Here’s a short screencast demoing the process.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/uJLk26_sgCc">SCREENCAST - Bulk install of R packages</a> (6:26)</p></li>
+</ul>
+<p>P.S. I ran the whole script on one of my Windows machines and it successfully installed all the libraries in under 5 minutes. :)</p>
+</section>
+<section id="anaconda-python-distro">
+<h3>Anaconda Python distro<a class="headerlink" href="#anaconda-python-distro" title="Link to this heading">¶</a></h3>
+<p>We don’t start learning Python until about halfway through the course, so there’s not a
+huge rush to get Python installed. I encourage you to do it early and then you’ve got time to deal with any installation issues.</p>
+<p>Ok, for this one you need to be careful you download the correct installer. You’ll be <a class="reference external" href="https://www.anaconda.com/products/individual#download-section">downloading the Individual Edition</a>.</p>
+<p>Click the big Download button and you’ll get taken to a section with the 64bit Windows installer (or Mac). Install it.</p>
+<p>Once that’s done, you’ve got Anaconda Python installed and you can use it for the first week of class when we do a quick “peek ahead” at Python. Later in the semester when we start learning Python, there are a few more things you need to do. I’ll describe them now and I’ve created a screencast to help you. If you want, you can wait and do these things later but you’ll eventually need to do them if you want to use Windows or Mac versions of Anaconda Python for this course. <strong>Well…, actually nothing terrible will happen if you just use the base conda environment that is installed by default.</strong> But you really should start to learn about conda virtual environments if you are serious about using Python for analytics work. So, here we go with those additional steps needed to create and use a new conda virtual environment.</p>
+<p>In order for Jupyter to recognize different conda virtual environments, you may need to <a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/tasks/use-jupyter-notebook-extensions/">install
+some extensions</a>.  Here’s a screencast that walks you through the next few steps.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/EJMXii67wlA">SCREENCAST - Creating datasci conda virtual environment</a></p></li>
+</ul>
+<p>Just start a open a Windows Anaconda Prompt shell (from the start menu) and do the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">jupyter</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">jupyterlab</span> <span class="n">nb_conda_kernels</span>
+</pre></div>
+</div>
+<p>You’ll only do this <strong>one time</strong>. This step actually does two things.</p>
+<ol class="arabic simple">
+<li><p>It creates a virtual environment called <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> that we’ll use whenever we want to use Jupyter Lab.</p></li>
+<li><p>It installs the <code class="docutils literal notranslate"><span class="pre">nb_conda_kernels</span></code> extension into the <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> virtual environment you just created.</p></li>
+</ol>
+<p>From then on, Jupyter will be able to recognize different
+conda virtual environments. I’ll be showing you how to switch between conda virtual environments from within Jupyter Lab later in the course.</p>
+<p>Now, you’ll create the <code class="docutils literal notranslate"><span class="pre">datasci</span></code> conda virtual environment.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>download the <a class="reference external" href="https://drive.google.com/file/d/1Z-VqIMKsR9ybCddRxeyrZhjpyZilPR0B/view?usp=sharing">datasci.yml</a> file to your <code class="docutils literal notranslate"><span class="pre">Downloads</span></code> folder.</p></li>
+<li><p>open a Windows Anaconda Prompt shell and navigate to your <code class="docutils literal notranslate"><span class="pre">Downloads</span></code> folder.</p></li>
+</ul>
+</div></blockquote>
+<p>Then do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">datasci</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+<p>Then, anytime you want to install new packages into this <cite>datasci</cite> environment, you just activate it like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">activate</span> <span class="n">datasci</span>
+</pre></div>
+</div>
+<p>Again, we will only do this if and when we need to install additional packages into our <code class="docutils literal notranslate"><span class="pre">datasci</span></code> conda environment. This isn’t something you need to worry about now. We’ll revisit this when we learn Python.</p>
+<p>To deactivate a conda virtual environment you just do this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">deactivate</span>
+</pre></div>
+</div>
+<p>When you want to use Jupyter lab, you first activate the <cite>jupyter</cite> environment and then launch Jupyter lab.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">activate</span> <span class="n">jupyter</span>
+<span class="o">&gt;</span> <span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<p>Then, once you are in Jupyter Lab, you can change the kernel to <code class="docutils literal notranslate"><span class="pre">datasci</span></code>.</p>
+<p>Again, you do <strong>NOT</strong> absolutely have to create a virtual environment for this course for Jupyter and <code class="docutils literal notranslate"><span class="pre">datasci</span></code>. If
+you want to use the <code class="docutils literal notranslate"><span class="pre">base</span></code> environment, you can. However,
+at some point you need to learn about conda virtual environments and this is a good opportunity to do so.</p>
+</section>
+<section id="notepad">
+<h3>Notepad++<a class="headerlink" href="#notepad" title="Link to this heading">¶</a></h3>
+<p>This is a free text editor that has good support for regular expressions.</p>
+<p>Go to the <a class="reference external" href="https://notepad-plus-plus.org/">Notepad++ site</a> and install it. For Mac, TextMate is
+one open source text editor you can freely obtain and there are others.</p>
+</section>
+</section>
+<section id="about-our-pcda-virtual-machine">
+<span id="about-pcda-vm"></span><h2>About our pcda virtual machine<a class="headerlink" href="#about-our-pcda-virtual-machine" title="Link to this heading">¶</a></h2>
+<p>We’ll be using a virtual machine running Lubuntu Linux via VirtualBox. Since virtual machines can become corrupted (just like USB sticks or hard drives) it is important that you use some cloud based storage location for your file backups. This could be your OU Google Drive account or Dropbox or some other cloud technology. There is more information about file backup strategies further down on this page.</p>
+<p>Business schools tend to be Microsoft dominated places. After all, Excel is the “Swiss army knife” of business and Powerpoint is everywhere. However, the analytics world is a far more diverse place. I’m going to give you an opportunity to explore a wide range of new tools and computing environments. I want all of us to be able to work in the same computing environment whether we are in the lab or at home. So, I’ve created a virtual machine based “analytic appliance” that we’ll call <em>pcda</em>. The pcda appliance comes preconfigured with:</p>
+<ul class="simple">
+<li><p>Lubuntu 20.04 - the operating system</p></li>
+<li><p>Geany - a lightweight powerful text editor</p></li>
+<li><p>R and R Studio and a whole bunch of R packages</p></li>
+<li><p>Anaconda Scientific Python distribution version 3.x</p></li>
+<li><p>Spyder - Python IDE that comes as part of the Anaconda Python distribution</p></li>
+<li><p>A web browser, file manager, command shell, and other tools such as git (version control) and pandoc (file format converter)</p></li>
+</ul>
+<p>Linux!? Yep, you are going to learn Linux. You may have heard of Ubuntu as it’s probably the most popular Linux “distro” out there for the average home user. Lubuntu is a lightweight version of Ubuntu that just has the minimal set of the Linux OS that we’ll need. While Lubuntu is GUI based, we will also be using the “shell” (like a Windows command line but a jillion times better and more powerful). Lubuntu (and Ubuntu) are both free and open source.</p>
+<p>Both R and Python are free and open source products with huge communities of analytics users and contributors. They overlap to some degree but have distinct strengths. Both are well worth learning. They both allow you to do things that would be absolutely hideous and painful to do in Excel. The pcda appliance was created with VirtualBox, a free software package from Oracle for creating and using virtual machines. I’ll be showing you how you will install and use it on your own computer.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Start this process early so that you have plenty of time for troubleshooting before the class really gets going. The ova file and instructions have been available since mid-August. If you wait until the last second to do things (in this class or IRL work), then technical problems can easily cause you plenty of grief. Telling a client that you couldn’t get their work done because you waited until the last second to find out that there was some problem with the data file they sent you is not a great way to become a successful analyst.</p>
+</div>
+</section>
+<section id="obtaining-and-installing-the-pcda-virtual-machine">
+<span id="install-pcda-vm"></span><h2>Obtaining and installing the pcda virtual machine<a class="headerlink" href="#obtaining-and-installing-the-pcda-virtual-machine" title="Link to this heading">¶</a></h2>
+<p>The <strong>big picture</strong> is that you’ll be:</p>
+<ol class="arabic simple">
+<li><p>downloading a compressed archive (an OVA file) of our pcda virtual machine (VM) that I’ve created</p></li>
+<li><p>downloading and installing VirtualBox</p></li>
+<li><p>importing the compressed archive (the OVA file) into VirtualBox which will turn it into the actual VM</p></li>
+<li><p>launching the pcda VM from VirtualBox</p></li>
+<li><p>using the pcda VM to do your work for this class</p></li>
+</ol>
+<p>I’ve provided the Installation Guide as a Google Doc so that you can make a copy and add your own notes
+to it if you wish. This is your first step in this course of becoming a
+more tech savvy business analytics professional. There will be many
+challenges and hiccups. Learning how to overcome these challenges is an
+important part of this course and your professional development. Roll
+up your sleeves and make it work. Of course, I am here to help.</p>
+<p>The following Installation Guide is from several years ago. Obviously,
+the filename and file size have changed. But, the steps are the same. The
+OVA file for this year is called pcda-2204-f24.ova and has a file size of 13,476,107 kilobytes in Windows (just under 13.5Gb).</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.google.com/document/d/1-So9nFP9MXBX7Q6xe2GJRoNK7buaRDtX/edit?usp=sharing&amp;ouid=108213286032058571069&amp;rtpof=true&amp;sd=true">pcda Installation Guide for home use</a></p></li>
+</ul>
+<p>I’ve made a few screencasts to supplement the Installation Guide. These were made last year so
+some of the details such as the machine name will obviously be different:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/uP7dVPAEA80">Screencast on importing ova file to create pcda virtual machine</a> (24:07)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/8diGSsgfbjE">Screencast on managing VMs with VirtualBox</a> (3:20)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/NeCp7fuS0QE">Screencast on the Lubuntu desktop</a> (2:44)</p></li>
+</ul>
+<p>The first thing to do is the download the following OVA file:</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>pcda-2204-f24.ova is a BIG file (~13.5 Gb). You’ll only be downloading
+it <strong>one time</strong> to your computer and then importing it into
+VirtualBox. Use Chrome or Firefox. The
+file size is <strong>13,476,107 Kb</strong> on my Windows hard drive. Oddly, the
+Mac computes file sizes slightly differently and according to one
+student who installed pcda on his MacBook Pro. If you don’t
+know anything about files sizes and how to view such things in
+Windows or the Mac, you might want to rethink taking this class. :)</p>
+</div>
+<ul>
+<li><p>Download pcda-2204-f24.ova file to your computer</p>
+<blockquote>
+<div><p><strong>I’ve moved link to our course Moodle site (right near the top)</strong></p>
+</div></blockquote>
+</li>
+</ul>
+<p>This is the “open virtual appliance” file that can be imported into
+<a class="reference external" href="https://www.virtualbox.org/">VirtualBox</a> on your computer to create
+the pcda virtual machine.  I’m hosting the file itself in Google Drive
+and using a shareable link to make it accessible to you.  OVA
+files are essentially a packaged archive of OVF (open virtualization
+format) files - a standard file format for packaging and distributing
+virtual machines. Here’s a <a class="reference external" href="http://damiankarlson.com/2010/11/01/ovas-and-ovfs-what-are-they-and-whats-the-difference/">nice quick explanation of OVA and OVF files</a>.</p>
+<p>After getting this file successfully downloaded, just follow the steps in the Installation Guide.</p>
+<p>If you are interested in how I created the virtual appliance itself, I’ve got
+a document I can share that I created with all my notes for recreating
+it. If you are interested, here’s a short article that gives a good
+<a class="reference external" href="https://www.howtogeek.com/196060/beginner-geek-how-to-create-and-use-virtual-machines/">overview of virtual machines and VirtualBox</a>.</p>
+</section>
+<section id="troubleshooting-guide-and-effectively-using-the-pcda-virtual-machine">
+<span id="troubleshooting-pcda-vm"></span><h2>Troubleshooting Guide and effectively using the pcda virtual machine<a class="headerlink" href="#troubleshooting-guide-and-effectively-using-the-pcda-virtual-machine" title="Link to this heading">¶</a></h2>
+<p>This class has used a Lubuntu based virtual machine since the first
+class ran in 2014. There are a few common issues that tend to pop
+up for a few people. If you run across something else, please
+make a post in the General Q&amp;A Forum in Moodle. Before making a post
+to the Q&amp;A Forum, you should:</p>
+<ul class="simple">
+<li><p>Look in this Troubleshooting Guide to see if you question is already addressed here.</p></li>
+<li><p>Look through the course Q&amp;A Forum to see if someone else has already encountered and solved your problem. Thank them with a reply to their post if this is the case.</p></li>
+<li><p>Thoroughly research the problem yourself. Take screenshots of error messages. Googling key parts of error messages is often a great way to start finding information that can lead to a solution. Take notes on exactly what you have tried and what the results were. Try to fix things for yourself.</p></li>
+<li><p>If after all of this, you still have not solved your problem, then make a post to the Q&amp;A Forum. Again, include information such as screenshots of error dialogs and things you’ve already tried to do to solve the problem yourself. People (your classmates and me) will be helpful but you must first try to solve things for yourself. Immediately posting a question before doing so is asking others to spend their time doing something for which you have not first spent your time. You’ll see that we’ll be using resources like StackOverflow in this course and you will learn what well formed questions and requests for help look like. You will also see what poorly asked questions will look like and what the responses to such questions look like.</p></li>
+</ul>
+<section id="vm-won-t-start-make-sure-the-ova-file-downloaded-correctly">
+<h3>VM won’t start - Make sure the ova file downloaded correctly<a class="headerlink" href="#vm-won-t-start-make-sure-the-ova-file-downloaded-correctly" title="Link to this heading">¶</a></h3>
+<p>If after importing the pcda-2204-f24.ova file, the virtual machine
+won’t start up correctly and you get an error dialog in Virtual Box saying it cannot start the VM,
+the <strong>VERY FIRST</strong> thing to check is if the
+ova file actually downloaded correctly. It’s a <strong>BIG</strong> file. When
+downloading big files, sometimes they get corrupted. Browse to the
+folder on your host machine containing the downloaded ova file. The
+file size is <strong>13,476,107 Kb</strong> on my Windows hard drive. Oddly, the
+Mac computes file sizes slightly differently and according to one
+student who installed pcda on his MacBook Pro, the Mac reports the
+file size as being slightly different.</p>
+</section>
+<section id="vm-hangs-with-black-screen-at-startup">
+<h3>VM hangs with black screen at startup<a class="headerlink" href="#vm-hangs-with-black-screen-at-startup" title="Link to this heading">¶</a></h3>
+<p>First of all, be patient.</p>
+<img alt="_images/blackscreen.jpg" src="_images/blackscreen.jpg" />
+<p>Sometimes, for whatever reason, startup may
+take a few minutes. If after several minutes you still are looking at
+a black rectangle, go to the VirtualBox Machine menu (at top of screen)
+and try the Reset option of the send ACPI Shutdown option. Sometimes
+after doing this, when the machine restarts, you may see what is known
+as a black screen with a few options. This is the “GRUB menu” and is a way
+to start the system in various modes (similar to Safe Mode in Windows).</p>
+<img alt="_images/grub.jpg" src="_images/grub.jpg" />
+<p>Usually you can just hit the Enter key to take the top option, which
+is a standard Ubuntu startup.</p>
+</section>
+<section id="vt-x-amd-v-hardware-accelerator-issue">
+<h3>VT-x/AMD-V Hardware Accelerator Issue<a class="headerlink" href="#vt-x-amd-v-hardware-accelerator-issue" title="Link to this heading">¶</a></h3>
+<p>If on trying to start the pcda VM, you get an error saying that
+hardware acceleration is not available on your system and the VM will not start, then you will need to make a BIOS change to
+enable hardware acceleration. Here’s a <a class="reference external" href="https://www.youtube.com/watch?v=XgF7RiXs43k">good YouTube vid</a> that
+shows how to do this. OBVIOUSLY, there are some things in the video
+that are specific to the person who made the video (such as which
+keys are needed to be pressed to enter the BIOS Setup on startup and
+how to make the necessary BIOS changes). It’s a good idea to do some
+Googling and look for guidance on using VMs on your specific make
+and model of computer.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Making BIOS changes can really mess up your machine, so
+be very careful when doing this. Only make the change shown and
+document exactly you did so that you can undo it if necessary.</p>
+</div>
+</section>
+<section id="another-vt-x-virtualization-related-error">
+<h3>Another VT-x (virtualization) related error<a class="headerlink" href="#another-vt-x-virtualization-related-error" title="Link to this heading">¶</a></h3>
+<p>Another common error related to enabling virtualization on your computer is:</p>
+<img alt="_images/vt-x_is_disabled.png" src="_images/vt-x_is_disabled.png" />
+<p>Googling key parts of error messages is often a great way to start finding information that can lead to a solution. For example, in this case:</p>
+<p>Google this – &gt; virtual box error VT-x is disabled in the BIOS for all CPU modes</p>
+<p>leads to this top result –&gt; <a class="reference external" href="https://stackoverflow.com/questions/33304393/vt-x-is-disabled-in-the-bios-for-both-all-cpu-modes-verr-vmx-msr-all-vmx-disabl">https://stackoverflow.com/questions/33304393/vt-x-is-disabled-in-the-bios-for-both-all-cpu-modes-verr-vmx-msr-all-vmx-disabl</a></p>
+<p>One student, who had this problem and then researched it, followed up with a Forum post in
+which he said:</p>
+<blockquote>
+<div><p>Following this error message, I emailed Professor Isken [ASIDE: <strong>Please don’t do this.</strong> Use the Forum so that we can all help each other] to get some help and how to move forward. He pointed out the Troubleshooting section on his website and he also googled a part of the string message which helped me find a solution!</p>
+<p>I have an HP Laptop and found this YouTube Video <a class="reference external" href="https://youtu.be/MOuTxfzCvMY">https://youtu.be/MOuTxfzCvMY</a> to help and solved my issues with this error message.</p>
+<p>For a quick summary: click on the <strong>Windows Icon -&gt; Settings -&gt; Update &amp; Security -&gt; Recovery (on the left hand side) -&gt; Advanced Startup -&gt; Restart Now</strong></p>
+<p>Once on Blue Screen: <strong>Troubleshoot -&gt; Advanced Options -&gt; UEFI Firmware Settings -&gt;F10 -&gt;System Configuration -&gt; Enable Virtualization Technology -&gt;F10 (Save and Exit)</strong>.</p>
+</div></blockquote>
+</section>
+<section id="mac-related-virtualization-errors-and-other-install-issues">
+<h3>Mac related virtualization errors and other install issues<a class="headerlink" href="#mac-related-virtualization-errors-and-other-install-issues" title="Link to this heading">¶</a></h3>
+<p>Here’s a Mac related error message you might see:</p>
+<img alt="_images/mac_kernel_driver_not_installed.png" src="_images/mac_kernel_driver_not_installed.png" />
+<p>Google this –&gt; virtualbox macbook pro error Kernel driver not installed</p>
+<p>The very first hit is: <a class="reference external" href="https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/">https://www.howtogeek.com/658047/how-to-fix-virtualboxs-%E2%80%9Ckernel-driver-not-installed-rc-1908-error/</a></p>
+<p>During the Fall 2020 semester, one student did some really nice troubleshooting on
+getting the pcda VM working on MacBook Pro. In addition to the kernel driver
+error he found that file sizes on the Mac are slightly different than on
+Windows (it’s related to how each calculates kB - do you divide by 1024 or by 1000).
+Anyway, here’s his Forum post as a PDF - very useful.</p>
+<p><a class="reference external" href="https://drive.google.com/file/d/1JN5v6zdxtOpIHi2xrBrm-AOQhMmYe5h0/view?usp=sharing">pcda_mac_install_post.pdf</a></p>
+</section>
+<section id="shutting-down-the-pcda-vm">
+<h3>Shutting down the pcda VM<a class="headerlink" href="#shutting-down-the-pcda-vm" title="Link to this heading">¶</a></h3>
+<p>When you are ready to stop working with the pcda VM, you <strong>ALWAYS</strong>
+should shut it down by clicking the little blue “start” button in lower
+left corner, select Leave | Shutdown. Then let the VM shut down. Then you
+can quit VirtualBox. This minimizes chances of your corrupting the
+virtual machine. Of course, bad stuff can always happen and that’s why
+you <strong>MUST</strong> have a file backup strategy. See syllabus and below for various options
+on that.</p>
+</section>
+<section id="doing-lubuntu-updates-from-the-command-line">
+<h3>Doing Lubuntu updates from the command line<a class="headerlink" href="#doing-lubuntu-updates-from-the-command-line" title="Link to this heading">¶</a></h3>
+<p>Periodically, when you start up the pcda VM, a little dialog box will pop up saying that there are system updates to do. You have the option of installing them now or clicking the Later button. These are just like the Windows or Mac update messages one might get when using those OS’s. Yes, you should do these updates. However, every once in a while, after clicking the Install button, the updates will fail and if you read the messages in the dialog box it will often be some type of failure to fetch the required packages. It sometimes seems like the update manager doesn’t think you’re connected to the internet - but you are. When this happens, we simply need to launch the update manager from the command line. This is easy to do and something every Linux user should know how to do.</p>
+<p>A really nice, simple, tutorial on doing this is available at <a class="reference external" href="https://www.makeuseof.com/update-ubuntu-command-line/">https://www.makeuseof.com/update-ubuntu-command-line/</a> (which I found from Googling “ubuntu update command line”). Here’s a short screencast I made that demos the process.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/Aq7DhrtwFNY">SCREENCAST - Doing Ubuntu updates from the command line</a> (8:25)</p></li>
+</ul>
+</section>
+<section id="frozen-apps-and-frozen-vm">
+<h3>Frozen apps and frozen VM<a class="headerlink" href="#frozen-apps-and-frozen-vm" title="Link to this heading">¶</a></h3>
+<p>When using a virtual machine (or actually any computer), it’s almost certain that
+at some point, either an application or the entire virtual machine
+will “freeze” or become unresponsive. What do you do? Here’s a few
+tips and there’s a screencast at the bottom of this section demoing some
+of them.</p>
+<section id="frozen-linux-application">
+<h4>Frozen Linux application<a class="headerlink" href="#frozen-linux-application" title="Link to this heading">¶</a></h4>
+<p>If an application seems to no longer be responding:</p>
+<ul class="simple">
+<li><p>Open a terminal window (i.e. a bash shell).</p></li>
+<li><p>Type <cite>xkill</cite> at the prompt and hit return.</p></li>
+<li><p>You’ll get a message telling you to click on the frozen application window.</p></li>
+<li><p>Click on the frozen application window. Frozen application will be killed.</p></li>
+</ul>
+<p>How did I figure this out? I went to one of my Google machines and
+searched “linux frozen application what do i do”. Top hit is this
+link with a very promising name.</p>
+<p><a class="reference external" href="https://www.makeuseof.com/tag/6-different-ways-to-end-unresponsive-programs-in-linux/">https://www.makeuseof.com/tag/6-different-ways-to-end-unresponsive-programs-in-linux/</a></p>
+</section>
+<section id="frozen-virtual-machine-in-virtualbox">
+<h4>Frozen virtual machine in VirtualBox<a class="headerlink" href="#frozen-virtual-machine-in-virtualbox" title="Link to this heading">¶</a></h4>
+<p>If the entire virtual machine seems to be not responding:</p>
+<p>In the VirtualBox menu at very top of the screen, select <strong>File | Close</strong>.
+You’ll get a little dialog box with three options. Use the “question mark” button
+to see what each of the options does. Usually you’ll try Option #2 “Send the shutdown signal”.
+If that doesn’t work, use Option #3, “Power off the machine”.</p>
+<p>You can get to the same three options by right clicking on the virtual machine
+icon in the VirtualBox interface and selecting close from there.</p>
+</section>
+<section id="screencast-demoing-frozen-app-and-frozen-vm-fixes">
+<h4>Screencast demoing frozen app and frozen VM fixes<a class="headerlink" href="#screencast-demoing-frozen-app-and-frozen-vm-fixes" title="Link to this heading">¶</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/E9eLC3RXJ8U">SCREENCAST: Frozen apps and frozen VM</a> (3:02)</p></li>
+</ul>
+</section>
+<section id="strange-looking-screen-on-startup">
+<h4>Strange looking screen on startup<a class="headerlink" href="#strange-looking-screen-on-startup" title="Link to this heading">¶</a></h4>
+<p>Sometimes, especially after having to do a forced shutdown (as above),
+the next time you start up the VM, you’ll see a basic dark startup
+screen with various options. This is the “GRUB menu” and is a way
+to start the system in various modes (similar to Safe Mode in Windows).
+Usually you can just hit the Enter key to take the top option, which
+is a standard Ubuntu startup.</p>
+<img alt="_images/grub.jpg" src="_images/grub.jpg" />
+</section>
+</section>
+<section id="downloading-and-extracting-compressed-files">
+<h3>Downloading and extracting compressed files<a class="headerlink" href="#downloading-and-extracting-compressed-files" title="Link to this heading">¶</a></h3>
+<p>When downloading tar.gz files for class, make sure you actually do a
+<strong>Save File</strong> and let it download to your Downloads folder. Then right
+click the file and Extract Here. Do <strong>NOT</strong> open the file with Archive
+Manager during the download and then try to access files within without
+extracting - this is just like trying to work inside of a zip file in
+Windows. <strong>DON’T DO IT</strong>. Always download the <code class="docutils literal notranslate"><span class="pre">tar.gz</span></code> file and extract before
+trying to use any files. Obviously after extraction, you can move the
+resulting folder where ever you’d like.</p>
+</section>
+<section id="emptying-trash-on-pcda-vm">
+<h3>Emptying trash on pcda VM<a class="headerlink" href="#emptying-trash-on-pcda-vm" title="Link to this heading">¶</a></h3>
+<p>When I created the pcda VM, I gave it a max size of about 25Gb. To free
+up unused space, you should periodically empty the Trash of deleted
+files. Just right click on the Trash Can item in the File Manager and
+select the Empty option.</p>
+</section>
+<section id="managing-ram-and-cpus-on-the-pcda-vm">
+<h3>Managing RAM and CPUs on the pcda VM<a class="headerlink" href="#managing-ram-and-cpus-on-the-pcda-vm" title="Link to this heading">¶</a></h3>
+<p>When I built the pcda VM, I allocated 3.5Gb of RAM to it and it uses 1 CPU (remember, you
+can see all the system settings by clicking the big orange cog in
+the VirtualBox manager GUI). So, if you’ve got tons of apps open in the
+VM, you might start to bog things down. So, be smart about closing apps
+when you aren’t using them. Also, don’t have a bunch of apps open in the
+host operation system (i.e. Windows or Mac). Especially, don’t have a ton of tabs
+open in a browser in the host OS.</p>
+<p>You can actually change the amount of RAM allocated to the VM, dynamically.
+If you’ve got a ton of RAM on your machine and want to allocate more RAM
+to the VM, feel free to try it. You can also increase the number of CPUs from
+1 to 2. These changes can definitely improve performance of the VM.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://youtu.be/bPvImY_7UNM">SCREENCAST: Managing RAM and CPUs on the pcda VM</a> (1:31)</p></li>
+</ul>
+</section>
+<section id="interpreting-bash-code-snippets">
+<h3>Interpreting bash code snippets<a class="headerlink" href="#interpreting-bash-code-snippets" title="Link to this heading">¶</a></h3>
+<p>In many places in my notes and in countless online examples, the <code class="docutils literal notranslate"><span class="pre">$</span></code> to the left of any bash command is <strong>NOT</strong> part of the
+command. It’s just representing the bash shell prompt. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ ls -l -a
+</pre></div>
+</div>
+<p>The command and its associated flags is just the <code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-l</span> <span class="pre">-a</span></code> part. The
+<code class="docutils literal notranslate"><span class="pre">$</span></code> is representing a generic bash prompt.</p>
+</section>
+<section id="managing-your-files">
+<h3>Managing your files<a class="headerlink" href="#managing-your-files" title="Link to this heading">¶</a></h3>
+<p>The bottom line is that <strong>you</strong> are
+responsible for <strong>your files</strong>. Figure out a file management and backup
+strategy that works for you. You should always have a backup of important files.
+Here are a few options for getting files from the pcda VM to some
+other location:</p>
+<blockquote>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>Compress working folder as a <code class="docutils literal notranslate"><span class="pre">zip</span></code> or <code class="docutils literal notranslate"><span class="pre">tar.gz</span></code> file and do something like:</dt><dd><ul>
+<li><p>copy to your Google drive or some other cloud based storage location (e.g. Dropbox)</p></li>
+<li><p>email it to yourself</p></li>
+<li><p>copy to a USB drive. To use a USB drive with VirtualBox, just stick the drive in and use the Devices menu to mount the USB device. Remember, USB devices do fail.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>Use a “shared folder” - see below for instructions on doing this</p></li>
+</ul>
+</div></blockquote>
+<p>For lab based versions of the course
+when you are doing work on the pcda VM on a lab machine, obviously, all
+files you create are only on that machine. You have many options for how
+you get those files to some other place so that you can access them later.
+You decide what works best for you. Of course if you just bring your laptop to class and use the pcda VM on
+there, you still need to create a backup strategy using one of the methods
+above or some other scheme you concoct.</p>
+<p>Finally, when we learn to use git and Github, you’ll see that not only
+does this provide version control on your source code files, it also gives
+you another place that source code files are backed up. It is yet another reason
+to learn to use version control software.</p>
+</section>
+<section id="creating-shared-folders-between-host-and-guest-machines">
+<h3>Creating shared folders between host and guest machines<a class="headerlink" href="#creating-shared-folders-between-host-and-guest-machines" title="Link to this heading">¶</a></h3>
+<p>One option for moving files between the host machine (e.g. Windows) and
+the pcda VM is to create a shared folder. I use this a lot for managing
+the course website and updating course content files. There are a few
+technical details to be aware of. I’m going to share below a Help Forum
+post done by a student in the class a few years ago on this topic.</p>
+<p>The following was a forum post from a few semester ago:</p>
+<p>1. You will need to go to the settings (It is the orange cog above
+your virtual machine) of your virtual machine and head over to the
+“Shared Folder” Section.</p>
+<img alt="_images/SharedFileButton.png" src="_images/SharedFileButton.png" />
+<p>2. Next you will need to create a folder and place it somewhere in the
+host computer that you can find. I highly suggest creating it in your
+Documents folder and naming it something obvious like
+“ShareLubuntuMIS”.</p>
+<img alt="_images/sharedFile4.png" src="_images/sharedFile4.png" />
+<p>3. You will now need to select that folder. To do this in the “Folder
+Path:” drop-down choose “Other..” and select the folder that you just
+made.  You will also need to check the boxes that say “Auto-mount” and
+“Make Permanent”. After that click “Ok”.</p>
+<img alt="_images/sharedfile5.png" src="_images/sharedfile5.png" />
+<p>4. Now you will need to load up your virtual machine and log in. When
+you log in you now see the shared folder that you just made.</p>
+<img alt="_images/sharefile6.png" src="_images/sharefile6.png" />
+<p>5. The final step is to add your user permission. Open up the Linux
+shell and run this code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>sudo adduser $USER vboxsf
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I may have already done this step because I use shared folders when creating the VM. So, when you run it
+you may get a message saying that it’s already been done. No big deal.</p>
+</div>
+<p>After this step,
+you will need to reboot your system and you should be set.  Hopefully,
+this helps someone, I did this because I wanted to save my work and in
+case of an error in the virtual machine, you will always have your
+work.</p>
+<p>Another source for similar info and steps is at
+<a class="reference external" href="https://www.howtogeek.com/187703/how-to-access-folders-on-your-host-machine-from-an-ubuntu-virtual-machine-in-virtualbox/">How to Access Folders on Your Host Machine from an Ubuntu Virtual Machine in VirtualBox</a></p>
+</section>
+<section id="weird-cursor-problem-in-r-studio">
+<h3>Weird cursor problem in R Studio<a class="headerlink" href="#weird-cursor-problem-in-r-studio" title="Link to this heading">¶</a></h3>
+<p>If ever you find that the cursor in R Studio seems to be not synchronized with where you are typing, it’s caused by a strange bug having to do with certain fonts in their editor. The easy fix is:</p>
+<blockquote>
+<div><p>In R Studio, go into <strong>Tools | Global Options</strong> and then select <strong>Appearance</strong> from the left toolbar in that window. Then, make sure you set the font back to Ubuntu Monospace and the cursor problem will go away. For some reason, sometimes the font gets switched to Courier (or you might change it by selecting a different theme).</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Software and pcda virtual machine</a><ul>
+<li><a class="reference internal" href="#technology-requirements">Technology requirements</a></li>
+<li><a class="reference internal" href="#course-software-the-big-picture-and-options">Course software - the big picture and options</a><ul>
+<li><a class="reference internal" href="#option-1-install-r-r-studio-anaconda-python-and-even-a-bash-shell-on-your-host-os">Option 1 - Install R, R Studio, Anaconda Python and even a bash shell on your host OS</a><ul>
+<li><a class="reference internal" href="#using-a-bash-shell-with-windows-mac-option-1-git-for-windows">Using a bash shell with Windows/Mac - Option 1: git for Windows</a></li>
+<li><a class="reference internal" href="#using-a-bash-shell-with-mac-option-2-macos-is-actually-unix-based">Using a bash shell with Mac - Option 2: macOS is actually Unix based</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#option-2-the-pcda-virtual-machine">Option 2 - The pcda virtual machine</a></li>
+<li><a class="reference internal" href="#another-resource-the-sba-open-labs">Another resource - the SBA open labs</a></li>
+<li><a class="reference internal" href="#so-what-should-i-do">So, what should I do?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#installing-course-software-in-your-base-os">Installing course software in your base OS</a><ul>
+<li><a class="reference internal" href="#git">git</a></li>
+<li><a class="reference internal" href="#r">R</a></li>
+<li><a class="reference internal" href="#rstudio">RStudio</a></li>
+<li><a class="reference internal" href="#r-packages-for-windows-or-mac-or-linux">R packages for Windows or Mac or Linux</a></li>
+<li><a class="reference internal" href="#anaconda-python-distro">Anaconda Python distro</a></li>
+<li><a class="reference internal" href="#notepad">Notepad++</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#about-our-pcda-virtual-machine">About our pcda virtual machine</a></li>
+<li><a class="reference internal" href="#obtaining-and-installing-the-pcda-virtual-machine">Obtaining and installing the pcda virtual machine</a></li>
+<li><a class="reference internal" href="#troubleshooting-guide-and-effectively-using-the-pcda-virtual-machine">Troubleshooting Guide and effectively using the pcda virtual machine</a><ul>
+<li><a class="reference internal" href="#vm-won-t-start-make-sure-the-ova-file-downloaded-correctly">VM won’t start - Make sure the ova file downloaded correctly</a></li>
+<li><a class="reference internal" href="#vm-hangs-with-black-screen-at-startup">VM hangs with black screen at startup</a></li>
+<li><a class="reference internal" href="#vt-x-amd-v-hardware-accelerator-issue">VT-x/AMD-V Hardware Accelerator Issue</a></li>
+<li><a class="reference internal" href="#another-vt-x-virtualization-related-error">Another VT-x (virtualization) related error</a></li>
+<li><a class="reference internal" href="#mac-related-virtualization-errors-and-other-install-issues">Mac related virtualization errors and other install issues</a></li>
+<li><a class="reference internal" href="#shutting-down-the-pcda-vm">Shutting down the pcda VM</a></li>
+<li><a class="reference internal" href="#doing-lubuntu-updates-from-the-command-line">Doing Lubuntu updates from the command line</a></li>
+<li><a class="reference internal" href="#frozen-apps-and-frozen-vm">Frozen apps and frozen VM</a><ul>
+<li><a class="reference internal" href="#frozen-linux-application">Frozen Linux application</a></li>
+<li><a class="reference internal" href="#frozen-virtual-machine-in-virtualbox">Frozen virtual machine in VirtualBox</a></li>
+<li><a class="reference internal" href="#screencast-demoing-frozen-app-and-frozen-vm-fixes">Screencast demoing frozen app and frozen VM fixes</a></li>
+<li><a class="reference internal" href="#strange-looking-screen-on-startup">Strange looking screen on startup</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#downloading-and-extracting-compressed-files">Downloading and extracting compressed files</a></li>
+<li><a class="reference internal" href="#emptying-trash-on-pcda-vm">Emptying trash on pcda VM</a></li>
+<li><a class="reference internal" href="#managing-ram-and-cpus-on-the-pcda-vm">Managing RAM and CPUs on the pcda VM</a></li>
+<li><a class="reference internal" href="#interpreting-bash-code-snippets">Interpreting bash code snippets</a></li>
+<li><a class="reference internal" href="#managing-your-files">Managing your files</a></li>
+<li><a class="reference internal" href="#creating-shared-folders-between-host-and-guest-machines">Creating shared folders between host and guest machines</a></li>
+<li><a class="reference internal" href="#weird-cursor-problem-in-r-studio">Weird cursor problem in R Studio</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="textbooks.html"
+                          title="previous chapter">Textbooks</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="resource_center.html"
+                          title="next chapter">Resource Center</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/pcda_vm.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="resource_center.html" title="Resource Center"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="textbooks.html" title="Textbooks"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="course_logistics.html" >Course logistics and resources</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Software and pcda virtual machine</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>
