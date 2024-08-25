@@ -145,7 +145,7 @@ some extensions</a>.  Here’s a screencast that walks you through the next few 
 <li><p><a class="reference external" href="https://youtu.be/EJMXii67wlA">SCREENCAST - Creating datasci conda virtual environment</a></p></li>
 </ul>
 <p>Just start a open a Windows Anaconda Prompt shell (from the start menu) and do the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">jupyter</span> <span class="o">-</span><span class="n">c</span> <span class="n">conda</span><span class="o">-</span><span class="n">forge</span> <span class="n">jupyterlab</span> <span class="n">nb_conda_kernels</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda create -n jupyter -c conda-forge jupyterlab nb_conda_kernels
 </pre></div>
 </div>
 <p>You’ll only do this <strong>one time</strong>. This step actually does two things.</p>
@@ -163,21 +163,21 @@ conda virtual environments. I’ll be showing you how to switch between conda vi
 </ul>
 </div></blockquote>
 <p>Then do:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">-</span><span class="n">f</span> <span class="n">datasci</span><span class="o">.</span><span class="n">yml</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda env create -f datasci.yml
 </pre></div>
 </div>
 <p>Then, anytime you want to install new packages into this <cite>datasci</cite> environment, you just activate it like this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">activate</span> <span class="n">datasci</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda activate datasci
 </pre></div>
 </div>
 <p>Again, we will only do this if and when we need to install additional packages into our <code class="docutils literal notranslate"><span class="pre">datasci</span></code> conda environment. This isn’t something you need to worry about now. We’ll revisit this when we learn Python.</p>
 <p>To deactivate a conda virtual environment you just do this:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">deactivate</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda deactivate
 </pre></div>
 </div>
 <p>When you want to use Jupyter lab, you first activate the <cite>jupyter</cite> environment and then launch Jupyter lab.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">conda</span> <span class="n">activate</span> <span class="n">jupyter</span>
-<span class="o">&gt;</span> <span class="n">jupyter</span> <span class="n">lab</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ conda activate jupyter
+$ jupyter lab
 </pre></div>
 </div>
 <p>Then, once you are in Jupyter Lab, you can change the kernel to <code class="docutils literal notranslate"><span class="pre">datasci</span></code>.</p>

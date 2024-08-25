@@ -98,6 +98,22 @@ Whirlwind Tour of Python book listed above.</p>
 </section>
 <section id="activities">
 <h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl>
+<dt>Using Jupyter notebooks with conda virtual environments</dt><dd><p>is an evolving thing. As of now (Fall 2024), and described at <a class="reference external" href="https://mis5470.netlify.app/pcda_vm#anaconda-python-distro">this part of our software page</a>, I am using a dedicated conda virtual env named <code class="docutils literal notranslate"><span class="pre">jupyter</span></code> for launching Jupyter Lab.</p>
+<blockquote>
+<div><dl class="simple">
+<dt>$ conda activate jupyter</dt><dd><p>$ jupyter lab</p>
+</dd>
+</dl>
+</div></blockquote>
+<p>Then, within Jupyter Lab, I’m changing the notebook kernel to our <code class="docutils literal notranslate"><span class="pre">datasci</span></code> conda virtual env.</p>
+<p>But, as described at the link above, if you end up launching Jupyter Lab from the base conda env, you’ll
+be fine.</p>
+</dd>
+</dl>
+</div>
 <p>We will begin with an overview of Python and its use in data analytics.
 Then we’ll start to learn Python in the context of data analysis,
 by working through a number of Jupyter notebooks together. While working through the
@@ -122,7 +138,7 @@ a few libraries but that’s no big deal.</p>
 <li><p>we will be using JupyterLab which is the latest evolution in the Jupyter Notebook ecosystem</p></li>
 <li><p>here’s a <a class="reference external" href="https://towardsdatascience.com/jupyter-lab-evolution-of-the-jupyter-notebook-5297cacde6b">nice overview post</a> about this evolution</p></li>
 <li><p>it is important to note that the underlying Jupyter notebooks themselves have not changed. What has changed is the interface for working with them.</p></li>
-<li><p><a class="reference external" href="https://youtu.be/4efoQxPDOhE">SCREENCAST: The relationship between JupyterLab and Jupyter Notebook</a> (9:24)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/4efoQxPDOhE">SCREENCAST: The relationship between Jupyter Lab and Jupyter Notebook</a> (9:24)</p></li>
 </ul>
 </div></blockquote>
 </li>

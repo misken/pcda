@@ -136,7 +136,7 @@ some extensions <https://docs.anaconda.com/anaconda/user-guide/tasks/use-jupyter
 
 Just start a open a Windows Anaconda Prompt shell (from the start menu) and do the following::
 
-    > conda create -n jupyter -c conda-forge jupyterlab nb_conda_kernels
+    $ conda create -n jupyter -c conda-forge jupyterlab nb_conda_kernels
 
 You'll only do this **one time**. This step actually does two things. 
 
@@ -154,24 +154,24 @@ Now, you'll create the ``datasci`` conda virtual environment.
   
 Then do::
 
-	> conda env create -f datasci.yml
+	$ conda env create -f datasci.yml
 
 Then, anytime you want to install new packages into this `datasci` environment, you just activate it like this::
 	
-	> conda activate datasci
+	$ conda activate datasci
 	
 Again, we will only do this if and when we need to install additional packages into our ``datasci`` conda environment. This isn't something you need to worry about now. We'll revisit this when we learn Python.
 	
 To deactivate a conda virtual environment you just do this::
 
-    > conda deactivate
+    $ conda deactivate
 
 When you want to use Jupyter lab, you first activate the `jupyter` environment and then launch Jupyter lab.
 
 ::
 
-    > conda activate jupyter
-    > jupyter lab
+    $ conda activate jupyter
+    $ jupyter lab
 
 
 Then, once you are in Jupyter Lab, you can change the kernel to ``datasci``.

@@ -58,6 +58,20 @@ Whirlwind Tour of Python book listed above.
 Activities
 ================================
 
+.. note::
+
+    Using Jupyter notebooks with conda virtual environments
+	is an evolving thing. As of now (Fall 2024), and described at `this part of our software page <https://mis5470.netlify.app/pcda_vm#anaconda-python-distro>`_, I am using a dedicated conda virtual env named ``jupyter`` for launching Jupyter Lab.
+	
+	    $ conda activate jupyter
+		$ jupyter lab
+		
+	Then, within Jupyter Lab, I'm changing the notebook kernel to our ``datasci`` conda virtual env.
+	
+	But, as described at the link above, if you end up launching Jupyter Lab from the base conda env, you'll
+	be fine.
+	 
+
 We will begin with an overview of Python and its use in data analytics.
 Then we'll start to learn Python in the context of data analysis,
 by working through a number of Jupyter notebooks together. While working through the
@@ -79,7 +93,7 @@ a few libraries but that's no big deal.
 	- we will be using JupyterLab which is the latest evolution in the Jupyter Notebook ecosystem
 	- here's a `nice overview post <https://towardsdatascience.com/jupyter-lab-evolution-of-the-jupyter-notebook-5297cacde6b>`_ about this evolution
 	- it is important to note that the underlying Jupyter notebooks themselves have not changed. What has changed is the interface for working with them.
-	- `SCREENCAST: The relationship between JupyterLab and Jupyter Notebook <https://youtu.be/4efoQxPDOhE>`_ (9:24)
+	- `SCREENCAST: The relationship between Jupyter Lab and Jupyter Notebook <https://youtu.be/4efoQxPDOhE>`_ (9:24)
 	
 * **01-basics-lookahead-pcda.ipynb**
 
