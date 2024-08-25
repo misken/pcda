@@ -45,9 +45,9 @@ Activities
 
 .. note::
 
-    Our SBA web server has some issues that sometimes lead
-	to problems loading our course webpages or my faculty home page. If this happens, you can usually fix the
-	problem by clearing your browser cache and reloading the page.
+    Our SBA web server has some issues that sometimes leadto problems loading our course webpages or my faculty home page. If this happens, you can usually fix theproblem by clearing your browser cache and reloading the page.
+
+    Or, you can use one of the alternative links - `https://pcda.misken.org <https://pcda.misken.org>`_ or `https://mis5470.netlify.app <https://mis5470.netlify.app>`_.
 
 Overview of pcda class
 ----------------------
@@ -104,8 +104,6 @@ Preview of Python and Anaconda
 
 We'll just do a quick look so that those who are curious can start
 to tinker around. We'll be learning Python later in the semester.
-
-**NOTE** I updated this screencast in W23 to include demo of using Python from within the VM as well as from Windows.
 
 - `SCREENCAST: Preview of Python <https://youtu.be/yzMuuNXCXRw>`_ (10:59)
 

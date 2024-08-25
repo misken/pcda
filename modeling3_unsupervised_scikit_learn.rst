@@ -111,7 +111,7 @@ Explore (OPTIONAL)
 
 	Anonymizing data is really hard in practice. For example, if you knew someone's age, zipcode and gender, it's not too hard to identify them using publicly available data. That's why, for example, simply dropping things like names and id numbers from health care data doesn't make the data "anonymized".
 	
-* `Think Stats <http://greenteapress.com/wp/think-stats-2e/>`_
+* `Think Stats <http://greenteapress.com/wp/think-stats-3e/>`_
 
 	Think Stats is an introduction to Probability and Statistics for Python programmers.
 
@@ -133,7 +133,7 @@ Explore (OPTIONAL)
    
 * `ISLR textbook for Python <https://www.statlearning.com/>`_
 
-* `Gallery of interesting Jupyter notebooks <https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks>`_
+* `Gallery of interesting Jupyter notebooks <https://github.com/jupyter/jupyter/wiki#a-gallery-of-interesting-jupyter-notebooks>`_
 
 * `Rethinking distance in NYC <https://medium.com/topos-ai/rethinking-distance-in-new-york-city-d17212d24919>`_
 

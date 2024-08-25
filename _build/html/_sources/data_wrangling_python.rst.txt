@@ -33,7 +33,7 @@ Web based tools and tutorials
 * `Regular-Expressions.info <https://www.regular-expressions.info/tutorial.html>`_ - One of my go to sites for regex for a long time now. Very complete, many examples with substantive explanations.
 * `Learning to Use Regular Expressions - Gnossis.cx <http://gnosis.cx/publish/programming/regular_expressions.html>`_ - This is the site from which I first learned regular expressions. It has been around forever, is widely read, and quite good.
 * `Regular Expressions - A Gentle User Guide and Tutorial <http://regexone.com/>`_ - This is a good tutorial, cleverly written, at a greater level of detail than some of the others above. It's got a browser based regex testing tool and the examples are based on matching parts of server logs which is a  relevant application for our class.
-* `Regex Cheat Sheet <http://www.cbs.dtu.dk/courses/27610/regular-expressions-cheat-sheet-v2.pdf>`_
+* `Regex Cheat Sheet <https://www.rexegg.com/regex-quickstart.php>`_
 * `Regular Expressions: Now You Have Two Problems <http://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/>`_ - Classic blog post on regex and a related famous quote about regex. Good links to some resources on the bare minimum that every analyst/coder/hacker should know about the incredible world of regular expressions.
 * https://xkcd.com/208/
 
@@ -104,8 +104,8 @@ More on learning to program in Python
 
 These are based on the Software Carpentry tutorials on programming with Python. They cover slightly more advanced topics. We won't cover them in class but are useful for going beyond basic programming.
 
-* Error Handling - http://swcarpentry.github.io/python-novice-inflammation/07-errors/
-* Defensive programming - http://swcarpentry.github.io/python-novice-inflammation/08-defensive/
-* Debugging - http://swcarpentry.github.io/python-novice-inflammation/09-debugging/
-* Handling command line arguments - http://swcarpentry.github.io/python-novice-inflammation/10-cmdline/
+* Error Handling - https://swcarpentry.github.io/python-novice-inflammation/09-errors.html
+* Defensive programming - https://swcarpentry.github.io/python-novice-inflammation/10-defensive.html
+* Debugging - https://swcarpentry.github.io/python-novice-inflammation/11-debugging.html
+* Handling command line arguments - https://swcarpentry.github.io/python-novice-inflammation/12-cmdline.html
 

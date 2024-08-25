@@ -100,4 +100,4 @@ General data science
 --------------------
    
 * `Field Guide to Data Science <https://www.boozallen.com/s/insight/publication/field-guide-to-data-science.html>`_ - Booz, Allen, Hamilton (one of the big consulting firms)
-* Analytics jobs on the `KDnuggets jobs board <http://www.kdnuggets.com/jobs/index.html>`_- KDnuggets is a great site for all things analytics. Up until very recently it had an endearing design reminiscent of the early days of the web.
+

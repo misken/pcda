@@ -82,14 +82,11 @@ Additional Resources
 
 `Jenny Bryan <https://jennybryan.org/about/>`_ developed and taught R related courses at
 the University of British Columbia. In particular, she was the driving
-force behind a course called `STAT 545 <https://stat545.com/>`_ and an `online textbook <https://stat545.com/index.html>`_. Now she works at R Studio on Hadley Wickham's team, but her course lives on. Many of the resources
+force behind a course called `STAT 545 <https://stat545.com/>`_ and an `online textbook <https://stat545.com/index.html>`_. Now she works at Posit on Hadley Wickham's team, but her course lives on. Many of the resources
 she created for STAT 545 are still available and will continue to 
 evolve. I highly recommend them as they really get at the heart of
 effectively using R to do analysis. It also includes invaluable practical R related information that
 is rarely found all in one place. Highly recommended.
-
-She has in-process book called `What they forgot to teach you about R <https://whattheyforgot.org/>`_ that is
-packed with more practical wisdom on working with R and R Studio.
 
 Asking good questions
 ----------------------

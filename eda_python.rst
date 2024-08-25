@@ -56,6 +56,7 @@ You can pip install it:
     $ conda activate datasci
     $ pip install us
     $ conda deactivate
+    $ conda activate jupyter
     $ jupyter lab
     
 Now you can go through the **c19_data_wrangle_viz.ipynb** notebook.
