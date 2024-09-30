@@ -79,7 +79,7 @@ Explore (OPTIONAL)
 Regression modeling
 -------------------
 
-* `STAT 501 - Regression Modeling (Penn State Univ online) <https://onlinecourses.science.psu.edu/stat501/>`_ - Penn State has a bunch of free online resources for learning stats. 
+* `STAT 501 - Regression Modeling (Penn State Univ online) <https://online.stat.psu.edu/stat501/>`_ - Penn State has a bunch of free online resources for learning stats. 
 * Regression modeling textbooks
 
    - `Regression and Other Stories <https://avehtari.github.io/ROS-Examples/>`_ (Gelman, Hill, Vehtari) Hot off the press. This book is about applied regression, uses R, and includes things like Bayesian approaches and using simulation.

@@ -197,7 +197,7 @@ We’ll be using a virtual machine running Lubuntu Linux via VirtualBox. Since v
 
 Business schools tend to be Microsoft dominated places. After all, Excel is the “Swiss army knife” of business and Powerpoint is everywhere. However, the analytics world is a far more diverse place. I’m going to give you an opportunity to explore a wide range of new tools and computing environments. I want all of us to be able to work in the same computing environment whether we are in the lab or at home. So, I’ve created a virtual machine based “analytic appliance” that we’ll call *pcda*. The pcda appliance comes preconfigured with:
 
-* Lubuntu 20.04 - the operating system
+* Lubuntu 22.04 - the operating system
 * Geany - a lightweight powerful text editor
 * R and R Studio and a whole bunch of R packages
 * Anaconda Scientific Python distribution version 3.x
