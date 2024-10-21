@@ -61,7 +61,7 @@ Activities
 .. note::
 
     Using Jupyter notebooks with conda virtual environments
-    is an evolving thing. As of now (Fall 2024), and described at `this part of our software page <https://mis5470.netlify.app/pcda_vm#anaconda-python-distro>`_, I am using a dedicated conda virtual env named ``jupyter`` for launching Jupyter Lab.
+    is an evolving thing. As of now (Fall 2024), and described at `this part of our software page <https://pcda.misken.org/pcda_vm#anaconda-python-distro>`_, I am using a dedicated conda virtual env named ``jupyter`` for launching Jupyter Lab.
     
         $ conda activate jupyter
         
@@ -87,19 +87,19 @@ a few libraries but that's no big deal.
 * **Intro to Python**
 
     - see the ``intro_to_python_for_business_analytics.html`` file in the Downloads folder
-    - `SCREENCAST: Intro to Python <https://youtu.be/qxPxJm2YD5g>`_ (23:47)
+    - `SCREENCAST: Intro to Python <https://youtu.be/qCbtsgOFM28>`_ (23:47)
     
 * **jupyter notebook vs jupyter lab**
 
     - we will be using JupyterLab which is the latest evolution in the Jupyter Notebook ecosystem
     - here's a `nice overview post <https://towardsdatascience.com/jupyter-lab-evolution-of-the-jupyter-notebook-5297cacde6b>`_ about this evolution
     - it is important to note that the underlying Jupyter notebooks themselves have not changed. What has changed is the interface for working with them.
-    - `SCREENCAST: The relationship between Jupyter Lab and Jupyter Notebook <https://youtu.be/4efoQxPDOhE>`_ (9:24)
+    - `SCREENCAST: The relationship between Jupyter Lab and Jupyter Notebook <https://youtu.be/f8dvK1wlD0Y>`_ (9:24)
     
 * **01-basics-lookahead-pcda.ipynb**
 
     - variables, numpy, math, peek at plotting
-    - `SCREENCAST: Python basics - variables <https://youtu.be/oVi9sN2S8PU>`_ (18:54)
+    - `SCREENCAST: Python basics - variables <https://youtu.be/1kFKp0JZJxc>`_ (20:36)
     - `SCREENCAST: Python basics - reading csv <https://youtu.be/eH1Ifu34OBw>`_ (16:54)
     - `SCREENCAST: Python basics - plotting <https://youtu.be/n_YXCgnVokk>`_ (7:00)
   
