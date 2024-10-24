@@ -164,6 +164,7 @@ Publicly available data
 Workflow and reproducible analysis
 ----------------------------------
 
+* `Modern plain text computing <https://mptc.io/content/>`_ - a course by Kieran Healy 
 * `Reproducible and Trustworthy Workflows for Data Science <https://ubc-dsci.github.io/reproducible-and-trustworthy-workflows-for-data-science/README.html>`_
 * `Data Science Workflow: Overview and Challenges <http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext>`_ - Blog post by Philip Guo who did his dissertation on this topic.
 * `Cookiecutter Data Science <https://drivendata.github.io/cookiecutter-data-science/>`_ - "A logical, reasonably standardized, but flexible project structure for doing and sharing data science work."
