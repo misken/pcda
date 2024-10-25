@@ -148,6 +148,7 @@ Publicly available data
 * `DrivenData Competitions <https://www.drivendata.org/competitions/>`_ - not suggesting you compete (you can) but these are a great source of high quality datasets. You'll need to create a free account to be able to download data. I used this site as a motivation for my series of blog posts on `algal bloom detection from satellite imagery <https://bitsofanalytics.org/posts/algaebloom-part1/>`_.
 * `Kaggle Datasets <https://www.kaggle.com/datasets>`_ - need to create a free Kaggle account
 * `Data is Plural <https://www.data-is-plural.com/>`_ - links to many interesting datasets
+* `Modern plain text computing <https://mptc.io/content/>`_ - this course has a list of practice data sources on the main page (check out tidy Tuesday)
 * `Data.gov <https://data.gov/>`_ - US government data
 * `Census.gov <https://www.census.gov/>`_ - US census data
 * `Bureau of Transportation Statistics <https://www.transtats.bts.gov/Homepage.asp>`_ - tons of transportation rel
