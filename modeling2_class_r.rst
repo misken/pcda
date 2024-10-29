@@ -42,7 +42,7 @@ In this first part we'll:
 
 You'll use **knn/kNN_notes.Rmd** and follow along with this screencast:
 
-* `SCREENCAST - Intro to classification with kNN <https://youtu.be/ceC8gV341tM>`_ (17:27)
+* `SCREENCAST - Intro to classification with kNN <https://youtu.be/M_uoT5OJIh8>`_ (22:25)
 
 Logistic regression
 ----------------------------------------------------------------------
