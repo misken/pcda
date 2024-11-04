@@ -75,6 +75,9 @@ you’ll find both “shell” versions of files that we’ll fill in in class
 as well as fully completed versions you can refer to later.</p>
 <p>As of 2022-09-11, all of the screencasts and files have been updated for R 4.x.
 See the note below related to the part on reading CSV files into R for more details.</p>
+<p>As of 2024-11-03, I have started replacing R Markdown documents with
+Quarto documents and updating the screencasts to reflect this change. Quarto
+is the future and it’s time to move to it.</p>
 <ul class="simple">
 <li><dl class="simple">
 <dt>Overview of R</dt><dd><ul>
@@ -94,47 +97,47 @@ See the note below related to the part on reading CSV files into R for more deta
 </dl>
 </li>
 <li><dl class="simple">
-<dt><strong>interactive1_notes_shell.Rmd</strong></dt><dd><ul>
+<dt><strong>interactive1_shell.qmd</strong></dt><dd><ul>
 <li><p>R Studio interface</p></li>
 <li><p>code chunks</p></li>
 <li><p>basics of markdown</p></li>
-<li><p><a class="reference external" href="https://youtu.be/TexMn6d2Mpw">SCREENCAST: Intro to R Studio and R Markdown</a> (16:15)</p></li>
-<li><p><a class="reference external" href="https://youtu.be/nU0Jgf6vyNg">SCREENCAST: Installing and loading packages</a> (8:01)</p></li>
-<li><p><a class="reference external" href="https://youtu.be/K7CGJyEucXI">SCREENCAST: Interactive computing with R</a> (19:54)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/EciNeDkWgyM">SCREENCAST: Intro to R Studio and R Markdown</a> (24:47)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/1MLCk7mNQeU">SCREENCAST: Installing and loading packages</a> (7:05)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/_6mxc2XKzjA">SCREENCAST: Interactive computing with R</a> (23:03)</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><strong>vectors_notes_shell.Rmd</strong></dt><dd><ul>
+<dt><strong>vectors_shell.qmd</strong></dt><dd><ul>
 <li><p>a fundamental data structure in R</p></li>
 <li><p>start to learn to think in vector terms</p></li>
-<li><p><a class="reference external" href="https://youtu.be/fIrwG3iSMGw">SCREENCAST: R Vectors</a> (21:21)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/AXKJjGkzZ5A">SCREENCAST: R Vectors</a> (21:17)</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><strong>dataframes_notes_shell.Rmd</strong></dt><dd><ul>
+<dt><strong>dataframes_shell.qmd</strong></dt><dd><ul>
 <li><p>the primary data structure in R</p></li>
 <li><p>like a table in a database or a spreadsheet</p></li>
-<li><p><a class="reference external" href="https://youtu.be/4Z9mYnP2hbM">SCREENCAST: R Dataframes</a> (18:15)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/tZgbtBsKP_0">SCREENCAST: R Dataframes</a> (10:27)</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><strong>readcsv_notes_shell.Rmd</strong></dt><dd><ul>
+<dt><strong>readcsv_shell.qmd</strong></dt><dd><ul>
 <li><p>getting data into R from text files</p></li>
 <li><p><strong>NOTE</strong>: The default for <code class="docutils literal notranslate"><span class="pre">stringsAsFactors</span></code> was changed to FALSE in R 4.0. Strings as factors as FALSE for the default is particularly nice when you are reading in some table that has string fields with a gagillion unique values that you would never use as a factor. You’ll see that in many vids we do some string to factor work with <code class="docutils literal notranslate"><span class="pre">as.factor()</span></code>. For me personally, I don’t have a strong opinion as to whether the default should be TRUE or FALSE, just that it’s important to understand what the default is if you are using <code class="docutils literal notranslate"><span class="pre">read.csv</span></code> or <code class="docutils literal notranslate"><span class="pre">read_csv</span></code> from the readr package. Then you just adapt on the fly and set it to whatever makes the most sense for the specific data set you are reading.</p></li>
 <li><p>also getting data from databases</p></li>
-<li><p><a class="reference external" href="https://youtu.be/uv_Yq48j_ts">SCREENCAST: Intro to Getting Data into R</a> (16:52)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/7XbwXjZ6W_U">SCREENCAST: Intro to Getting Data into R</a> (14:28)</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
-<p>This last Rmd files has some additional details on datetime conversions.</p>
+<p>This last Rmd file has some additional details on datetime conversions.</p>
 <ul>
 <li><p><strong>chardate_POSIXct_conversion.Rmd</strong></p>
 <blockquote>

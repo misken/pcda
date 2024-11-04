@@ -38,6 +38,10 @@ as well as fully completed versions you can refer to later.
 As of 2022-09-11, all of the screencasts and files have been updated for R 4.x.
 See the note below related to the part on reading CSV files into R for more details.
 
+As of 2024-11-03, I have started replacing R Markdown documents with
+Quarto documents and updating the screencasts to reflect this change. Quarto
+is the future and it's time to move to it.
+
 * Overview of R 
     - see pdf slides
     - `SCREENCAST: Overview of R <https://youtu.be/Oqt1O2W_jqY>`_ (17:11)
@@ -45,36 +49,34 @@ See the note below related to the part on reading CSV files into R for more deta
     - a basic R script
     - learn how to run commands.
     - `SCREENCAST: HelloWorld.R <https://youtu.be/9aoAiv72cCE>`_ (8:34)
-* **interactive1_notes_shell.Rmd**
+* **interactive1_shell.qmd**
     - R Studio interface
     - code chunks
     - basics of markdown
-    - `SCREENCAST: Intro to R Studio and R Markdown  <https://youtu.be/TexMn6d2Mpw>`_ (16:15)
-    - `SCREENCAST: Installing and loading packages <https://youtu.be/nU0Jgf6vyNg>`_ (8:01)
-    - `SCREENCAST: Interactive computing with R <https://youtu.be/K7CGJyEucXI>`_ (19:54)
-* **vectors_notes_shell.Rmd**
+    - `SCREENCAST: Intro to R Studio and R Markdown  <https://youtu.be/EciNeDkWgyM>`_ (24:47)
+    - `SCREENCAST: Installing and loading packages <https://youtu.be/1MLCk7mNQeU>`_ (7:05)
+    - `SCREENCAST: Interactive computing with R <https://youtu.be/_6mxc2XKzjA>`_ (23:03)
+* **vectors_shell.qmd**
     - a fundamental data structure in R
     - start to learn to think in vector terms
-    - `SCREENCAST: R Vectors <https://youtu.be/fIrwG3iSMGw>`_ (21:21)
-* **dataframes_notes_shell.Rmd**
+    - `SCREENCAST: R Vectors <https://youtu.be/AXKJjGkzZ5A>`_ (21:17)
+* **dataframes_shell.qmd**
     - the primary data structure in R
     - like a table in a database or a spreadsheet
-    - `SCREENCAST: R Dataframes <https://youtu.be/4Z9mYnP2hbM>`_ (18:15)
-* **readcsv_notes_shell.Rmd**
+    - `SCREENCAST: R Dataframes <https://youtu.be/tZgbtBsKP_0>`_ (10:27)
+* **readcsv_shell.qmd**
     - getting data into R from text files
     - **NOTE**: The default for ``stringsAsFactors`` was changed to FALSE in R 4.0. Strings as factors as FALSE for the default is particularly nice when you are reading in some table that has string fields with a gagillion unique values that you would never use as a factor. You'll see that in many vids we do some string to factor work with ``as.factor()``. For me personally, I don't have a strong opinion as to whether the default should be TRUE or FALSE, just that it's important to understand what the default is if you are using ``read.csv`` or ``read_csv`` from the readr package. Then you just adapt on the fly and set it to whatever makes the most sense for the specific data set you are reading. 
     - also getting data from databases
-    - `SCREENCAST: Intro to Getting Data into R <https://youtu.be/uv_Yq48j_ts>`_ (16:52)
+    - `SCREENCAST: Intro to Getting Data into R <https://youtu.be/7XbwXjZ6W_U>`_ (14:28)
 	
 	
-This last Rmd files has some additional details on datetime conversions.
+This last Rmd file has some additional details on datetime conversions.
  
 * **chardate_POSIXct_conversion.Rmd**
 
     - dates and times can be tricky
     - converting between character and datetime data types
-
-
 
 
 Additional Resources
