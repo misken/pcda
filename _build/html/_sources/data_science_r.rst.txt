@@ -15,6 +15,7 @@ Intro to data analytics with R
    git_intro
    data_wrangling_r
    modeling1_mlr_r
+   modeling1_mlr_r_tidymodels
    modeling2_class_r
    
 

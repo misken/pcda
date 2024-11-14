@@ -11,7 +11,7 @@ Readings
 ========
 
 * PDSwR - Ch 5, 7.1
-* RforE - Ch 19 and 21
+* [Tidy Modeling with R](https://www.tmwr.org/) - Ch 4-11
 * ISLR - Ch 1-3 and 4.1-4.3
 
 `An Introduction to Statistical Learning with applications in R <https://statlearning.com/>`_
