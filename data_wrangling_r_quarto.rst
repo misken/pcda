@@ -56,8 +56,9 @@ of functions as well as a tool called plyr.
 
 * File **GroupByAnalysis_oldschool_notes.Rmd** (OPTIONAL)
 
-Now let's see some alternatives to ``read.table`` and ``read.csv``, a bit on tibbles, RData and RDS files, built in datasets. See **GettingDataIntoR_notes.Rmd**.
+Now let's see some alternatives to ``read.table`` and ``read.csv``, a bit on tibbles, RData and RDS files, built in datasets. 
 
+* File **data_wrangling_ingesting.qmd**
 * `SCREENCAST: Getting data into R <https://coming_soon>`_ (12:54)
 
 Let's learn about combining data by rows and columns as well as doing SQL style joins. 
