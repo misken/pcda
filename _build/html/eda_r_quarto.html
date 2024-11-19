@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>EDA with R (UNDER CONSTRUCTION) &#8212; mis5470  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Version control with git and GitHub" href="git_intro.html" />
+    <link rel="prev" title="EDA with R" href="eda_r.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="git_intro.html" title="Version control with git and GitHub"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="eda_r.html" title="EDA with R"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_r.html" accesskey="U">Intro to data analytics with R</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">EDA with R (UNDER CONSTRUCTION)</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="eda-with-r-under-construction">
+<h1>EDA with R (UNDER CONSTRUCTION)<a class="headerlink" href="#eda-with-r-under-construction" title="Link to this heading">¶</a></h1>
+<p><strong>NOTE: This is new material for Winter 2025</strong></p>
+<section id="intro-and-objectives">
+<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
+<p>We will begin to do exploratory data analysis in R. After completing
+the activities in this module, you should be able to explore a
+dataset using:</p>
+<ul class="simple">
+<li><p>descriptive statistics,</p></li>
+<li><p>simple R scripts including writing your own functions,</p></li>
+<li><p>basic (and not so basic) plots with ggplot2.</p></li>
+</ul>
+<p>We are going to explore a dataset related to New York City condo evaluations for fiscal year 2011-2012. It was obtained
+from the NYC Open Data initiative - <a class="reference external" href="https://data.cityofnewyork.us/">https://data.cityofnewyork.us/</a>.</p>
+</section>
+<section id="readings">
+<h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>RforE - Chapters 6, 7, 8</p></li>
+<li><p>r4ds - Chapters 1-2, 10-12</p></li>
+<li><p>PDSwR - Chapters 3, 4</p></li>
+</ul>
+</section>
+<section id="downloads-and-other-resources">
+<h2>Downloads and other resources<a class="headerlink" href="#downloads-and-other-resources" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://drive.google.com/file/d/1TpCepJFGaCDIyhSxF017VezO2xCueH8n/view?usp=sharing">Downloads_EDA1withR.zip</a></p></li>
+</ul>
+<p>Other Resources:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.jaredlander.com/data/">Data files for the “R for Everyone” text</a></p></li>
+<li><p><a class="reference external" href="https://github.com/rstudio/cheatsheets/blob/master/data-visualization-2.1.pdf">ggplot2 cheat sheet</a> (R Studio)</p></li>
+<li><p><a class="reference external" href="https://ggplot2-book.org/">Hadley Wickham is working on a new ggplot2 book</a></p></li>
+</ul>
+</section>
+<section id="activities">
+<h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
+<p>We will work through two tutorials on EDA (with a short detour on
+creating user defined functions in R)</p>
+<section id="summary-statistics">
+<h3>Summary statistics<a class="headerlink" href="#summary-statistics" title="Link to this heading">¶</a></h3>
+<p>R makes it easy to compute summary statistics. We will also see how to
+create R Projects to help you organize your R work.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>File: <strong>EDA1a_summarystats_shell.qmd</strong></p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Overview of EDA and creating R Project</a> (7:17)</p></li>
+</ul>
+<ul class="simple">
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Inital exploration of housing dataframe</a> (16:41)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Modify dataframe, summary statistics, save as binary file</a> (25:13)</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="writing-your-own-functions">
+<h3>Writing your own functions<a class="headerlink" href="#writing-your-own-functions" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>File: <strong>summarystats_4470.R</strong></p></li>
+<li><p><a class="reference external" href="https://youtu.be/0huJzAyDi4c">SCREENCAST: Create your own R function</a> (12:40)</p></li>
+</ul>
+</section>
+<section id="plots-and-graphs">
+<h3>Plots and graphs<a class="headerlink" href="#plots-and-graphs" title="Link to this heading">¶</a></h3>
+<p>Now we are going to see an area where R really shines.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>File: <strong>EDA1b_basicplots_shell.qmd</strong></p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Intro to data visualization</a> (2:41)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Plotting using R’s base plot system</a> (8:53)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Intro to ggplot2</a> (2:55)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: The Grammar of Graphics underlying ggplot2</a> (7:24)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Starting with qplot</a> (2:52)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Using the ggplot() function</a> (7:07)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Histograms</a> (5:29)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Boxplots and violin plots, Faceting and reusing plot objects</a> (5:40)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Scatter plots</a> (2:33)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Themes</a> (5:40)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Density plots and other histogram alternatives</a> (8:45)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Bar charts</a> (6:13)</p></li>
+<li><p><a class="reference external" href="https://coming_soon">SCREENCAST: Correlation plots and Geeky fun with xkcd</a> (6:28)</p></li>
+</ul>
+</div></blockquote>
+</section>
+</section>
+<section id="explore-optional">
+<h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/ojedatony1616/exploratory_transformation/blob/master/transformation.pdf">A framework for exploratory data analysis</a> - As you browse this, there’s a “More Pages” button at the bottom. You can also download the pdf from the GitHub site.</p></li>
+</ul>
+<section id="data-visualization">
+<h3>Data visualization<a class="headerlink" href="#data-visualization" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>There’s no doubt that ggplot is awesome, but <a class="reference external" href="https://github.com/karoliskoncevicius/tutorial_r_introduction/blob/main/baseplotting.md">check out what can be done if you have a good grasp of base plotting in R</a>. When I read this, it felt a bit like matplotlib, the venerable Python based plotting package.</p></li>
+<li><p><a class="reference external" href="https://r-graph-gallery.com/">R Graph Catalog</a> Plot demos and code</p></li>
+<li><p><a class="reference external" href="https://www.rstudio.com/resources/cheatsheets/#ggplot2">Data visualization Cheet Sheet from R Studio</a></p></li>
+<li><p><a class="reference external" href="https://xkcd.com/1798/">Box plot comic</a> - You can always count on xkcd.</p></li>
+<li><p><a class="reference external" href="http://www.sba.oakland.edu/faculty/isken/courses/ba/data_viz.html">Some data visualization resources from my MIS 5460: Business Analytics class</a></p></li>
+<li><p><a class="reference external" href="https://nycdatascience.com/blog/student-works/r-visualization/nyc-citi-bike-migration-visulization/">R Shiny app for visualizing NYC bike share data</a>- Lots of interesting logistical challenges with bike share programs. EDA plays a role in gaining insight to system dynamics.</p></li>
+</ul>
+</section>
+<section id="r-markdown">
+<h3>R Markdown<a class="headerlink" href="#r-markdown" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Now that you know some basic R Markdown, you might want to dig into its capabilities a little further. This <a class="reference external" href="http://rmarkdown.rstudio.com/">overview provided by the folks at R Studio</a> is a good place to start. In addition, Ch 27-28 of RforE covers R Markdown, knitr, and LaTex.</p></li>
+<li><p><a class="reference external" href="https://daringfireball.net/projects/markdown/syntax">Daring Fireball: Markown Syntax site</a> - This is John Gruber’s site - he developed Markdown.</p></li>
+<li><p><a class="reference external" href="http://www.zevross.com/blog/2017/06/19/tips-and-tricks-for-working-with-images-and-figures-in-r-markdown-documents/">Tips and tricks for working with images and figures in R Markdown documents</a> - Very comprehensive post on the ins and outs of working with both external images as well as R generated images within R Markdown documents.</p></li>
+</ul>
+</section>
+<section id="percentiles">
+<h3>Percentiles<a class="headerlink" href="#percentiles" title="Link to this heading">¶</a></h3>
+<p>It’s easy to get enamored with averages. They don’t tell the whole story. Look at percentiles, too.</p>
+<ul class="simple">
+<li><p>Examples of why percentiles are important for performance monitoring by <a class="reference external" href="https://www.dynatrace.com/news/blog/why-averages-suck-and-percentiles-are-great/">Dynatrace</a>, <a class="reference external" href="https://www.elastic.co/blog/averages-can-dangerous-use-percentile">Elastic</a>, <a class="reference external" href="https://blog.appsignal.com/2018/12/04/dont-be-mean-statistical-means-and-percentiles-101.html">AppSignal</a> and <a class="reference external" href="https://www.optimizely.com/insights/blog/why-cdn-balancing/">Optimizely</a>.</p></li>
+<li><p><a class="reference external" href="https://blog.timescale.com/blog/how-percentile-approximation-works-and-why-its-more-useful-than-averages/">Percentiles in PostgreSQL</a> - this SQL flavor has implemented some nice percentile and <a class="reference external" href="https://blog.timescale.com/blog/what-time-weighted-averages-are-and-why-you-should-care/">time weighted stats functions</a>, including approximate percentiles.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">EDA with R (UNDER CONSTRUCTION)</a><ul>
+<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
+<li><a class="reference internal" href="#readings">Readings</a></li>
+<li><a class="reference internal" href="#downloads-and-other-resources">Downloads and other resources</a></li>
+<li><a class="reference internal" href="#activities">Activities</a><ul>
+<li><a class="reference internal" href="#summary-statistics">Summary statistics</a></li>
+<li><a class="reference internal" href="#writing-your-own-functions">Writing your own functions</a></li>
+<li><a class="reference internal" href="#plots-and-graphs">Plots and graphs</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
+<li><a class="reference internal" href="#data-visualization">Data visualization</a></li>
+<li><a class="reference internal" href="#r-markdown">R Markdown</a></li>
+<li><a class="reference internal" href="#percentiles">Percentiles</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="eda_r.html"
+                          title="previous chapter">EDA with R</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="git_intro.html"
+                          title="next chapter">Version control with git and GitHub</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/eda_r_quarto.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="git_intro.html" title="Version control with git and GitHub"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="eda_r.html" title="EDA with R"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="data_science_r.html" >Intro to data analytics with R</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">EDA with R (UNDER CONSTRUCTION)</a></li> 
+      </ul>
+    </div>
+		 <p> &#169; Copyright 2021-2023, Mark Isken.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.0.2.</p>
+         <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p> 
+
+  </body>
+</html>

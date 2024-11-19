@@ -1,9 +1,9 @@
-***********************************************
-Modeling 2: Intro to classifiers with R
-***********************************************
+***********************************************************
+Modeling 2: Intro to classifiers with R(UNDER CONSTRUCTION)
+***********************************************************
 
-Intro and Objectives
-====================
+**NOTE: This is new material for Winter 2025**
+
 
 In class we'll spend some time learning about using logistic regression for binary classification problems - i.e. when our response variable has two possible outcomes (e.g. customer defaults on loan or does not default on loan). We'll explore other simple classification approaches such as k-Nearest Neighbors and basic classification trees. Trees, forests, and their many variants have proved to be some of the most robust and effective techniques for classification problems.
 
@@ -12,7 +12,7 @@ This module will take us 1.5 weeks.
 
    
 Readings
-========
+---------
 
 * PDSwR - Ch 6 (kNN), 7.2 (logistic regression), 6.3 & 9.1 (trees and forests)
 * ISLR - Sec 3.5 (kNN), Sec 4.1-4.3 (Classification, logistic regression), Ch 8 (trees)
@@ -20,19 +20,19 @@ Readings
 
 
 Downloads and other resources
-=============================
+------------------------------
 
 * `Downloads_StatModel2.zip <https://drive.google.com/file/d/1L3LAV7Hqr9kDriqju3_JEGdny_GZm7xH/view?usp=sharing>`_
 
 Activities 
-================================
+-------------
 
 We will work through a number of Quarto documents as we 
 learn to build basic classifiers using R. Everything is available
 in the Downloads file above.
 
 Intro to classification problems and the k-Nearest Neighbor technique
-----------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In this first part we'll:
 
@@ -45,7 +45,7 @@ You'll use **knn.qmd** and follow along with this screencast:
 * `SCREENCAST - Intro to classification with kNN <https://coming_soon>`_ ()
 
 Logistic regression
-----------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^
 
 Logistic regression is a variant of multiple linear regression in which the response variable is binary (two possible outcomes). It
 is a commonly used technique for binary classification problems. It's definitely more "mathy" than
@@ -80,7 +80,7 @@ regression models.
 * `SCREENCAST - ROC curves <https://coming_soon>`_ (11:24)
 
 Decision trees
----------------
+^^^^^^^^^^^^^^^
 
 Now on to learning about decision trees and variants such as random forests. 
 You'll use **trees.qmd** with these screencasts.
@@ -102,7 +102,7 @@ Now we'll look at some more advanced tree based models.
 
 
 Putting it all together - the Kaggle Titanic challenge (OPTIONAL) 
-------------------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This is the famous Kaggle practice competition that so many people used
 as a first introduction to predictive modeling and to Kaggle. A number of very nice
@@ -120,7 +120,7 @@ get 100% predictive accuracy.
 
 
 Explore (OPTIONAL)
-==================
+-------------------
 
 * StatQuest YouTube Channel - Josh Starmer
     - `StatQuest: Confusion matrix <https://www.youtube.com/watch?v=Kdsp6soqA7o>`_

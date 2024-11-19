@@ -2,9 +2,6 @@
 Intro to R and R Studio
 ***********************************
 
-Intro and Objectives
-====================
-
 In this module we will:
 
 * get an overview of R and R Studio, 
@@ -14,73 +11,102 @@ In this module we will:
 * write our own "tutorials" or "learning guides" using the magic of R Markdown documents along with the knitr package. 
    
 Readings
-========
-
+--------
 * R for Everyone (RfE) - Chapters 1-6
 * Practical Data Science with R (PDSwR) - Chapter 2
 * See the `Additional Resources`_ section below, especially the stuff on asking good questions
 
-
 Downloads
-=========
-	
+---------	
 * `Download_IntroToR.zip <https://drive.google.com/file/d/1YnPqbSFNDYcavLQlrm8KLzi72FEcmLCp/view?usp=sharing>`_
 * `R Markdown cheat sheet <http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf>`_ (R Studio)
 
 Activities
-================================
+---------------
 
 We will work through a series of R scripts and R Markdown documents as
 we start to learn the basics of R and R Studio. In the Downloads file
 you'll find both "shell" versions of files that we'll fill in in class
 as well as fully completed versions you can refer to later.
 
-As of 2022-09-11, all of the screencasts and files have been updated for R 4.x.
-See the note below related to the part on reading CSV files into R for more details.
+.. note::
 
-As of 2024-11-03, I have started replacing R Markdown documents with
-Quarto documents and updating the screencasts to reflect this change. Quarto
-is the future and it's time to move to it.
+    As of 2024-11-03, I have started replacing R Markdown documents with
+    Quarto documents and updating the screencasts to reflect this change. Quarto
+    is the future and it's time to move to it.
 
-* Overview of R 
-    - see pdf slides
+Overview of R 
+^^^^^^^^^^^^^^
+I'll use the slides for structure.
+
     - `SCREENCAST: Overview of R <https://youtu.be/Oqt1O2W_jqY>`_ (17:11)
-* **HelloWorld.R** 
-    - a basic R script
-    - learn how to run commands.
-    - `SCREENCAST: HelloWorld.R <https://youtu.be/9aoAiv72cCE>`_ (8:34)
-* **interactive1_shell.qmd**
+
+The obligatory hello world example
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We'll see a basic R script and learn how to run commands from it.
+	
+    * File: **HelloWorld.R** 
+    * `SCREENCAST: HelloWorld.R <https://youtu.be/9aoAiv72cCE>`_ (8:34)
+
+
+R Studio and Quarto
+^^^^^^^^^^^^^^^^^^^^
+
+Time to get familiar with working in R Studio with Quarto markdown documents. We'll go over:
+
     - R Studio interface
     - code chunks
     - basics of markdown
+
+We'll use:
+	
+    - File: **interactive1_shell.qmd**
     - `SCREENCAST: Intro to R Studio and R Markdown  <https://youtu.be/EciNeDkWgyM>`_ (24:47)
     - `SCREENCAST: Installing and loading packages <https://youtu.be/1MLCk7mNQeU>`_ (7:05)
     - `SCREENCAST: Interactive computing with R <https://youtu.be/_6mxc2XKzjA>`_ (23:03)
-* **vectors_shell.qmd**
-    - a fundamental data structure in R
-    - start to learn to think in vector terms
-    - `SCREENCAST: R Vectors <https://youtu.be/AXKJjGkzZ5A>`_ (21:17)
-* **dataframes_shell.qmd**
-    - the primary data structure in R
-    - like a table in a database or a spreadsheet
-    - `SCREENCAST: R Dataframes <https://youtu.be/tZgbtBsKP_0>`_ (10:27)
-* **readcsv_shell.qmd**
-    - getting data into R from text files
-    - **NOTE**: The default for ``stringsAsFactors`` was changed to FALSE in R 4.0. Strings as factors as FALSE for the default is particularly nice when you are reading in some table that has string fields with a gagillion unique values that you would never use as a factor. You'll see that in many vids we do some string to factor work with ``as.factor()``. For me personally, I don't have a strong opinion as to whether the default should be TRUE or FALSE, just that it's important to understand what the default is if you are using ``read.csv`` or ``read_csv`` from the readr package. Then you just adapt on the fly and set it to whatever makes the most sense for the specific data set you are reading. 
-    - also getting data from databases
-    - `SCREENCAST: Intro to Getting Data into R <https://youtu.be/7XbwXjZ6W_U>`_ (14:28)
 	
+Vectors
+^^^^^^^^
+Vectors are a fundamental data structure in R. We need to start
+thinking in vectors.
+
+    * File: **vectors_shell.qmd**
+    * `SCREENCAST: R Vectors <https://youtu.be/AXKJjGkzZ5A>`_ (21:17)
+	
+Dataframes
+^^^^^^^^^^^
+Dataframes are the primary data structure in R. You can think of them kind of
+like a table in a database or a spreadsheet.
+
+    * File: **dataframes_shell.qmd**
+    * `SCREENCAST: R Dataframes <https://youtu.be/tZgbtBsKP_0>`_ (10:27)
+	
+Reading text files into R dataframes
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+This is a fundamental R task and we'll get our first look at it here. We will
+also see an example of bringing data in R from a database.
+
+    * File: **readcsv_shell.qmd**
+    * `SCREENCAST: Intro to Getting Data into R <https://youtu.be/7XbwXjZ6W_U>`_ (14:28)
+	
+    .. note::
+	The default for ``stringsAsFactors`` was changed to FALSE in R 4.0. Strings as factors as FALSE for the default is particularly nice when you are reading in some table that has string fields with a gagillion unique values that you would never use as a factor. You'll see that in many vids we do some string to factor work with ``as.factor()``. For me personally, I don't have a strong opinion as to whether the default should be TRUE or FALSE, just that it's important to understand what the default is if you are using ``read.csv`` or ``read_csv`` from the readr package. Then you just adapt on the fly and set it to whatever makes the most sense for the specific data set you are reading. 
+
+
+Datetime conversions
+^^^^^^^^^^^^^^^^^^^^^	
 	
 This last Rmd file has some additional details on datetime conversions.
- 
-* **chardate_POSIXct_conversion.Rmd**
+Dates and times can be tricky and we'll learn about converting between character and datetime data types
 
-    - dates and times can be tricky
-    - converting between character and datetime data types
+    * File: **chardate_POSIXct_conversion.Rmd**
+
+
 
 
 Additional Resources
-====================
+---------------------
 
 `Jenny Bryan <https://jennybryan.org/about/>`_ developed and taught R related courses at
 the University of British Columbia. In particular, she was the driving
@@ -91,7 +117,7 @@ effectively using R to do analysis. It also includes invaluable practical R rela
 is rarely found all in one place. Highly recommended.
 
 Asking good questions
-----------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 One particularly helpful page Jenny Bryan created in the old 545 course was
 one on "How to get unstuck". Unfortunately, while the new course website
@@ -107,7 +133,7 @@ is not for the easily offended, but as Jenny says, they "speak truth".
 * `How to Ask Questions the Smart Way <http://www.catb.org/~esr/faqs/smart-questions.html>`_ 
 
 Reproducible examples (reprex)
-------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 A big part of asking good questions is creating something known as a minimal reproducible example, or *reprex* for short.
 When people post questions to places like StackOverflow or a GitHub Issue they are **strongly** encouraged
@@ -119,13 +145,13 @@ to create a reprex that can be pasted from the clipboard into a question or foru
 * `Ask Better Code Questions (and Get Better Answers) With Reprex <https://data.library.virginia.edu/ask-better-code-questions-and-get-better-answers-with-reprex/>`_
 
 DataCamp
---------
+^^^^^^^^^^
 
 There's an `Intro to R course at DataCamp <https://www.datacamp.com/courses/free-introduction-to-r>`_ that covers much of what we do in
 this first session. There are `many R courses <https://www.datacamp.com/search?q=r>`_ available on DataCamp.
 
 Explore
-=======
+--------
 
 * `R-bloggers <http://www.r-bloggers.com/>`_ - Aggregation site for R related blogs
 * `Simply Statistics <http://simplystatistics.org/>`_ - Roger Peng and two other biostats guys from Johns Hopkins blog on data science and R. Peng has a super popular online R course through Coursera and these folks have launched a several course series on data science in R on Coursera.

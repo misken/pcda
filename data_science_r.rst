@@ -12,11 +12,14 @@ Intro to data analytics with R
    
    r_intro
    eda_r
+   eda_r_quarto
    git_intro
    data_wrangling_r
+   data_wrangling_r_quarto
    modeling1_mlr_r
    modeling1_mlr_r_tidymodels
    modeling2_class_r
+   modeling2_class_r_tidymodels
    
 
 * :ref:`search`
