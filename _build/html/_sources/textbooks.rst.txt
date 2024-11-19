@@ -5,7 +5,7 @@ Traditional textbooks do not exist for a class like this. Instead we'll be using
 
 At the bottom of this page I'll list the books I've used at some point in the past - but you do **NOT** need them.
 
-Required texts for Fall 2024 
+Required texts for Winter 2025 
 ---------------------------------------------------
 
 Several of the texts have free versions available online. All these books also have official websites from which you can buy print, PDF, or eBooks. Of course, you can also find them at numerous places on the web. I've listed approximate pricing from checking a few of the online booksellers.
@@ -15,6 +15,13 @@ Several of the texts have free versions available online. All these books also h
 * https://web.stanford.edu/~hastie/ISLRv2_website.pdf
 
 This is a **FREE** text that does a great job of explaining the main statistical learning techniques at an accessible mathematical level. You can download a free PDF from the link above. They've even created a whole set of video lectures accompanying the book - https://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/.
+
+**ISLR Tidymodels lab** (Emil Hvitfeldt )
+
+* https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/
+
+This is a new addition to the ISLR family. It's a terrific online text that
+translates all of the examples in ISLR to use `tidymodels <https://www.tidymodels.org/>`_.
 
 **R for Everyone (2nd Edition)** (Jared Lander) (RforE)
 

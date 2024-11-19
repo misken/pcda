@@ -41,8 +41,6 @@
             
   <section id="intro-to-r-and-r-studio">
 <h1>Intro to R and R Studio<a class="headerlink" href="#intro-to-r-and-r-studio" title="Link to this heading">¶</a></h1>
-<section id="intro-and-objectives">
-<h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
 <p>In this module we will:</p>
 <ul class="simple">
 <li><p>get an overview of R and R Studio,</p></li>
@@ -51,7 +49,6 @@
 <li><p>learn how to create and use basic R scripts to document a series of analysis steps,</p></li>
 <li><p>write our own “tutorials” or “learning guides” using the magic of R Markdown documents along with the knitr package.</p></li>
 </ul>
-</section>
 <section id="readings">
 <h2>Readings<a class="headerlink" href="#readings" title="Link to this heading">¶</a></h2>
 <ul class="simple">
@@ -73,84 +70,96 @@
 we start to learn the basics of R and R Studio. In the Downloads file
 you’ll find both “shell” versions of files that we’ll fill in in class
 as well as fully completed versions you can refer to later.</p>
-<p>As of 2022-09-11, all of the screencasts and files have been updated for R 4.x.
-See the note below related to the part on reading CSV files into R for more details.</p>
 <p>As of 2024-11-03, I have started replacing R Markdown documents with
 Quarto documents and updating the screencasts to reflect this change. Quarto
 is the future and it’s time to move to it.</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Overview of R</dt><dd><ul>
-<li><p>see pdf slides</p></li>
+<section id="overview-of-r">
+<h3>Overview of R<a class="headerlink" href="#overview-of-r" title="Link to this heading">¶</a></h3>
+<p>I’ll use the slides for structure.</p>
+<blockquote>
+<div><ul class="simple">
 <li><p><a class="reference external" href="https://youtu.be/Oqt1O2W_jqY">SCREENCAST: Overview of R</a> (17:11)</p></li>
 </ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>HelloWorld.R</strong></dt><dd><ul>
-<li><p>a basic R script</p></li>
-<li><p>learn how to run commands.</p></li>
+</div></blockquote>
+</section>
+<section id="the-obligatory-hello-world-example">
+<h3>The obligatory hello world example<a class="headerlink" href="#the-obligatory-hello-world-example" title="Link to this heading">¶</a></h3>
+<p>We’ll see a basic R script and learn how to run commands from it.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>File: <strong>HelloWorld.R</strong></p></li>
 <li><p><a class="reference external" href="https://youtu.be/9aoAiv72cCE">SCREENCAST: HelloWorld.R</a> (8:34)</p></li>
 </ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>interactive1_shell.qmd</strong></dt><dd><ul>
+</div></blockquote>
+</section>
+<section id="r-studio-and-quarto">
+<h3>R Studio and Quarto<a class="headerlink" href="#r-studio-and-quarto" title="Link to this heading">¶</a></h3>
+<p>Time to get familiar with working in R Studio with Quarto markdown documents. We’ll go over:</p>
+<blockquote>
+<div><ul class="simple">
 <li><p>R Studio interface</p></li>
 <li><p>code chunks</p></li>
 <li><p>basics of markdown</p></li>
+</ul>
+</div></blockquote>
+<p>We’ll use:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>File: <strong>interactive1_shell.qmd</strong></p></li>
 <li><p><a class="reference external" href="https://youtu.be/EciNeDkWgyM">SCREENCAST: Intro to R Studio and R Markdown</a> (24:47)</p></li>
 <li><p><a class="reference external" href="https://youtu.be/1MLCk7mNQeU">SCREENCAST: Installing and loading packages</a> (7:05)</p></li>
 <li><p><a class="reference external" href="https://youtu.be/_6mxc2XKzjA">SCREENCAST: Interactive computing with R</a> (23:03)</p></li>
 </ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>vectors_shell.qmd</strong></dt><dd><ul>
-<li><p>a fundamental data structure in R</p></li>
-<li><p>start to learn to think in vector terms</p></li>
-<li><p><a class="reference external" href="https://youtu.be/AXKJjGkzZ5A">SCREENCAST: R Vectors</a> (21:17)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>dataframes_shell.qmd</strong></dt><dd><ul>
-<li><p>the primary data structure in R</p></li>
-<li><p>like a table in a database or a spreadsheet</p></li>
-<li><p><a class="reference external" href="https://youtu.be/tZgbtBsKP_0">SCREENCAST: R Dataframes</a> (10:27)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><dl class="simple">
-<dt><strong>readcsv_shell.qmd</strong></dt><dd><ul>
-<li><p>getting data into R from text files</p></li>
-<li><p><strong>NOTE</strong>: The default for <code class="docutils literal notranslate"><span class="pre">stringsAsFactors</span></code> was changed to FALSE in R 4.0. Strings as factors as FALSE for the default is particularly nice when you are reading in some table that has string fields with a gagillion unique values that you would never use as a factor. You’ll see that in many vids we do some string to factor work with <code class="docutils literal notranslate"><span class="pre">as.factor()</span></code>. For me personally, I don’t have a strong opinion as to whether the default should be TRUE or FALSE, just that it’s important to understand what the default is if you are using <code class="docutils literal notranslate"><span class="pre">read.csv</span></code> or <code class="docutils literal notranslate"><span class="pre">read_csv</span></code> from the readr package. Then you just adapt on the fly and set it to whatever makes the most sense for the specific data set you are reading.</p></li>
-<li><p>also getting data from databases</p></li>
-<li><p><a class="reference external" href="https://youtu.be/7XbwXjZ6W_U">SCREENCAST: Intro to Getting Data into R</a> (14:28)</p></li>
-</ul>
-</dd>
-</dl>
-</li>
-</ul>
-<p>This last Rmd file has some additional details on datetime conversions.</p>
-<ul>
-<li><p><strong>chardate_POSIXct_conversion.Rmd</strong></p>
+</div></blockquote>
+</section>
+<section id="vectors">
+<h3>Vectors<a class="headerlink" href="#vectors" title="Link to this heading">¶</a></h3>
+<p>Vectors are a fundamental data structure in R. We need to start
+thinking in vectors.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>dates and times can be tricky</p></li>
-<li><p>converting between character and datetime data types</p></li>
+<li><p>File: <strong>vectors_shell.qmd</strong></p></li>
+<li><p><a class="reference external" href="https://youtu.be/AXKJjGkzZ5A">SCREENCAST: R Vectors</a> (21:17)</p></li>
 </ul>
 </div></blockquote>
-</li>
-</ul>
 </section>
+<section id="dataframes">
+<h3>Dataframes<a class="headerlink" href="#dataframes" title="Link to this heading">¶</a></h3>
+<p>Dataframes are the primary data structure in R. You can think of them kind of
+like a table in a database or a spreadsheet.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>File: <strong>dataframes_shell.qmd</strong></p></li>
+<li><p><a class="reference external" href="https://youtu.be/tZgbtBsKP_0">SCREENCAST: R Dataframes</a> (10:27)</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="reading-text-files-into-r-dataframes">
+<h3>Reading text files into R dataframes<a class="headerlink" href="#reading-text-files-into-r-dataframes" title="Link to this heading">¶</a></h3>
+<p>This is a fundamental R task and we’ll get our first look at it here. We will
+also see an example of bringing data in R from a database.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>File: <strong>readcsv_shell.qmd</strong></p></li>
+<li><p><a class="reference external" href="https://youtu.be/7XbwXjZ6W_U">SCREENCAST: Intro to Getting Data into R</a> (14:28)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The default for <code class="docutils literal notranslate"><span class="pre">stringsAsFactors</span></code> was changed to FALSE in R 4.0. Strings as factors as FALSE for the default is particularly nice when you are reading in some table that has string fields with a gagillion unique values that you would never use as a factor. You’ll see that in many vids we do some string to factor work with <code class="docutils literal notranslate"><span class="pre">as.factor()</span></code>. For me personally, I don’t have a strong opinion as to whether the default should be TRUE or FALSE, just that it’s important to understand what the default is if you are using <code class="docutils literal notranslate"><span class="pre">read.csv</span></code> or <code class="docutils literal notranslate"><span class="pre">read_csv</span></code> from the readr package. Then you just adapt on the fly and set it to whatever makes the most sense for the specific data set you are reading.</p>
+</div>
+</div></blockquote>
+</section>
+<section id="datetime-conversions">
+<h3>Datetime conversions<a class="headerlink" href="#datetime-conversions" title="Link to this heading">¶</a></h3>
+<p>This last Rmd file has some additional details on datetime conversions.
+Dates and times can be tricky and we’ll learn about converting between character and datetime data types</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>File: <strong>chardate_POSIXct_conversion.Rmd</strong></p></li>
+</ul>
+</div></blockquote>
 <section id="additional-resources">
-<h2>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">¶</a></h2>
+<h4>Additional Resources<a class="headerlink" href="#additional-resources" title="Link to this heading">¶</a></h4>
 <p><a class="reference external" href="https://jennybryan.org/about/">Jenny Bryan</a> developed and taught R related courses at
 the University of British Columbia. In particular, she was the driving
 force behind a course called <a class="reference external" href="https://stat545.com/">STAT 545</a> and an <a class="reference external" href="https://stat545.com/index.html">online textbook</a>. Now she works at Posit on Hadley Wickham’s team, but her course lives on. Many of the resources
@@ -158,8 +167,11 @@ she created for STAT 545 are still available and will continue to
 evolve. I highly recommend them as they really get at the heart of
 effectively using R to do analysis. It also includes invaluable practical R related information that
 is rarely found all in one place. Highly recommended.</p>
+</section>
+</section>
+</section>
 <section id="asking-good-questions">
-<h3>Asking good questions<a class="headerlink" href="#asking-good-questions" title="Link to this heading">¶</a></h3>
+<h2>Asking good questions<a class="headerlink" href="#asking-good-questions" title="Link to this heading">¶</a></h2>
 <p>One particularly helpful page Jenny Bryan created in the old 545 course was
 one on “How to get unstuck”. Unfortunately, while the new course website
 includes a link to it, the link is broken. Using the magical wayback machine
@@ -175,7 +187,7 @@ is not for the easily offended, but as Jenny says, they “speak truth”.</p>
 </ul>
 </section>
 <section id="reproducible-examples-reprex">
-<h3>Reproducible examples (reprex)<a class="headerlink" href="#reproducible-examples-reprex" title="Link to this heading">¶</a></h3>
+<h2>Reproducible examples (reprex)<a class="headerlink" href="#reproducible-examples-reprex" title="Link to this heading">¶</a></h2>
 <p>A big part of asking good questions is creating something known as a minimal reproducible example, or <em>reprex</em> for short.
 When people post questions to places like StackOverflow or a GitHub Issue they are <strong>strongly</strong> encouraged
 (in SO it’s almost a must) to include a reprex. There’s a very good <a class="reference external" href="https://community.rstudio.com/t/faq-whats-a-reproducible-example-reprex-and-how-do-i-create-one/5219">FAQ entry in the R Studio
@@ -187,13 +199,9 @@ to create a reprex that can be pasted from the clipboard into a question or foru
 </ul>
 </section>
 <section id="datacamp">
-<h3>DataCamp<a class="headerlink" href="#datacamp" title="Link to this heading">¶</a></h3>
+<h2>DataCamp<a class="headerlink" href="#datacamp" title="Link to this heading">¶</a></h2>
 <p>There’s an <a class="reference external" href="https://www.datacamp.com/courses/free-introduction-to-r">Intro to R course at DataCamp</a> that covers much of what we do in
 this first session. There are <a class="reference external" href="https://www.datacamp.com/search?q=r">many R courses</a> available on DataCamp.</p>
-</section>
-</section>
-<section id="explore">
-<h2>Explore<a class="headerlink" href="#explore" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://www.r-bloggers.com/">R-bloggers</a> - Aggregation site for R related blogs</p></li>
 <li><p><a class="reference external" href="http://simplystatistics.org/">Simply Statistics</a> - Roger Peng and two other biostats guys from Johns Hopkins blog on data science and R. Peng has a super popular online R course through Coursera and these folks have launched a several course series on data science in R on Coursera.</p></li>
@@ -214,17 +222,24 @@ this first session. There are <a class="reference external" href="https://www.da
     <h3><a href="index.html">Table of Contents</a></h3>
     <ul>
 <li><a class="reference internal" href="#">Intro to R and R Studio</a><ul>
-<li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
 <li><a class="reference internal" href="#readings">Readings</a></li>
 <li><a class="reference internal" href="#downloads">Downloads</a></li>
-<li><a class="reference internal" href="#activities">Activities</a></li>
-<li><a class="reference internal" href="#additional-resources">Additional Resources</a><ul>
+<li><a class="reference internal" href="#activities">Activities</a><ul>
+<li><a class="reference internal" href="#overview-of-r">Overview of R</a></li>
+<li><a class="reference internal" href="#the-obligatory-hello-world-example">The obligatory hello world example</a></li>
+<li><a class="reference internal" href="#r-studio-and-quarto">R Studio and Quarto</a></li>
+<li><a class="reference internal" href="#vectors">Vectors</a></li>
+<li><a class="reference internal" href="#dataframes">Dataframes</a></li>
+<li><a class="reference internal" href="#reading-text-files-into-r-dataframes">Reading text files into R dataframes</a></li>
+<li><a class="reference internal" href="#datetime-conversions">Datetime conversions</a><ul>
+<li><a class="reference internal" href="#additional-resources">Additional Resources</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a class="reference internal" href="#asking-good-questions">Asking good questions</a></li>
 <li><a class="reference internal" href="#reproducible-examples-reprex">Reproducible examples (reprex)</a></li>
 <li><a class="reference internal" href="#datacamp">DataCamp</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#explore">Explore</a></li>
 </ul>
 </li>
 </ul>

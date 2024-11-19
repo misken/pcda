@@ -15,10 +15,11 @@ Readings
 * PDSwR - Ch 5, 7.1
 * [Tidy Modeling with R](https://www.tmwr.org/) - Ch 4-11
 * ISLR - Ch 1-3 and 4.1-4.3
+[ISLR Tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/03-linear-regression.html - Ch 3 (Linear regression)
 
 `An Introduction to Statistical Learning with applications in R <https://statlearning.com/>`_
 
-This is an outstanding book, which is available as a free pdf. ISLR covers the main statistical learning topics at a nice introductory level. There is a more mathy version that preceded it called Elements of Statistical Learning. It also has a `freely available pdf <https://web.stanford.edu/~hastie/ElemStatLearn/>`_.
+This is an outstanding book, which is available as a free pdf. ISLR covers the main statistical learning topics at a nice introductory level. 
 
 I will be listing the associated reading that you can do from ISLR as we explore various statistical learning topics - starting with linear regression.
 
