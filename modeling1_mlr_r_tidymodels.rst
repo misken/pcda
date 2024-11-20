@@ -12,10 +12,7 @@ One of the workhorses of statistical predictive modeling is the family of linear
 Readings
 ========
 
-* PDSwR - Ch 5, 7.1
-* [Tidy Modeling with R](https://www.tmwr.org/) - Ch 4-11
 * ISLR - Ch 1-3 and 4.1-4.3
-[ISLR Tidymodels labs](https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/03-linear-regression.html - Ch 3 (Linear regression)
 
 `An Introduction to Statistical Learning with applications in R <https://statlearning.com/>`_
 
@@ -24,6 +21,9 @@ This is an outstanding book, which is available as a free pdf. ISLR covers the m
 I will be listing the associated reading that you can do from ISLR as we explore various statistical learning topics - starting with linear regression.
 
 * `In-depth introduction to machine learning in 15 hours of expert videos <https://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/>`_ - The ISLR authors have created a whole series of video lectures based on their book.
+
+* `Tidy Modeling with R <https://www.tmwr.org/>`_ - Ch 4-11
+* `ISLR Tidymodels labs <https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/03-linear-regression.html>`_ - Ch 3 (Linear regression)
 
 Downloads and other resources
 =============================

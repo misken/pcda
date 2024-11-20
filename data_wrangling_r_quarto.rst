@@ -18,9 +18,7 @@ The term data wrangling is used to describe the process of reading, exploring, c
 Readings
 --------
 
-* RforE - 6, 11, 12, 14-16
-* r4ds - 4, 6, 13-20
-* PDSwR - 4
+* R4DS - 4, 6, 13-20
 
 Downloads and other resources
 =============================

@@ -12,8 +12,7 @@ In this module we will:
    
 Readings
 --------
-* R for Everyone (RfE) - Chapters 1-6
-* Practical Data Science with R (PDSwR) - Chapter 2
+* Intro to R (I2R) - Chapters 1-3
 * See the `Additional Resources`_ section below, especially the stuff on asking good questions
 
 Downloads

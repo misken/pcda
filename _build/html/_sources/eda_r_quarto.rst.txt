@@ -22,9 +22,8 @@ from the NYC Open Data initiative - https://data.cityofnewyork.us/.
 Readings
 ---------
 
-* RforE - Chapters 6, 7, 8
-* r4ds - Chapters 1-2, 10-12
-* PDSwR - Chapters 3, 4
+* I2R - Chapters 4-6
+* R4DS - Chapters 1-2, 10-12
 
 Downloads and other resources
 -----------------------------
@@ -50,8 +49,8 @@ create R Projects to help you organize your R work.
 
     * File: **EDA1a_summarystats_shell.qmd**
     * `SCREENCAST: Overview of EDA and creating R Project <https://coming_soon>`_ (7:17)
-    - `SCREENCAST: Inital exploration of housing dataframe <https://coming_soon>`_ (16:41)
-    - `SCREENCAST: Modify dataframe, summary statistics, save as binary file <https://coming_soon>`_ (25:13)
+    * `SCREENCAST: Inital exploration of housing dataframe <https://coming_soon>`_ (16:41)
+    * `SCREENCAST: Modify dataframe, summary statistics, save as binary file <https://coming_soon>`_ (25:13)
 
 Writing your own functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
