@@ -1,20 +1,29 @@
 Textbooks
 =====================
 
-Traditional textbooks do not exist for a class like this. Instead we'll be using a number of inexpensive or free paperback/electronic books that will cover different aspects of the course. They are all well worth owning. In addition, we will be using numerous free web based resources.
+I've been teaching this course since 2016. Since then, a growing number of
+really good, free, web based books and other resources have been contributed
+by the R and Python ecosystem. At this point, there is no need for me to
+require any non-free textbooks for the course. 
 
 At the bottom of this page I'll list the books I've used at some point in the past - but you do **NOT** need them.
 
 Required texts for Winter 2025 
 ---------------------------------------------------
 
-Several of the texts have free versions available online. All these books also have official websites from which you can buy print, PDF, or eBooks. Of course, you can also find them at numerous places on the web. I've listed approximate pricing from checking a few of the online booksellers.
+All of the texts have free versions available online. All these books also have official websites from which you can buy print, PDF, or eBooks. Of course, you can also find them at numerous places on the web. I've listed approximate pricing from checking a few of the online booksellers.
+
+**An Introduction to R** (Alex Douglas, Deon Roos, Francesca Mancini, Ana Couto & David Lusseau) (I2R)
+
+* https://intro2r.com/
+
+This online book also has a `companion website <https://alexd106.github.io/intro2R/>`_ with exercises, more tutorials and other resources.
 
 **Introduction to Statistical Learning (with Applications in R)** (Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani) (ISLR)
 
 * https://web.stanford.edu/~hastie/ISLRv2_website.pdf
 
-This is a **FREE** text that does a great job of explaining the main statistical learning techniques at an accessible mathematical level. You can download a free PDF from the link above. They've even created a whole set of video lectures accompanying the book - https://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/.
+This is a text that does a great job of explaining the main statistical learning techniques at an accessible mathematical level. You can download a free PDF from the link above. They've even created a whole set of video lectures accompanying the book - https://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/.
 
 **ISLR Tidymodels lab** (Emil Hvitfeldt )
 
@@ -23,32 +32,12 @@ This is a **FREE** text that does a great job of explaining the main statistical
 This is a new addition to the ISLR family. It's a terrific online text that
 translates all of the examples in ISLR to use `tidymodels <https://www.tidymodels.org/>`_.
 
-**R for Everyone (2nd Edition)** (Jared Lander) (RforE)
+**R for Data Science (2e)** (Wickham, Cetinkaya-Rundel and Grolemund) (R4DS)
 
-* http://www.jaredlander.com/r-for-everyone/ 
-* ~$33 new, less for used (IMPORTANT: Make sure you get the Second Edition.)
-
-This provides an accessible, modern and thorough introduction to the world of the R statistical computing platform. I've used this book the past three years.
-
-**R for Data Science (2e)** (Wickham, Cetinkaya-Rundel and Grolemund) (r4ds)
-
-The second edition of this book was released in summer of 2023. It's a pretty big overhaul and it's freely available online. 
+The second edition of this book was released in summer of 2023. It's a pretty big overhaul and it's freely available online. This is a newly released book by one of the giants in the R community. Hadley Wickham has created some of the most widely used R packages and has had a tremendous influence on the use of R for data science.
 
 * https://r4ds.hadley.nz/
-* Online version is **FREE**
 
-This is a newly released book by one of the giants in the R community. Hadley Wickham has created some of the most widely used R packages and has had a tremendous influence on the use of R for data science.
-
-**Practical Data Science with R (2ed)** (Nina Zumel and John Mount) (PDSwR)
-
-* https://www.manning.com/books/practical-data-science-with-r
-* ~$40 new, less for used
-
-This is a newish book (2014 with 2ed just out a few years ago) that does just 
-what the title suggests. It is structured around typical business 
-analytics or data science projects and covers the main statistical 
-learning techniques along with tons of practical advice on doing data 
-science projects. 
 
 **A Whirlwind Tour of Python** (Jake VanderPlas) (WToP)
 
@@ -71,9 +60,28 @@ all the main essentials for doing data science work in Python.
 More good books (**NOT required**)
 ----------------------------------
 
-[PfDA] **Python for Data Analysis** - https://wesmckinney.com/book/
+**R for Everyone (2nd Edition)** (Jared Lander) (RforE)
 
-Wes McKinney
+* http://www.jaredlander.com/r-for-everyone/ 
+* ~$33 new, less for used (IMPORTANT: Make sure you get the Second Edition.)
+
+This provides an accessible, modern and thorough introduction to the world of the R statistical computing platform. I've used this book the past three years.
+
+**Practical Data Science with R (2ed)** (Nina Zumel and John Mount) (PDSwR)
+
+* https://www.manning.com/books/practical-data-science-with-r
+* ~$40 new, less for used
+
+This is a newish book (2014 with 2ed just out a few years ago) that does just 
+what the title suggests. It is structured around typical business 
+analytics or data science projects and covers the main statistical 
+learning techniques along with tons of practical advice on doing data 
+science projects.
+
+**Python for Data Analysis** (Wes McKinney)
+
+* https://wesmckinney.com/book/
+
 Free online but print also available
 
 This is a somewhat more advanced book on using Python for data 
@@ -83,6 +91,9 @@ covers numpy, IPython, and even an intro to the Python language. This
 is the 3rd edition which just came out in 2022.
 
 A few years we used the following book along with RforE and PDSwR. It's not required for the class this year but I do highly recommend it for those interested in more advanced web scraping and other data wrangling tasks. See the description below.
+
+Some older books
+----------------
 
 [DWwP] Data Wrangling with Python - http://shop.oreilly.com/product/0636920032861.do
 Jacqueline Kazil & Katharine Jarmul
