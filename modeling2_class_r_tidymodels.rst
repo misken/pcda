@@ -17,14 +17,13 @@ Readings
 
 * ISLR - Sec 3.5 (kNN), Sec 4.1-4.3 (Classification, logistic regression), Ch 8 (trees)
 * `ISLR Tidymodels labs <https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/08-tree-based-methods.html>`_ - Sec 4.1, 4.2 (Classification and logistic regression) and Ch 8 (Tree based methods)
-* The `Tidy Modeling with R <https://www.tmwr.org/>`_ book also has useful
-info throughout.
+* The `Tidy Modeling with R <https://www.tmwr.org/>`_ book also has useful info throughout.
 
 
 Downloads and other resources
 ------------------------------
 
-* `Downloads_StatModel2.zip <https://drive.google.com/file/d/1L3LAV7Hqr9kDriqju3_JEGdny_GZm7xH/view?usp=sharing>`_
+* `Downloads_StatModel2_tidymodels.zip <https://drive.google.com/file/d/135fn2CNFfRWj2miUxZhMLp8v7xTBpccF/view?usp=sharing>`_
 
 Activities 
 -------------
