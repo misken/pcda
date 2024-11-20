@@ -22,7 +22,7 @@ from the NYC Open Data initiative - https://data.cityofnewyork.us/.
 Readings
 ---------
 
-* I2R - Chapters 4-6
+* I2R - Chapters 4-7
 * R4DS - Chapters 1-2, 10-12
 
 Downloads and other resources

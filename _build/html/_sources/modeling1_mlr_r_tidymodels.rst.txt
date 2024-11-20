@@ -28,7 +28,7 @@ I will be listing the associated reading that you can do from ISLR as we explore
 Downloads and other resources
 =============================
 
-* `Downloads_StatModels1.zip <https://drive.google.com/file/d/1mJVvSPQo4bTvL0Rs-hyqRpTCaPaJoHxJ/view?usp=sharing>`_
+* `Downloads_StatModels1_tidymodels.zip <https://drive.google.com/file/d/1Tce4bXgYPAVCsAPnNQZFj4aNPvXsFEHy/view?usp=drive_link>`_
 
 If you are rusty on statistics, there's a really good OpenIntro Stats book available as a free online book or you can pay what you want for a paperback copy. It includes R based material.
 
