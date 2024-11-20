@@ -21,7 +21,7 @@ Readings
 ---------
 
 * I2R - Chapters 4-7
-* R4DS - Chapters 1-2, 10-12
+* R4DS - Chapters 1-2
 
 Downloads and other resources
 -----------------------------
