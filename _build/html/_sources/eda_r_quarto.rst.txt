@@ -1,8 +1,6 @@
 ***********************************
-EDA with R (UNDER CONSTRUCTION)
+EDA with R 
 ***********************************
-
-**NOTE: This is new material for Winter 2025**
 
 Intro and Objectives
 --------------------
