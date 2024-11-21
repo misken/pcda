@@ -18,7 +18,7 @@ The term data wrangling is used to describe the process of reading, exploring, c
 Readings
 --------
 
-* R4DS - 4, 6, 13-20
+* R4DS - 5, 7, 14, 17, 19, 20, 21
 
 Downloads and other resources
 =============================
@@ -35,7 +35,8 @@ is known as "group by" analysis.
 
 We'll start by learning about the new dplyr library - think pivot tables but way more powerful.
 
-Here's the file we'll be using. 
+Here's the file we'll be using.
+ 
 * File: **dplyr_basics_shell.qmd**
 
 I'm going to break this up into logical chunks.

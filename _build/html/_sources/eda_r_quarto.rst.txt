@@ -46,19 +46,25 @@ R makes it easy to compute summary statistics. We will also see how to
 create R Projects to help you organize your R work.
 
     * File: **EDA1a_summarystats_shell.qmd**
-    * `SCREENCAST: Overview of EDA and creating R Project <https://coming_soon>`_ (7:17)
-    * `SCREENCAST: Inital exploration of housing dataframe <https://coming_soon>`_ (16:41)
-    * `SCREENCAST: Modify dataframe, summary statistics, save as binary file <https://coming_soon>`_ (25:13)
+    * `SCREENCAST: Overview of EDA and creating R Project <https://youtu.be/ikW7GHwjFWo>`_ (8:30)
+    * `SCREENCAST: Inital exploration of housing dataframe <https://youtu.be/gcFRacvr9CY>`_ (11:21)
+    * `SCREENCAST: Modify dataframe, summary statistics, save as binary file <https://youtu.be/kLTASLL2lzQ>`_ (22:24)
 
 Writing your own functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-	
+We will do a brief introduction to writing functions in R.
+
 * File: **summarystats_4470.R**
 * `SCREENCAST: Create your own R function <https://youtu.be/0huJzAyDi4c>`_ (12:40)
 
+.. note::
+    The video above makes a few references to the "R for Everyone" text that
+	we are not longer using. Instead, see Chapter 7 of the
+	` An Introduction to R <https://intro2r.com/>`_ online textbook.
+	
 Plots and graphs
 ^^^^^^^^^^^^^^^^^
-Now we are going to see an area where R really shines.
+Now we are going to see an area where R really shines - plotting.
 
     - File: **EDA1b_basicplots_shell.qmd**
     - `SCREENCAST: Intro to data visualization <https://coming_soon>`_ (2:41)
