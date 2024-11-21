@@ -67,19 +67,14 @@ Plots and graphs
 Now we are going to see an area where R really shines - plotting.
 
     - File: **EDA1b_basicplots_shell.qmd**
-    - `SCREENCAST: Intro to data visualization <https://coming_soon>`_ (2:41)
-    - `SCREENCAST: Plotting using R's base plot system <https://coming_soon>`_ (8:53)
-    - `SCREENCAST: Intro to ggplot2 <https://coming_soon>`_ (2:55)
-    - `SCREENCAST: The Grammar of Graphics underlying ggplot2 <https://coming_soon>`_ (7:24)
-    - `SCREENCAST: Starting with qplot <https://coming_soon>`_ (2:52)
-    - `SCREENCAST: Using the ggplot() function <https://coming_soon>`_ (7:07)
-    - `SCREENCAST: Histograms <https://coming_soon>`_ (5:29)
-    - `SCREENCAST: Boxplots and violin plots, Faceting and reusing plot objects <https://coming_soon>`_ (5:40)
-    - `SCREENCAST: Scatter plots <https://coming_soon>`_ (2:33)
-    - `SCREENCAST: Themes <https://coming_soon>`_ (5:40)
-    - `SCREENCAST: Density plots and other histogram alternatives <https://coming_soon>`_ (8:45)
-    - `SCREENCAST: Bar charts <https://coming_soon>`_ (6:13)
-    - `SCREENCAST: Correlation plots and Geeky fun with xkcd <https://coming_soon>`_ (6:28)
+    - `SCREENCAST: Intro to data visualization and base plot <https://youtu.be/UVvp7h17FdI>`_ (9:35)
+    - `SCREENCAST: Intro to ggplot2 and the Grammar of Graphics <https://youtu.be/XeAvGtKNmPg>`_ (14:53)
+    - `SCREENCAST: Histograms, boxplots and violin plots, faceting and reusing plot objects <https://youtu.be/l-yfXzmxihc>`_ (11:17)
+    - `SCREENCAST: Scatter plots <https://youtu.be/h5nO5n3cWQ0>`_ (3:11)
+    - `SCREENCAST: Themes <https://youtu.be/LR9Rz7fvjVY>`_ (6:37)
+    - `SCREENCAST: Density plots and other histogram alternatives <https://youtu.be/JxCB1vBi4Qc>`_ (5:30)
+    - `SCREENCAST: Bar charts <https://youtu.be/LMCmSn0LdLw>`_ (6:54)
+    - `SCREENCAST: Correlation plots and Geeky fun with xkcd <https://youtu.be/a8hJmZoBtCA>`_ (7:10)
 
 Explore (OPTIONAL)
 ------------------
