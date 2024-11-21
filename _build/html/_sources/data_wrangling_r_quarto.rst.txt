@@ -41,12 +41,12 @@ Here's the file we'll be using.
 
 I'm going to break this up into logical chunks.
 
-* `SCREENCAST: Intro to group by analysis with dplyr <https://coming_soon>`_ (11:02)
-* `SCREENCAST: Using filter() to get subset of rows <https://coming_soon>`_ (10:37)
-* `SCREENCAST: Using select() to get subset of columns <https://coming_soon>`_ (4:49)
-* `SCREENCAST: Using mutate() to compute new variables <https://coming_soon>`_ (12:06)
-* `SCREENCAST: Using summarise() to do aggregations like sums, counts, means, ... <https://coming_soon>`_ (20:03)
-* `SCREENCAST: Using dplyr with databases <https://coming_soon>`_ (6:14)
+* `SCREENCAST: Intro to group by analysis with dplyr <https://youtu.be/rdDEvcnywL8>`_ (13:50)
+* `SCREENCAST: Using filter() to get subset of rows <https://youtu.be/ZXO1T_eKHmo>`_ (8:38)
+* `SCREENCAST: Using select() to get subset of columns <https://youtu.be/tQQalylyoDk>`_ (3:04)
+* `SCREENCAST: Using mutate() to compute new variables <https://youtu.be/Ukz5qNEHRyk>`_ (9:15)
+* `SCREENCAST: Using summarise() to do aggregations like sums, counts, means, ... <https://youtu.be/Jul8bKUGqho>`_ (19:48)
+* `SCREENCAST: Using dplyr with databases <https://youtu.be/NNAk4I-L1Ic>`_ (10:03)
 
 If you have the time
 and interest, check out
