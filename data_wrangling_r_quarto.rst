@@ -21,7 +21,7 @@ Readings
 * R4DS - 5, 7, 14, 17, 19, 20, 21
 
 Downloads and other resources
-=============================
+------------------------------
 
 * `Downloads_EDA2withR.zip <https://drive.google.com/file/d/1fmlP-7M5ZIrXnl758TdYr3-LRquZGAZz/view?usp=sharing>`_ - Group by analysis using old school tools like apply along with new era tools such as plyr and dplyr. Basic date/time manipulation.
 * `Downloads_DataWranglngwithR.zip <https://drive.google.com/file/d/1dcMv6dDsTLaduOzuu49_2PS9IbX0OEPT/view?usp=sharing>`_ - More on getting data into and out of R. Also, data reshaping and basic string manipulation.
@@ -58,7 +58,7 @@ Ingesting data and saving data
 Now let's see some alternatives to ``read.table`` and ``read.csv``, a bit on tibbles, RData and RDS files, built in datasets. 
 
 * File **data_wrangling_ingesting.qmd**
-* `SCREENCAST: Getting data into R <https://coming_soon>`_ (12:54)
+* `SCREENCAST: Getting data into R <https://youtu.be/D_A6lX6TW58>`_ (10:04)
 
 Combining data
 ^^^^^^^^^^^^^^^
@@ -66,7 +66,7 @@ Combining data
 Let's learn about combining data by rows and columns as well as doing SQL style joins. 
 
 * File: **data_wrangling_combining_notes.qmd**
-* `SCREENCAST: Combining data <https://coming_soon>`_ (16:05)
+* `SCREENCAST: Combining data <https://youtu.be/jmh3QI-Uz9A>`_ (22:01)
 
 Reshaping data
 ^^^^^^^^^^^^^^^
@@ -74,7 +74,7 @@ Reshaping data
 The tidyverse approach to reshaping data between long and wide formats is next. 
 
 * File: **data_wrangling_reshaping_notes.qmd**
-* `SCREENCAST: Wide <--> Long with tidyr <https://coming_soon>`_ (11:18)
+* `SCREENCAST: Wide <--> Long with tidyr <https://youtu.be/YiMtRXM46XA>`_ (12:43)
 
 Older material (OPTIONAL)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -93,10 +93,10 @@ Prior to the tidyverse, the reshape2 package was used to go between wide and lon
 
 
 Explore (OPTIONAL)
-==================
+------------------
 
 Split-Apply-Combine
--------------------
+^^^^^^^^^^^^^^^^^^^^
 
 * `The Split-Apply-Combine Strategy for Data Analysis <https://www.jstatsoft.org/article/view/v040i01>`_ - This is the original paper by Hadley Wickham. I've also included the pdf in the Downloads file for this session.
 * `A brief introduction to “apply” in R <http://nsaunders.wordpress.com/2010/08/20/a-brief-introduction-to-apply-in-r/>`_ - This is one of the best overviews I've found of the "apply" family of functions in R.
@@ -104,6 +104,6 @@ Split-Apply-Combine
 
 
 Data reshaping
---------------
+^^^^^^^^^^^^^^^^
 
 * `Tidy Data <https://www.jstatsoft.org/article/view/v059i10/v59i10.pdf>`_ - This is the original paper by Hadley Wickham.
