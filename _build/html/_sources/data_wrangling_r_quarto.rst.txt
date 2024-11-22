@@ -29,6 +29,10 @@ Downloads and other resources
 
 Activities
 -----------
+We will do a few different data wrangling things in this session.
+
+Group by analysis with dplyr
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Tools like Excel Pivot Tables and aggregate SQL queries are commonly used for what
 is known as "group by" analysis.
@@ -48,27 +52,38 @@ I'm going to break this up into logical chunks.
 * `SCREENCAST: Using summarise() to do aggregations like sums, counts, means, ... <https://youtu.be/Jul8bKUGqho>`_ (19:48)
 * `SCREENCAST: Using dplyr with databases <https://youtu.be/NNAk4I-L1Ic>`_ (10:03)
 
-If you have the time
-and interest, check out
-the "old school" approach use base R tools such as the apply family
-of functions as well as a tool called plyr. 
-
-* File **GroupByAnalysis_oldschool_notes.Rmd** (OPTIONAL)
+Ingesting data and saving data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now let's see some alternatives to ``read.table`` and ``read.csv``, a bit on tibbles, RData and RDS files, built in datasets. 
 
 * File **data_wrangling_ingesting.qmd**
 * `SCREENCAST: Getting data into R <https://coming_soon>`_ (12:54)
 
+Combining data
+^^^^^^^^^^^^^^^
+
 Let's learn about combining data by rows and columns as well as doing SQL style joins. 
 
 * File: **data_wrangling_combining_notes.qmd**
 * `SCREENCAST: Combining data <https://coming_soon>`_ (16:05)
 
+Reshaping data
+^^^^^^^^^^^^^^^
+
 The tidyverse approach to reshaping data between long and wide formats is next. 
 
 * File: **data_wrangling_reshaping_notes.qmd**
 * `SCREENCAST: Wide <--> Long with tidyr <https://coming_soon>`_ (11:18)
+
+Older material (OPTIONAL)
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you have the time and interest, check out
+the "old school" approach use base R tools such as the apply family
+of functions as well as a tool called plyr. 
+
+* File **GroupByAnalysis_oldschool_notes.Rmd** (OPTIONAL)
 
 Prior to the tidyverse, the reshape2 package was used to go between wide and long data formats. Then tidyr came along. The next screencast uses reshape2. It also gets into some basic string manipulation like substringing as well as some more advanced ggplot2 plot formatting. 
 
