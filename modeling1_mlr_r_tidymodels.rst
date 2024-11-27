@@ -78,7 +78,7 @@ We'll use the tidymodels package to do similar things that we just did.
     * File: **3_comparing_competing_models.qmd** 
     * `SCREENCAST - Intro to tidymodels <https://youtu.be/t6foQuUEM7E>`_ (7:31)
     * `SCREENCAST - Data partitioning and modeling <https://youtu.be/YAUXG_G5KKQ>`_ (15:48)
-    * `SCREENCAST - Comparing models with cross-validation <https://coming soon>`_ (15:23)
+    * `SCREENCAST - Comparing models with cross-validation <https://youtu.be/wfJmwlh0Pys>`_ (15:23)
 
 Explore (OPTIONAL)
 -------------------
