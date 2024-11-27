@@ -11,10 +11,8 @@ Intro to data analytics with R
    :caption: Intro to data science with R
    
    r_intro
-   eda_r
    eda_r_quarto
    git_intro
-   data_wrangling_r
    data_wrangling_r_quarto
    modeling1_mlr_r
    modeling1_mlr_r_tidymodels

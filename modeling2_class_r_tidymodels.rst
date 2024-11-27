@@ -14,7 +14,6 @@ This module will take us 1.5 weeks.
 Readings
 ---------
 
-
 * ISLR - Sec 3.5 (kNN), Sec 4.1-4.3 (Classification, logistic regression), Ch 8 (trees)
 * `ISLR Tidymodels labs <https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/08-tree-based-methods.html>`_ - Sec 4.1, 4.2 (Classification and logistic regression) and Ch 8 (Tree based methods)
 * The `Tidy Modeling with R <https://www.tmwr.org/>`_ book also has useful info throughout.

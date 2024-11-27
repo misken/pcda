@@ -1,8 +1,9 @@
 ****************************************************************
-Group by analysis and data wrangling with R (UNDER CONSTRUCTION)
+Group by analysis and data wrangling with R 
 ****************************************************************
 
-**NOTE: This is new material for Winter 2025**
+.. note::
+    The notes for this session have been updated to use Quarto instead of R Markdown. You can find the `old version here <https://pcda.misken.org/data_wrangling_r>`_
 
 Intro and Objectives
 --------------------

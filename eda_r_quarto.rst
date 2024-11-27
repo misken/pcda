@@ -2,6 +2,9 @@
 EDA with R 
 ***********************************
 
+.. note::
+    The notes for this session have been updated to use Quarto instead of R Markdown. You can find the `old version here <https://pcda.misken.org/eda_r>`_
+
 Intro and Objectives
 --------------------
 

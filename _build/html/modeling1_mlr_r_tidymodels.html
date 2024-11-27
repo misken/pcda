@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Modeling 1: Overview and linear regression in R with tidymodels (UNDER CONSTRUCTION) &#8212; mis5470  documentation</title>
+    <title>Modeling 1: Overview and linear regression in R with tidymodels &#8212; mis5470  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
     <script src="_static/documentation_options.js?v=5929fcd5"></script>
@@ -30,7 +30,7 @@
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="data_science_r.html" accesskey="U">Intro to data analytics with R</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Modeling 1: Overview and linear regression in R with tidymodels (UNDER CONSTRUCTION)</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Modeling 1: Overview and linear regression in R with tidymodels</a></li> 
       </ul>
     </div>  
 
@@ -39,8 +39,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="modeling-1-overview-and-linear-regression-in-r-with-tidymodels-under-construction">
-<h1>Modeling 1: Overview and linear regression in R with tidymodels (UNDER CONSTRUCTION)<a class="headerlink" href="#modeling-1-overview-and-linear-regression-in-r-with-tidymodels-under-construction" title="Link to this heading">¶</a></h1>
+  <section id="modeling-1-overview-and-linear-regression-in-r-with-tidymodels">
+<h1>Modeling 1: Overview and linear regression in R with tidymodels<a class="headerlink" href="#modeling-1-overview-and-linear-regression-in-r-with-tidymodels" title="Link to this heading">¶</a></h1>
 <p><strong>NOTE: This is new material for Winter 2025</strong></p>
 <section id="intro-and-objectives">
 <h2>Intro and Objectives<a class="headerlink" href="#intro-and-objectives" title="Link to this heading">¶</a></h2>
@@ -74,26 +74,29 @@
 <h2>Activities<a class="headerlink" href="#activities" title="Link to this heading">¶</a></h2>
 <p>We are going to work through a series of tutorials exploring the topic
 of building, using and evaluating predictive linear regression models.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - Overview of statistical modeling session</a> (5:32)</p></li>
-</ul>
-</div></blockquote>
-<p>Next we’ll do a brief review of working with probability distributions in R.</p>
+<section id="probability-distributions-in-r">
+<h3>Probability distributions in R<a class="headerlink" href="#probability-distributions-in-r" title="Link to this heading">¶</a></h3>
+<p>First we’ll do a brief review of working with probability distributions in R.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>File: <strong>0_probability_dists.qmd</strong></p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - Probability distributions in R</a> (5:44)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/9fFQV0DqNWI">SCREENCAST - Probability distributions in R</a> (7:06)</p></li>
 </ul>
 </div></blockquote>
+</section>
+<section id="simple-linear-regression">
+<h3>Simple linear regression<a class="headerlink" href="#simple-linear-regression" title="Link to this heading">¶</a></h3>
 <p>Review of simple linear regression of will set the stage for
 more complex linear models.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>File: <strong>1_simple_linear_regression.qmd</strong></p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - Simple linear regression</a> (20:45)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/grb5rhboUA0">SCREENCAST - Simple linear regression</a> (20:45)</p></li>
 </ul>
 </div></blockquote>
+</section>
+<section id="multiple-linear-regression">
+<h3>Multiple linear regression<a class="headerlink" href="#multiple-linear-regression" title="Link to this heading">¶</a></h3>
 <p>Now we are ready for multiple linear regression. In this part, we will use
 the built in <cite>lm()</cite> function for fitting linear models. We will deal with
 missing data, partition data into training and test datasets, build and fit linear models with <code class="docutils literal notranslate"><span class="pre">lm()</span></code>, assess model fit, make predictions and assess
@@ -101,27 +104,23 @@ predictive accuracy of our models using simple techniques.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>File: <strong>2_multiple_linear_regression.qmd</strong></p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - MLR - Part 1: imputation of missing values</a> (5:39)</p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - MLR - Part 2: partition into train and test</a> (2:47)</p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - MLR - Part 3: some EDA</a> (4:10)</p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - MLR - Part 4: fitting simple additive models</a> (6:36)</p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - MLR - Part 5: fitting models with interaction terms</a> (4;14)</p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - MLR - Part 6: making predictions</a> (5:27)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/eivKZedgHuk">SCREENCAST - Intro to multiple linear regression</a> (25:10)</p></li>
 </ul>
 </div></blockquote>
+</section>
+<section id="comparing-competing-models">
+<h3>Comparing competing models<a class="headerlink" href="#comparing-competing-models" title="Link to this heading">¶</a></h3>
 <p>There are better (or at least, newer) ways to build and compare models in R.
 We’ll use the tidymodels package to do similar things that we just did.</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>File: <strong>3_comparing_competing_models.qmd</strong></p></li>
-<li><p><a class="reference external" href="https://comingsoon">SCREENCAST - Intro to tidymodels</a> (5:18)</p></li>
-<li><p><a class="reference external" href="https://comingsoon">SCREENCAST - Data partitioning</a> (5:18)</p></li>
-<li><p><a class="reference external" href="https://comingsoon">SCREENCAST - Model fitting with parsnip</a> (5:18)</p></li>
-<li><p><a class="reference external" href="https://comingsoon">SCREENCAST - Computing error metrics</a> (5:18)</p></li>
-<li><p><a class="reference external" href="https://comingsoon">SCREENCAST - Comparing models with cross-validation</a> (5:18)</p></li>
-<li><p><a class="reference external" href="https://comingsoon">SCREENCAST - Assessing predictive performance</a> (5:18)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/t6foQuUEM7E">SCREENCAST - Intro to tidymodels</a> (7:31)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/YAUXG_G5KKQ">SCREENCAST - Data partitioning and modeling</a> (15:48)</p></li>
+<li><p><a class="reference external" href="https://comingsoon">SCREENCAST - Comparing models with cross-validation</a> (15:23)</p></li>
 </ul>
 </div></blockquote>
+</section>
 </section>
 <section id="explore-optional">
 <h2>Explore (OPTIONAL)<a class="headerlink" href="#explore-optional" title="Link to this heading">¶</a></h2>
@@ -153,12 +152,6 @@ We’ll use the tidymodels package to do similar things that we just did.</p>
 </li>
 </ul>
 </section>
-<section id="general-data-science">
-<h3>General data science<a class="headerlink" href="#general-data-science" title="Link to this heading">¶</a></h3>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.boozallen.com/s/insight/publication/field-guide-to-data-science.html">Field Guide to Data Science</a> - Booz, Allen, Hamilton (one of the big consulting firms)</p></li>
-</ul>
-</section>
 </section>
 </section>
 
@@ -172,14 +165,19 @@ We’ll use the tidymodels package to do similar things that we just did.</p>
   <div>
     <h3><a href="index.html">Table of Contents</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Modeling 1: Overview and linear regression in R with tidymodels (UNDER CONSTRUCTION)</a><ul>
+<li><a class="reference internal" href="#">Modeling 1: Overview and linear regression in R with tidymodels</a><ul>
 <li><a class="reference internal" href="#intro-and-objectives">Intro and Objectives</a></li>
 <li><a class="reference internal" href="#readings">Readings</a></li>
 <li><a class="reference internal" href="#downloads-and-other-resources">Downloads and other resources</a></li>
-<li><a class="reference internal" href="#activities">Activities</a></li>
+<li><a class="reference internal" href="#activities">Activities</a><ul>
+<li><a class="reference internal" href="#probability-distributions-in-r">Probability distributions in R</a></li>
+<li><a class="reference internal" href="#simple-linear-regression">Simple linear regression</a></li>
+<li><a class="reference internal" href="#multiple-linear-regression">Multiple linear regression</a></li>
+<li><a class="reference internal" href="#comparing-competing-models">Comparing competing models</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#explore-optional">Explore (OPTIONAL)</a><ul>
 <li><a class="reference internal" href="#regression-modeling">Regression modeling</a></li>
-<li><a class="reference internal" href="#general-data-science">General data science</a></li>
 </ul>
 </li>
 </ul>
@@ -232,7 +230,7 @@ We’ll use the tidymodels package to do similar things that we just did.</p>
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="data_science_r.html" >Intro to data analytics with R</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Modeling 1: Overview and linear regression in R with tidymodels (UNDER CONSTRUCTION)</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Modeling 1: Overview and linear regression in R with tidymodels</a></li> 
       </ul>
     </div>
 		 <p> &#169; Copyright 2021-2023, Mark Isken.

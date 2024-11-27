@@ -1,16 +1,16 @@
 ************************************************************************************
-Modeling 1: Overview and linear regression in R with tidymodels (UNDER CONSTRUCTION)
+Modeling 1: Overview and linear regression in R with tidymodels 
 ************************************************************************************
 
 **NOTE: This is new material for Winter 2025**
 
 Intro and Objectives
-====================
+---------------------
 
 One of the workhorses of statistical predictive modeling is the family of linear models. We'll do things like multiple linear regression for numeric predictions and logistic regression as a classifier for binary response variables. We'll use these relatively simple models as a way to also learn about important modeling topics such as partitioning data into training and test sets, model training, validation and diagnostics. We'll also use regression to introduce the notion of parameter estimation, error metrics for assessing model fit and for comparing candidate models against each other. These topics underlie all of statistical learning algorithms. 
    
 Readings
-========
+----------
 
 * ISLR - Ch 1-3 and 4.1-4.3
 
@@ -26,7 +26,7 @@ I will be listing the associated reading that you can do from ISLR as we explore
 * `ISLR Tidymodels labs <https://emilhvitfeldt.github.io/ISLR-tidymodels-labs/03-linear-regression.html>`_ - Ch 3 (Linear regression)
 
 Downloads and other resources
-=============================
+------------------------------
 
 * `Downloads_StatModels1_tidymodels.zip <https://drive.google.com/file/d/1Tce4bXgYPAVCsAPnNQZFj4aNPvXsFEHy/view?usp=drive_link>`_
 
@@ -35,23 +35,30 @@ If you are rusty on statistics, there's a really good OpenIntro Stats book avail
 * `OpenIntro Stats <https://www.openintro.org/book/ims/>`_
 
 Activities
-================================
+------------
 
 We are going to work through a series of tutorials exploring the topic
 of building, using and evaluating predictive linear regression models.
 
-    * `SCREENCAST - Overview of statistical modeling session <https://coming_soon>`_ (5:32)
+Probability distributions in R
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Next we'll do a brief review of working with probability distributions in R.
+First we'll do a brief review of working with probability distributions in R.
 
     * File: **0_probability_dists.qmd**
-    * `SCREENCAST - Probability distributions in R <https://coming_soon>`_ (5:44)
+    * `SCREENCAST - Probability distributions in R <https://youtu.be/9fFQV0DqNWI>`_ (7:06)
+
+Simple linear regression
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Review of simple linear regression of will set the stage for
 more complex linear models.
 
     * File: **1_simple_linear_regression.qmd**
-    * `SCREENCAST - Simple linear regression <https://coming_soon>`_ (20:45)
+    * `SCREENCAST - Simple linear regression <https://youtu.be/grb5rhboUA0>`_ (20:45)
+
+Multiple linear regression
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now we are ready for multiple linear regression. In this part, we will use
 the built in `lm()` function for fitting linear models. We will deal with
@@ -59,29 +66,25 @@ missing data, partition data into training and test datasets, build and fit line
 predictive accuracy of our models using simple techniques.
 
     * File: **2_multiple_linear_regression.qmd**
-    * `SCREENCAST - MLR - Part 1: imputation of missing values <https://coming_soon>`_ (5:39)
-    * `SCREENCAST - MLR - Part 2: partition into train and test <https://coming_soon>`_ (2:47)
-    * `SCREENCAST - MLR - Part 3: some EDA <https://coming_soon>`_ (4:10)
-    * `SCREENCAST - MLR - Part 4: fitting simple additive models <https://coming_soon>`_ (6:36)
-    * `SCREENCAST - MLR - Part 5: fitting models with interaction terms <https://coming_soon>`_ (4;14)
-    * `SCREENCAST - MLR - Part 6: making predictions <https://coming_soon>`_ (5:27)
+    * `SCREENCAST - Intro to multiple linear regression <https://youtu.be/eivKZedgHuk>`_ (25:10)
+    
+
+Comparing competing models
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 	
 There are better (or at least, newer) ways to build and compare models in R. 
 We'll use the tidymodels package to do similar things that we just did.
 	
     * File: **3_comparing_competing_models.qmd** 
-    * `SCREENCAST - Intro to tidymodels <https://coming soon>`_ (5:18)
-    * `SCREENCAST - Data partitioning <https://coming soon>`_ (5:18)
-    * `SCREENCAST - Model fitting with parsnip <https://coming soon>`_ (5:18)
-    * `SCREENCAST - Computing error metrics <https://coming soon>`_ (5:18)
-    * `SCREENCAST - Comparing models with cross-validation <https://coming soon>`_ (5:18)
-    * `SCREENCAST - Assessing predictive performance <https://coming soon>`_ (5:18)
+    * `SCREENCAST - Intro to tidymodels <https://youtu.be/t6foQuUEM7E>`_ (7:31)
+    * `SCREENCAST - Data partitioning and modeling <https://youtu.be/YAUXG_G5KKQ>`_ (15:48)
+    * `SCREENCAST - Comparing models with cross-validation <https://coming soon>`_ (15:23)
 
 Explore (OPTIONAL)
-==================
+-------------------
 
 Regression modeling
--------------------
+^^^^^^^^^^^^^^^^^^^^^
 
 * `STAT 501 - Regression Modeling (Penn State Univ online) <https://online.stat.psu.edu/stat501/>`_ - Penn State has a bunch of free online resources for learning stats. 
 * Regression modeling textbooks
@@ -99,9 +102,4 @@ Regression modeling
 	- `StatQuest: Linear models (part 1.5) <https://www.youtube.com/watch?v=zITIFTsivN8>`_
 	- `StatQuest: Linear models (part 2) <https://www.youtube.com/watch?v=NF5_btOaCig>`_
 	- `StatQuest: Cross-validation <https://www.youtube.com/watch?v=fSytzGwwBVw>`_
-
-General data science
---------------------
-   
-* `Field Guide to Data Science <https://www.boozallen.com/s/insight/publication/field-guide-to-data-science.html>`_ - Booz, Allen, Hamilton (one of the big consulting firms)
 
