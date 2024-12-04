@@ -1,5 +1,5 @@
 ***********************************************************
-Modeling 2: Intro to classifiers with R(UNDER CONSTRUCTION)
+Modeling 2: Intro to classifiers with R using tidymodels
 ***********************************************************
 
 **NOTE: This is new material for Winter 2025**
@@ -83,19 +83,14 @@ Now on to learning about decision trees and variants such as random forests.
 You'll use **trees.qmd** with these screencasts.
 
 We'll start with a short introduction to the problem and the data. Data
-partioning and a bit of data exploration are done.
-
-* `SCREENCAST - Intro to decision trees <https://coming_soon>`_ (17:04)
-
-So, how do decision trees decide how to create their branches? We'll take a very
+partioning and a bit of data exploration are done. Then we'll build a simple decision tree. So, how do decision trees decide how to create their branches? We'll take a very
 brief look at this and point you to some resources to go deeper if you want.
 
-* `SCREENCAST - Variable splitting to create new branches <https://coming_soon>`_ (6:05)
- 
+* `SCREENCAST - Intro to decision trees <https://youtu.be/dZZ3YS0kZdY>`_ (21:41)
+
 Now we'll look at some more advanced tree based models.
 
-* `SCREENCAST - Bagged decision trees <https://coming_soon>`_ (9:22)
-* `SCREENCAST - Random forests and beyond <https://coming_soon>`_ (9:22)
+* `SCREENCAST - Bagging, random forests and beyond <https://youtu.be/rN59cd1YkHs>`_ (16:49)
 
 
 Putting it all together - the Kaggle Titanic challenge (OPTIONAL) 
@@ -130,12 +125,6 @@ Explore (OPTIONAL)
 * `The vtreat package for data preparation for statistical learning models <https://winvector.github.io/vtreat/>`_
 * `Predictive analytics at Target: the ethics of data analytics <https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html>`_
 * `Kappa statistic defined in plain english <https://stats.stackexchange.com/questions/82162/cohens-kappa-in-plain-english>`_ - Kappa is a stat used (among other things) to see how well a classifier does as compared to a random choice model but which takes into account the underlying prevalence of the classes in the data.
-* `Applied Predictive Modeling <http://appliedpredictivemodeling.com/>`_ - This is another really good textbook on this topic that is well suited for business school students. You can see details about the book at its companion website and you can actually get the book as an electronic resource through the OU Library.
-* `The caret package for classification and regression training <http://topepo.github.io/caret/index.html>`_ - Widely used R package for all aspects of building and evaluating classifier models. A few summers ago I wrote a three part series of blog posts on automating caret for efficient evaluation of models over various parameter spaces.
-   - https://bitsofanalytics.org/posts/obsim-caret-1/obsim_caret_part1.html
-   - https://bitsofanalytics.org/posts/obsim-caret-2/obsim_caret_part2.html
-   - https://bitsofanalytics.org/posts/obsim-caret-3/obsim_caret_part3.html
-* `Tidymodels - <https://www.tidymodels.org/>`_ - "a collection of packages for modeling and machine learning using tidyverse principles." The `Tidy Modeling with R <https://www.tmwr.org/>`_ online book by Kuhn and Silge provides a very good introduction to the tidymodels package and how its consitutient packages can be used for different parts of the modeling process.
 * `Frustration: One Year with R <https://github.com/ReeceGoding/Frustration-One-Year-With-R>`_
 
 

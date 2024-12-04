@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Modeling 2: Intro to classifiers with R(UNDER CONSTRUCTION) &#8212; mis5470  documentation</title>
+    <title>Modeling 2: Intro to classifiers with R using tidymodels &#8212; mis5470  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="_static/nature.css?v=0f882399" />
     <script src="_static/documentation_options.js?v=5929fcd5"></script>
@@ -30,7 +30,7 @@
              accesskey="P">previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="data_science_r.html" accesskey="U">Intro to data analytics with R</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Modeling 2: Intro to classifiers with R(UNDER CONSTRUCTION)</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Modeling 2: Intro to classifiers with R using tidymodels</a></li> 
       </ul>
     </div>  
 
@@ -39,8 +39,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <section id="modeling-2-intro-to-classifiers-with-r-under-construction">
-<h1>Modeling 2: Intro to classifiers with R(UNDER CONSTRUCTION)<a class="headerlink" href="#modeling-2-intro-to-classifiers-with-r-under-construction" title="Link to this heading">¶</a></h1>
+  <section id="modeling-2-intro-to-classifiers-with-r-using-tidymodels">
+<h1>Modeling 2: Intro to classifiers with R using tidymodels<a class="headerlink" href="#modeling-2-intro-to-classifiers-with-r-using-tidymodels" title="Link to this heading">¶</a></h1>
 <p><strong>NOTE: This is new material for Winter 2025</strong></p>
 <p>In class we’ll spend some time learning about using logistic regression for binary classification problems - i.e. when our response variable has two possible outcomes (e.g. customer defaults on loan or does not default on loan). We’ll explore other simple classification approaches such as k-Nearest Neighbors and basic classification trees. Trees, forests, and their many variants have proved to be some of the most robust and effective techniques for classification problems.</p>
 <p>This module will take us 1.5 weeks.</p>
@@ -110,19 +110,14 @@ regression models.</p>
 <p>Now on to learning about decision trees and variants such as random forests.
 You’ll use <strong>trees.qmd</strong> with these screencasts.</p>
 <p>We’ll start with a short introduction to the problem and the data. Data
-partioning and a bit of data exploration are done.</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - Intro to decision trees</a> (17:04)</p></li>
-</ul>
-<p>So, how do decision trees decide how to create their branches? We’ll take a very
+partioning and a bit of data exploration are done. Then we’ll build a simple decision tree. So, how do decision trees decide how to create their branches? We’ll take a very
 brief look at this and point you to some resources to go deeper if you want.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - Variable splitting to create new branches</a> (6:05)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/dZZ3YS0kZdY">SCREENCAST - Intro to decision trees</a> (21:41)</p></li>
 </ul>
 <p>Now we’ll look at some more advanced tree based models.</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - Bagged decision trees</a> (9:22)</p></li>
-<li><p><a class="reference external" href="https://coming_soon">SCREENCAST - Random forests and beyond</a> (9:22)</p></li>
+<li><p><a class="reference external" href="https://youtu.be/rN59cd1YkHs">SCREENCAST - Bagging, random forests and beyond</a> (16:49)</p></li>
 </ul>
 </section>
 <section id="putting-it-all-together-the-kaggle-titanic-challenge-optional">
@@ -161,17 +156,6 @@ get 100% predictive accuracy.</p>
 <li><p><a class="reference external" href="https://winvector.github.io/vtreat/">The vtreat package for data preparation for statistical learning models</a></p></li>
 <li><p><a class="reference external" href="https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html">Predictive analytics at Target: the ethics of data analytics</a></p></li>
 <li><p><a class="reference external" href="https://stats.stackexchange.com/questions/82162/cohens-kappa-in-plain-english">Kappa statistic defined in plain english</a> - Kappa is a stat used (among other things) to see how well a classifier does as compared to a random choice model but which takes into account the underlying prevalence of the classes in the data.</p></li>
-<li><p><a class="reference external" href="http://appliedpredictivemodeling.com/">Applied Predictive Modeling</a> - This is another really good textbook on this topic that is well suited for business school students. You can see details about the book at its companion website and you can actually get the book as an electronic resource through the OU Library.</p></li>
-<li><dl class="simple">
-<dt><a class="reference external" href="http://topepo.github.io/caret/index.html">The caret package for classification and regression training</a> - Widely used R package for all aspects of building and evaluating classifier models. A few summers ago I wrote a three part series of blog posts on automating caret for efficient evaluation of models over various parameter spaces.</dt><dd><ul>
-<li><p><a class="reference external" href="https://bitsofanalytics.org/posts/obsim-caret-1/obsim_caret_part1.html">https://bitsofanalytics.org/posts/obsim-caret-1/obsim_caret_part1.html</a></p></li>
-<li><p><a class="reference external" href="https://bitsofanalytics.org/posts/obsim-caret-2/obsim_caret_part2.html">https://bitsofanalytics.org/posts/obsim-caret-2/obsim_caret_part2.html</a></p></li>
-<li><p><a class="reference external" href="https://bitsofanalytics.org/posts/obsim-caret-3/obsim_caret_part3.html">https://bitsofanalytics.org/posts/obsim-caret-3/obsim_caret_part3.html</a></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p><a class="reference external" href="https://www.tidymodels.org/">Tidymodels -</a> - “a collection of packages for modeling and machine learning using tidyverse principles.” The <a class="reference external" href="https://www.tmwr.org/">Tidy Modeling with R</a> online book by Kuhn and Silge provides a very good introduction to the tidymodels package and how its consitutient packages can be used for different parts of the modeling process.</p></li>
 <li><p><a class="reference external" href="https://github.com/ReeceGoding/Frustration-One-Year-With-R">Frustration: One Year with R</a></p></li>
 </ul>
 </section>
@@ -187,7 +171,7 @@ get 100% predictive accuracy.</p>
   <div>
     <h3><a href="index.html">Table of Contents</a></h3>
     <ul>
-<li><a class="reference internal" href="#">Modeling 2: Intro to classifiers with R(UNDER CONSTRUCTION)</a><ul>
+<li><a class="reference internal" href="#">Modeling 2: Intro to classifiers with R using tidymodels</a><ul>
 <li><a class="reference internal" href="#readings">Readings</a></li>
 <li><a class="reference internal" href="#downloads-and-other-resources">Downloads and other resources</a></li>
 <li><a class="reference internal" href="#activities">Activities</a><ul>
@@ -248,7 +232,7 @@ get 100% predictive accuracy.</p>
              >previous</a> |</li>
         <li class="nav-item nav-item-0"><a href="index.html">mis5470  documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="data_science_r.html" >Intro to data analytics with R</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">Modeling 2: Intro to classifiers with R(UNDER CONSTRUCTION)</a></li> 
+        <li class="nav-item nav-item-this"><a href="">Modeling 2: Intro to classifiers with R using tidymodels</a></li> 
       </ul>
     </div>
 		 <p> &#169; Copyright 2021-2023, Mark Isken.
