@@ -42,7 +42,7 @@ In this first part we'll:
 
 You'll use **knn.qmd** and follow along with this screencast:
 
-* `SCREENCAST - Intro to classification with kNN <https://coming_soon>`_ ()
+* `SCREENCAST - Intro to classification with kNN <https://youtu.be/zxoce5Lu2ro>`_ (26:18)
 
 Logistic regression
 ^^^^^^^^^^^^^^^^^^^
@@ -59,25 +59,22 @@ We'll start with a short introduction to the problem, the data and
 an ill-advised multiple linear regression model. We will also
 partition the data into training and test sets.
 
-* `SCREENCAST - Intro to the problem <https://coming_soon>`_ (9:21)
+* `SCREENCAST - Intro to the problem <https://youtu.be/ukDnTLbK45Q>`_ (6:44)
 
 Next, we will review the main ideas of the logistic regression model.
 We'll create a null model and then use ``glm()`` to build our first 
 few models. We'll see some of the challenges in interpretation of
 statistical models (and this is a tiny model).
 
-* `SCREENCAST - Logistic regression models <https://coming_soon>`_ (12:51)
+* `SCREENCAST - Logistic regression models <https://youtu.be/XE4_meeIzC8>`_ (6:42)
+* `SCREENCAST - Fitting with glm() <https://youtu.be/SdkRjLHjv5U>`_ (12:40)
 
 We'll learn how to use tidymodels to build, fit and assess logistic
 regression models.
 
-* `SCREENCAST - Model specification <https://coming_soon>`_ (11:24)
-* `SCREENCAST - Data preprocessing with recipes <https://coming_soon>`_ (11:24)
-* `SCREENCAST - Setting up a workflow for logistic regression <https://coming_soon>`_ (11:24)
-* `SCREENCAST - Model assessment for training <https://coming_soon>`_ (11:24)
-* `SCREENCAST - Predictions and assessment on test data <https://coming_soon>`_ (11:24)
-* `SCREENCAST - More training assessment and impact of thresholds <https://coming_soon>`_ (11:24)
-* `SCREENCAST - ROC curves <https://coming_soon>`_ (11:24)
+* `SCREENCAST - Logistic regression with tidymodels <https://youtu.be/4nHTQKfxDog>`_ (19:06)
+* `SCREENCAST - Impact of thresholds and ROC curves <https://youtu.be/tR8uGs1g1_8>`_ (7:45)
+
 
 Decision trees
 ^^^^^^^^^^^^^^^
