@@ -28,7 +28,8 @@ before doing this course. Highly recommended but not strictly required.
    Getting started with pcda and Linux (Weeks 1-2) <foundation>
    Intro to data science with R (Weeks 3-8) <data_science_r>
    Intro to data science with Python (Weeks 8-13) <data_science_python>
-   More topics (teaching Advanced Analytics with Python course in summer 2024) <additional_topics>
+   Appendix - older/deprecated pages <appendix>
+   More topics (teaching Advanced Analytics with Python course in summer 2025) <additional_topics>
    
 * :ref:`search`
 
