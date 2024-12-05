@@ -80,6 +80,22 @@ We'll use the tidymodels package to do similar things that we just did.
     * `SCREENCAST - Data partitioning and modeling <https://youtu.be/YAUXG_G5KKQ>`_ (15:48)
     * `SCREENCAST - Comparing models with cross-validation <https://youtu.be/wfJmwlh0Pys>`_ (15:23)
 
+Predicting winning percentage with MLB data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Now we'll revisit the MLB data and try to predict winning percentage based on team level data.
+
+    * File: **4_mlb_multiple_regression.qmd** 
+    * `SCREENCAST - Predicting winning percentage in MLB <https://youtu.be/28a8ktCSIHQ>`_ (9:52)
+
+Residual analysis
+^^^^^^^^^^^^^^^^^^
+
+We'll do a brief review of a few residual analysis techniques.
+
+    * File: **5_residual_analysis.qmd** 
+    * `SCREENCAST - Residual analysis <https://youtu.be/4-9LDxIkRiI>`_ (7:45)
+
+
 Explore (OPTIONAL)
 -------------------
 
