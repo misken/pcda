@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MIS 4470/5470 - Practical Computing for Data Analytics (Fall 2024)
+MIS 4470/5470 - Practical Computing for Data Analytics
 ==================================================================================
 
 This course is part of our graduate MS
