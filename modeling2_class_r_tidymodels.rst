@@ -72,8 +72,8 @@ statistical models (and this is a tiny model).
 We'll learn how to use tidymodels to build, fit and assess logistic
 regression models.
 
-* `SCREENCAST - Logistic regression with tidymodels <https://youtu.be/4nHTQKfxDog>`_ (19:06)
-* `SCREENCAST - Impact of thresholds and ROC curves <https://youtu.be/tR8uGs1g1_8>`_ (7:45)
+* `SCREENCAST - Logistic regression with tidymodels <https://youtu.be/YiJqgkxJ9ns>`_ (30:00)
+
 
 
 Decision trees
