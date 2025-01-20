@@ -86,7 +86,7 @@ We'll start with a short introduction to the problem and the data. Data
 partioning and a bit of data exploration are done. Then we'll build a simple decision tree. So, how do decision trees decide how to create their branches? We'll take a very
 brief look at this and point you to some resources to go deeper if you want.
 
-* `SCREENCAST - Intro to decision trees <https://youtu.be/dZZ3YS0kZdY>`_ (21:41)
+* `SCREENCAST - Intro to decision trees <https://youtu.be/1dYakSwg_lo>`_ (21:41)
 
 Now we'll look at some more advanced tree based models.
 

@@ -12,7 +12,7 @@ Both graduate and undergrad students from a variety of programs find their way t
 Master of Accounting, MS in Business Analytics, MS in IT Management, MS in Applied Statistics, undergraduates in School of Business, Actuarial Scence, and
 the School of Engineering and Computer Science. The diverse mix of students make this a very enjoyable class to teach and take.
 
-Most students take my spreadsheet based analytics course, `MIS 4460/5460 <http://www.sba.oakland.edu/faculty/isken/courses/ba/index.html>`_ 
+Most students take my spreadsheet based analytics course, `MIS 4460/5460 <https://ba.misken.org/>`_ 
 before doing this course. Highly recommended but not strictly required.
 
 * My OU website: http://www.sba.oakland.edu/faculty/isken/
