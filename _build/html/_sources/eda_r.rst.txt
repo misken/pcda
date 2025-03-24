@@ -76,7 +76,8 @@ Data visualization
 * `R Graph Catalog <https://r-graph-gallery.com/>`_ Plot demos and code
 * `Data visualization Cheet Sheet from R Studio <https://www.rstudio.com/resources/cheatsheets/#ggplot2>`_
 * `Box plot comic <https://xkcd.com/1798/>`_ - You can always count on xkcd.
-* `Some data visualization resources from my MIS 5460: Business Analytics class <http://www.sba.oakland.edu/faculty/isken/courses/ba/data_viz.html>`_
+* `Working with colours in R <https://nrennie.rbind.io/blog/colours-in-r/?utm_source=substack&utm_medium=email>`_
+* `Some data visualization resources from my MIS 5460: Business Analytics class <https://ba.misken.org/data_viz>`_
 * `R Shiny app for visualizing NYC bike share data <https://nycdatascience.com/blog/student-works/r-visualization/nyc-citi-bike-migration-visulization/>`_- Lots of interesting logistical challenges with bike share programs. EDA plays a role in gaining insight to system dynamics. 
 
 
