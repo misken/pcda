@@ -22,7 +22,7 @@ There are three main computing based topics in this course:
 I'm going to provide several options for obtaining the necessary software and setting up the necessary computing environment for each of these three main topics. As you'll see, you will be able to pick and choose parts from the different resources depending on what makes the most sense for you given the type of computer you have and other factors that I'll describe. In a nutshell, you'll either install R and Python (and a few other things) in your base OS (i.e. Windows or Mac) or you'll use a Linux based virtual machine that I've created which I'll refer to as the "pcda VM".
 
 All the details are described next, but here's a screencast as well. Note that this screencast is from last year but
-nothing has changed other than f23 becomes f24 and the VM
+nothing has changed other than f23 becomes f25 and the VM
 is running a slightly older version of Lubuntu (which just
 means it looks a little different in the screencast).
 
@@ -234,7 +234,7 @@ up your sleeves and make it work. Of course, I am here to help.
 
 The following Installation Guide is from several years ago. Obviously,
 the filename and file size have changed. But, the steps are the same. The
-OVA file for this year is called pcda-2204-f24.ova and has a file size of 13,476,107 kilobytes in Windows (just under 13.5Gb).
+OVA file for this year is called pcda-2204-f24.ova and has a file size of 14,550,287 kilobytes in Windows (just over 14.5Gb).
 
 * `pcda Installation Guide for home use <https://docs.google.com/document/d/1-So9nFP9MXBX7Q6xe2GJRoNK7buaRDtX/edit?usp=sharing&ouid=108213286032058571069&rtpof=true&sd=true>`_
 
@@ -249,10 +249,10 @@ The first thing to do is the download the following OVA file:
 
 .. warning:: 
 
-    pcda-2204-f24.ova is a BIG file (~13.5 Gb). You'll only be downloading 
+    pcda-2204-f24.ova is a BIG file (~14.5 Gb). You'll only be downloading 
     it **one time** to your computer and then importing it into 
     VirtualBox. Use Chrome or Firefox. The
-    file size is **13,476,107 Kb** on my Windows hard drive. Oddly, the
+    file size is **14,550,287 Kb** on my Windows hard drive. Oddly, the
     Mac computes file sizes slightly differently and according to one
     student who installed pcda on his MacBook Pro. If you don't
     know anything about files sizes and how to view such things in
@@ -305,7 +305,7 @@ the **VERY FIRST** thing to check is if the
 ova file actually downloaded correctly. It's a **BIG** file. When
 downloading big files, sometimes they get corrupted. Browse to the
 folder on your host machine containing the downloaded ova file. The
-file size is **13,476,107 Kb** on my Windows hard drive. Oddly, the
+file size is **14,550,287 Kb** on my Windows hard drive. Oddly, the
 Mac computes file sizes slightly differently and according to one
 student who installed pcda on his MacBook Pro, the Mac reports the
 file size as being slightly different. 

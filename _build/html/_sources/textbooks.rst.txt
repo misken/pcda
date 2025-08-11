@@ -8,7 +8,7 @@ require any non-free textbooks for the course.
 
 At the bottom of this page I'll list the books I've used at some point in the past - but you do **NOT** need them.
 
-Required texts for Winter 2025 
+Required texts for Fall 2025 
 ---------------------------------------------------
 
 All of the texts have free versions available online. All these books also have official websites from which you can buy print, PDF, or eBooks. Of course, you can also find them at numerous places on the web. I've listed approximate pricing from checking a few of the online booksellers.

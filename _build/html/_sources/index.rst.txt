@@ -15,7 +15,7 @@ the School of Engineering and Computer Science. The diverse mix of students make
 Most students take my spreadsheet based analytics course, `MIS 4460/5460 <https://ba.misken.org/>`_ 
 before doing this course. Highly recommended but not strictly required.
 
-* My OU website: http://www.sba.oakland.edu/faculty/isken/
+* My main website: https://misken.org/
 * My Github site: https://github.com/misken/
 * My Bits of Analytics blog: https://bitsofanalytics.org/
 
