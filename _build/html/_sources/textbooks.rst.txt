@@ -21,7 +21,7 @@ This online book also has a `companion website <https://alexd106.github.io/intro
 
 **Introduction to Statistical Learning (with Applications in R)** (Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani) (ISLR)
 
-* https://web.stanford.edu/~hastie/ISLRv2_website.pdf
+* https://www.statlearning.com/
 
 This is a text that does a great job of explaining the main statistical learning techniques at an accessible mathematical level. You can download a free PDF from the link above. They've even created a whole set of video lectures accompanying the book - https://www.r-bloggers.com/in-depth-introduction-to-machine-learning-in-15-hours-of-expert-videos/.
 
