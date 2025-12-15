@@ -63,7 +63,7 @@ We will do a brief introduction to writing functions in R.
 .. note::
     The video above makes a few references to the "R for Everyone" text that
 	we are not longer using. Instead, see Chapter 7 of the
-	` An Introduction to R <https://intro2r.com/>`_ online textbook.
+	`An Introduction to R <https://intro2r.com/>`_ online textbook.
 	
 Plots and graphs
 ^^^^^^^^^^^^^^^^^

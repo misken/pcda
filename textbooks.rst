@@ -8,7 +8,7 @@ require any non-free textbooks for the course.
 
 At the bottom of this page I'll list the books I've used at some point in the past - but you do **NOT** need them.
 
-Required texts for Fall 2025 
+Required texts for Fall 2025 / Winter 2026
 ---------------------------------------------------
 
 All of the texts have free versions available online. All these books also have official websites from which you can buy print, PDF, or eBooks. Of course, you can also find them at numerous places on the web. I've listed approximate pricing from checking a few of the online booksellers.
@@ -66,6 +66,13 @@ More good books (**NOT required**)
 * ~$33 new, less for used (IMPORTANT: Make sure you get the Second Edition.)
 
 This provides an accessible, modern and thorough introduction to the world of the R statistical computing platform. I've used this book the past three years.
+
+**Modern Statistics with R** (Thulin)
+
+Free online book.
+
+* https://www.modernstatisticswithr.com
+
 
 **Practical Data Science with R (2ed)** (Nina Zumel and John Mount) (PDSwR)
 
