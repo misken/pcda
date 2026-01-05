@@ -89,17 +89,6 @@ Learn how to use bash to edit files, search files, grab data from websites. Also
 
 - `SCREENCAST: Some additional useful bash commands <https://youtu.be/7R4wEsbVi4M>`_ (15:48)
 
-[OPTIONAL] Intro to Shell for Data Science course at DataCamp
--------------------------------------------------------------
-
-If you're using DataCamp for the Classroom in my class, you also have access to the following course:
-
-* `Intro to Shell for Data Science <https://www.datacamp.com/courses/introduction-to-shell-for-data-science>`_
-
-Sections 1-3 cover very similar ground as done in my screencasts. Subsequent sections go a bit further and
-get into shell variables and basic shell scripting. It's interactive and an efficient intro the bash shell.
-
-
 Explore (OPTIONAL)
 ==================
 
