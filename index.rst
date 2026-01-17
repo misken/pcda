@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MIS 4470/5470 - Practical Computing for Data Analytics
+MIS 4470/5470 - Practical Computing for Data Analytics (Winter 2026)
 ==================================================================================
 
 This course is part of our graduate MS
@@ -26,7 +26,7 @@ before doing this course. Highly recommended but not strictly required.
    
    Course logistics and resources <course_logistics>
    Getting started with pcda and Linux (Weeks 1-2) <foundation>
-   Intro to data science with R (Weeks 3-8) <data_science_r>
+   Intro to data science with R (Weeks 3-7) <data_science_r>
    Intro to data science with Python (Weeks 8-13) <data_science_python>
    Appendix - older/deprecated pages <appendix>
    More topics (teaching Advanced Analytics with Python course in summer 2025) <additional_topics>
