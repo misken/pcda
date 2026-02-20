@@ -12,8 +12,8 @@ Intro to data analytics with Python
    
    python_intro_1
    python_intro_2
-   eda_python
    data_wrangling_python
+   eda_python
    modeling3_unsupervised_scikit_learn
    getting_data_from_web
 
